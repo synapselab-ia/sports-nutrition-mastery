@@ -2,7 +2,7 @@
 
 **Updated:** 2026-09-08
 **Canonical branch:** `main`
-**Project state:** `F0_2_STUDY_PACKAGE_READY`
+**Project state:** `F0_3_UNIT_APPROVED`
 
 ## Completed
 
@@ -49,13 +49,23 @@
 - F0.2 study sequence repeatedly requires `Strongest defensible inference` plus `Tempting unsupported inference` rather than design-name recall alone;
 - F0.2 package excludes `ANSWER_KEY.md` and keeps `EXERCISES.md` outside the initial NotebookLM corpus to prevent answer leakage;
 - F0.2 package QA and source/version/link verification recorded in `notebooklm/F0.2-study-designs/QA_REPORT.md`;
-- external verification on 2026-09-08 confirmed CONSORT 2025 as current general reporting statement, Cochrane Chapter 23 under Handbook v6.5 (2024; chapter last updated October 2019), current official STROBE site, the 2023 factorial CONSORT extension plus 2025 BMJ explanation/elaboration, and the 2025 target-trial framework article with PMC full text.
+- external verification on 2026-09-08 confirmed CONSORT 2025 as current general reporting statement, Cochrane Chapter 23 under Handbook v6.5 (2024; chapter last updated October 2019), current official STROBE site, the 2023 factorial CONSORT extension plus 2025 BMJ explanation/elaboration, and the 2025 target-trial framework article with PMC full text;
+- `F0-A06` completed: full instructional unit `F0.3 — Bias, confounding, causal reasoning and validity` created and QA-approved;
+- F0.3 self-contained lesson created in `foundations/F0-scientific-literacy/F0.3-bias-confounding-causal-validity/LESSON.md`;
+- F0.3 active-recall/application assessment created in `EXERCISES.md` with a 100-point gate and mandatory causal-structure/reparability reasoning;
+- F0.3 commented answer key and local progression rubric created in `ANSWER_KEY.md`;
+- F0.3 production QA recorded in `QA_REPORT.md` with CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates passed;
+- F0.3 explicitly teaches counterfactual intuition, exchangeability in accessible language, systematic versus random error, confounding/residual confounding, causal DAGs, confounder/mediator/collider roles, selection, measurement/information bias, misclassification, missingness/attrition, reverse causation, target-trial thinking, randomization limits and internal versus external validity/applicability;
+- F0.3 assessment requires applied answers in the sequence `target causal question → causal structure → distortion mechanism → repairability → calibrated conclusion`, preventing terminology-only passing;
+- current DAG methods guide `F0-S26` (Feeney, Hartwig & Davies, BMJ 2025) added to `SOURCE_INDEX.md` because it directly supports introductory DAG construction, causal roles and invalid-adjustment reasoning;
+- `F0-S07` source record updated after 2026-09-08 recheck to preserve the current status of the revised `ROBINS-I V2` draft announced 2025-11-30; F0.3 does not prematurely teach the formal tool;
+- external verification on 2026-09-08 rechecked the official Hernán/Robins causal-inference resource, the 2025 target-trial framework, current Catalogue of Bias material, current riskofbias.info resources and the 2025 BMJ DAG guide.
 
 ## Current curriculum position
 
 `F0 — Scientific Literacy and Quantitative Reasoning`
 
-Production position: `F0.2 STUDY_PACKAGE_READY`; F0.1 and F0.2 now both have approved instructional units and NotebookLM packages. F0.3 is the next unproduced instructional unit.
+Production position: `F0.3 APPROVED`; F0.1 and F0.2 have approved instructional units plus NotebookLM packages, and F0.3 now has an approved instructional unit. The F0.3 NotebookLM study package is the next production artifact.
 
 Learning position: `UNSEEN`
 
@@ -68,7 +78,7 @@ No module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MAS
 - a quantitative entry diagnostic precedes F0.4; isolated numeracy gaps are P1 repairs, structural gaps become conditional `P2-QB` before inferential statistics;
 - F0 exit requires integrated appraisal of a complete exercise/nutrition paper plus quantitative and evidence-synthesis interpretation;
 - passing the first exit assessment can support `APPLIED/INTEGRATED`, but does not automatically establish `MASTERED`; later cumulative retesting is required;
-- current methodological backbone includes CONSORT 2025, Cochrane Handbook v6.5 (2024), current risk-of-bias resources, ASA statistical-inference statements, causal-inference references and the living GRADE Book current through 2026;
+- current methodological backbone includes CONSORT 2025, Cochrane Handbook v6.5 (2024), current risk-of-bias resources, ASA statistical-inference statements, causal-inference references, the 2025 BMJ DAG guide and the living GRADE Book current through 2026;
 - exercise/nutrition primary studies used for transfer must be labeled as exemplars and must not be treated as general methodological authorities.
 
 ## F0.1 canonical production decisions
@@ -122,12 +132,37 @@ No module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MAS
 - `ANSWER_KEY.md`, `EXERCISES.md`, QA metadata and full source registry are excluded from the first-pass corpus;
 - package creation changed no learner state.
 
+## F0.3 canonical production decisions
+
+- F0.3 begins causal appraisal with the target causal question/estimand; covariate selection is downstream of the causal question rather than a data-driven ritual;
+- counterfactual reasoning and exchangeability are introduced at conceptual/P1 level without formal potential-outcome mathematics;
+- systematic bias is explicitly separated from random error; larger sample size is not represented as a cure for systematic error;
+- confounding is taught as a causal/common-cause structure, not merely as a variable statistically associated with exposure and outcome;
+- residual confounding explicitly includes unmeasured, poorly measured, coarsened/proxy and structurally misspecified confounders;
+- DAGs are used to encode and audit causal assumptions, temporal ordering and adjustment choices; they are never treated as empirical proof generators;
+- confounder, mediator and collider roles are question/estimand-specific; indiscriminate adjustment can increase rather than decrease bias;
+- mediator adjustment is explicitly identified as potentially changing a total-effect estimand;
+- conditioning on colliders and post-exposure selection is explicitly identified as a mechanism that can open non-causal paths;
+- selection mechanisms affecting entry, retention, complete-case status or the final analytical set are distinguished from simple representativeness/external-validity concerns;
+- measurement/information bias includes exposure, outcome and confounder measurement; non-differential misclassification is not taught as universally biasing toward the null;
+- missingness/attrition is taught as a causal process; missing-data percentage alone and equal percentages between arms are insufficient to determine bias;
+- complete-case analysis is not treated as neutral by default;
+- reverse causation is explicitly linked to temporal-ordering limitations from F0.2;
+- randomization is taught as reducing baseline causal-identification/confounding problems in expectation while leaving post-randomization selection, missingness, measurement, adherence and analysis threats possible;
+- target-trial thinking is used as a causal-design benchmark, not as a method that creates randomization or repairs data that were never collected;
+- internal validity is separated from external validity, generalizability, transportability and applicability;
+- every major applied scenario distinguishes what can be prevented or mitigated by design/measurement/analysis from information that cannot be guaranteed recoverable from inadequate data;
+- formal RoB 2/ROBINS-I/GRADE certainty scoring and the inferential-statistics machinery of F0.4–F0.6 remain deliberately deferred;
+- the local F0.3 exercise gate is `>=80/100` with critical-fail conditions, but it affects learning state only after actual observed learner performance.
+
 ## Pending learning validations
 
 - F0.1 has not yet been studied or assessed by the learner.
 - F0.2 has not yet been studied or assessed by the learner.
+- F0.3 has not yet been studied or assessed by the learner.
 - The approved F0.1 NotebookLM study sequence is available in `notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md`.
 - The approved F0.2 NotebookLM study sequence is available in `notebooklm/F0.2-study-designs/STUDY_GUIDE.md`.
+- F0.3 has no NotebookLM package yet; production of that package is the next canonical action.
 - No mastery-state change is authorized from curriculum/package production alone.
 
 ## Operational constraints
@@ -139,9 +174,11 @@ No module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MAS
 - NotebookLM is a study layer; GitHub remains canonical;
 - F0 source versions must be rechecked if a living methodological resource materially changes before its dependent lesson is authored;
 - legacy CONSORT design extensions must be clearly distinguished from the current general CONSORT 2025 statement;
+- the current revised `ROBINS-I V2` material located on riskofbias.info must be labeled by its actual draft/version status until that status changes;
+- causal DAGs encode assumptions and must never be represented as proof that a causal structure is true;
 - lesson exemplars must not be promoted into practical recommendations beyond the evidence they directly provide;
 - answer keys must not contaminate first-pass retrieval/application assessments.
 
 ## NEXT_ACTION
 
-`F0-A06` — Produce the complete third instructional unit `F0.3 — Bias, confounding, causal reasoning and validity` using `COURSE_MAP.md`, `PREREQUISITE_GRAPH.md`, the approved F0.1/F0.2 units and the mapped current methodological sources. Create a self-contained `LESSON.md`, active-recall/application `EXERCISES.md`, commented `ANSWER_KEY.md` and production `QA_REPORT.md`. Explicitly teach systematic versus random error; confounding and residual confounding; selection mechanisms; measurement/information bias and misclassification; attrition/missingness as bias mechanisms; reverse causation; counterfactual intuition; confounder versus mediator versus collider at an introductory level; simple directed causal graphs as reasoning aids rather than proof generators; invalid adjustment strategies; target-trial thinking as a causal-design benchmark; internal validity versus external validity/applicability; and why randomization reduces some causal-identification problems without eliminating every source of bias. Build directly on F0.2 design architecture, but do **not** prematurely teach the full formal RoB 2/ROBINS-I/GRADE certainty framework reserved for F0.8 or the inferential-statistics content reserved for F0.4–F0.6. For applied scenarios, require the learner to identify the target causal question, draw or describe the relevant causal structure, explain the mechanism by which the estimate could be distorted, distinguish what can be repaired by design/measurement/analysis from what cannot be recovered from inadequate data, and state a conclusion whose certainty matches the assumptions. Research/recheck current authoritative causal-inference and bias sources as required, add only new sources actually used to `SOURCE_INDEX.md`, apply CONTENT/EVIDENCE/PEDAGOGICAL/MASTERY QA, preserve F0.1/F0.2 learning states as pending, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
+`F0-A07` — Produce the complete NotebookLM study package for `F0.3 — Bias, confounding, causal reasoning and validity`. Create `notebooklm/F0.3-bias-confounding-causal-validity/MANIFEST.md`, `STUDY_GUIDE.md` and package `QA_REPORT.md` using the approved F0.3 lesson and a deliberately limited, auditable source corpus drawn only from current sources actually needed for the learning objectives. Assign `CORE`/`SUPPORT`/`CONTRAST` roles and explain the instructional function and limitation of every source. The package must reinforce the causal-reasoning sequence `target causal question/estimand → temporal/causal structure → confounder/mediator/collider/selection/measurement/missingness mechanism → valid versus invalid adjustment → repairability/data limitation → calibrated conclusion`; require the learner to construct or critique simple DAGs without treating them as proof; contrast randomized and observational bias pathways; preserve target-trial emulation as a design benchmark rather than retroactive randomization; and keep formal RoB 2/ROBINS-I/GRADE certainty scoring deferred to F0.8. Exclude `ANSWER_KEY.md` from the initial NotebookLM corpus and keep `EXERCISES.md` outside the first-pass retrieval corpus so assessment remains independent. Recheck all external source links/version statuses used in the manifest, especially living risk-of-bias resources and the current status of `ROBINS-I V2`; apply STUDY PACKAGE QA and copyright/public-repository controls; preserve F0.1–F0.3 learner states as pending; then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
