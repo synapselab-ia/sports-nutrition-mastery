@@ -19,6 +19,15 @@ Dar ao estudante ferramentas para avaliar evidência antes de estudar claims esp
 9. `F0.9` — leitura crítica de artigo completo;
 10. `F0.10` — síntese e comunicação de incerteza.
 
+## Arquitetura detalhada
+
+A arquitetura canônica de F0 está em:
+
+- `COURSE_MAP.md`;
+- `PREREQUISITE_GRAPH.md`;
+- `SOURCE_INDEX.md`;
+- `ASSESSMENT_BLUEPRINT.md`.
+
 ## Gate de conclusão
 
 F0 não termina quando o estudante reconhece os termos. Ele deve conseguir receber um artigo de nutrição/esporte e:
@@ -33,4 +42,4 @@ F0 não termina quando o estudante reconhece os termos. Ele deve conseguir receb
 
 ## Estado
 
-`SCAFFOLDED` — fontes e especificações detalhadas ainda não construídas.
+`ARCHITECTED` — arquitetura detalhada, fontes-base e avaliação de saída definidas; aulas completas ainda não produzidas nem estudadas.
