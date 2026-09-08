@@ -34,6 +34,7 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S23 | crossover-trial reporting/design extension | F0.2, F0.9 |
 | F0-S24 | cluster-randomized-trial reporting/design extension | F0.2, F0.9 |
 | F0-S25 | factorial-trial reporting/design extension | F0.2, F0.6, F0.9 |
+| F0-S26 | current DAG/causal-adjustment guide | F0.3, F0.9 |
 
 ## 2. Registered sources
 
@@ -189,15 +190,15 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Source type:** official operational hub for domain-based risk-of-bias tools.
 
-**Question answered:** Which structured tools are used for risk-of-bias assessment in randomized trials and non-randomized studies of interventions/exposures?
+**Question answered:** Which structured tools are used for risk-of-bias assessment in randomized trials and non-randomized studies of interventions/exposures, and how are distinct bias mechanisms operationally separated?
 
 **Population/context:** systematic review and study-level risk-of-bias assessment.
 
-**Key contribution:** access point for RoB 2, ROBINS-I, ROBINS-E and ROB ME.
+**Key contribution:** access point for RoB 2, ROBINS-I, ROBINS-E and ROB ME. As rechecked on 2026-09-08, the site exposes the current RoB 2 resources and a revised draft of `ROBINS-I V2` announced 30 November 2025; the revised draft reorganizes/expands domains including classification, selection and missing data.
 
-**Key limitations:** tool use requires guidance/training; domain judgments cannot be replaced by a total score. Licensing must be respected; do not republish protected tool documents into the public repository unless permitted.
+**Key limitations:** tool use requires guidance/training; domain judgments cannot be replaced by a total score. `ROBINS-I V2` must be identified by its current draft/version state rather than silently treated as a finalized universal standard. Licensing must be respected; do not republish protected tool documents into the public repository unless permitted.
 
-**Claims supported/contested:** risk of bias is domain- and result-specific; randomized and non-randomized studies require different causal/bias considerations.
+**Claims supported/contested:** risk of bias is domain- and result-specific; randomized and non-randomized studies require different causal/bias considerations; current operational frameworks distinguish confounding, selection, missingness, measurement and reporting processes rather than collapsing them into one “quality” number.
 
 **Modules:** F0.3, F0.8, F0.9.
 
@@ -289,9 +290,9 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** clinical/health research, with broad methodological transfer.
 
-**Key contribution:** definitions, examples, impacts and prevention/mitigation context for many biases; useful for concrete counterexamples.
+**Key contribution:** definitions, examples, impacts and prevention/mitigation context for many biases; current entries directly relevant to F0.3 include confounding, collider bias, selection bias, attrition bias, information bias and misclassification bias.
 
-**Key limitations:** a catalogue can encourage name memorization; F0 must teach causal mechanism of distortion rather than “spot the bias name.”
+**Key limitations:** a catalogue can encourage name memorization; F0 must teach causal mechanism of distortion rather than “spot the bias name.” Individual entries may be updated on different schedules.
 
 **Claims supported/contested:** biases can alter magnitude/direction at multiple research stages; identifying a label is insufficient without explaining the distortion pathway.
 
@@ -635,11 +636,36 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Last checked:** 2026-09-08.
 
+---
+
+### F0-S26 — BMJ guide to directed acyclic graphs
+
+**Citation:** Feeney T, Hartwig FP, Davies NM. How to use directed acyclic graphs: guide for clinical researchers. *BMJ*. 2025;388:e078226. doi:10.1136/bmj-2023-078226.
+
+**URL/DOI:** https://doi.org/10.1136/bmj-2023-078226
+
+**Source type:** peer-reviewed research-methods tutorial / clinical causal-inference guide.
+
+**Question answered:** How can causal directed acyclic graphs be constructed, interpreted and used to make assumptions, confounding, mediators, colliders, selection processes and covariate choices explicit in health research?
+
+**Population/context:** clinical/health research, especially observational causal-effect questions; principles transfer to exercise/nutrition methodology.
+
+**Key contribution:** current 2025 practical guide linking target question and causal assumptions to DAG construction, identification of relevant measured/unmeasured variables, confounder/mediator/collider roles and minimally sufficient adjustment reasoning; explicitly treats DAGs as assumption/communication tools rather than empirical proof.
+
+**Key limitations:** tutorial scope; a DAG is only as defensible as the causal knowledge/assumptions encoded in it. It does not establish that arrows are true, quantify bias by itself, repair measurement/missing data or replace design expertise/formal causal methods.
+
+**Claims supported/contested:** covariate selection should follow the causal estimand/structure rather than indiscriminate adjustment; conditioning on mediators/colliders can distort target effects; DAGs improve transparency but do not prove causal identification.
+
+**Modules:** F0.3, F0.9.
+
+**Last checked:** 2026-09-08.
+
 ## 3. Research notes and version controls
 
 - `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010.
 - The current Cochrane Handbook located during this research is version 6.5, updated August 2024.
 - Current CONSORT/SPIRIT materials continue to expose design-specific extensions. The crossover (2019), cluster (2012) and factorial (2023; explanation/elaboration 2025) extensions used in F0.2 were developed against CONSORT 2010, so they are used only for design-specific concepts together with the general CONSORT 2025 standard; they are not mislabeled as 2025-rewritten extensions.
+- The official risk-of-bias site rechecked on 2026-09-08 exposes a revised draft of `ROBINS-I V2` announced 30 November 2025. Until its status changes, project materials must label it by the current draft/version state rather than silently treating it as a finalized replacement. F0.3 uses the hub only to support bias-domain separation; formal tool application remains reserved for F0.8.
 - GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the official GRADE site states that the Book is the most current resource and is intended to replace the previous Handbook by the end of 2026. For a chapter not yet replaced/complete, consult the official GRADE living map/legacy guidance rather than silently assuming the old handbook is current.
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
 - Methodological sources above are the F0 backbone. Exercise/nutrition exemplars are labeled separately and must not be mistaken for general methodological authorities.
