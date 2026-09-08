@@ -25,11 +25,15 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S14 | trial objectives, estimands and statistical principles | F0.1–F0.5 |
 | F0-S15 | structured answerable questions | F0.1 |
 | F0-S16 | causal inference foundations | F0.2, F0.3 |
-| F0-S17 | target-trial framework | F0.3 |
+| F0-S17 | target-trial framework | F0.2, F0.3 |
 | F0-S18 | current GRADE overview | F0.8–F0.10 |
 | F0-S19 | current GRADE certainty principles | F0.8–F0.10 |
 | F0-S20 | current GRADE indirectness/applicability guidance | F0.8, F0.10 |
 | F0-S21 | sports-nutrition transfer exemplar: acute protein-distribution experiment | F0.1, F0.9 |
+| F0-S22 | Cochrane variants on randomized trials | F0.2, F0.7, F0.8 |
+| F0-S23 | crossover-trial reporting/design extension | F0.2, F0.9 |
+| F0-S24 | cluster-randomized-trial reporting/design extension | F0.2, F0.9 |
+| F0-S25 | factorial-trial reporting/design extension | F0.2, F0.6, F0.9 |
 
 ## 2. Registered sources
 
@@ -435,7 +439,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Claims supported/contested:** clearer design can prevent self-inflicted bias; causal validity still depends on data and assumptions.
 
-**Modules:** F0.3.
+**Modules:** F0.2, F0.3.
 
 **Last checked:** 2026-09-08.
 
@@ -535,10 +539,107 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Last checked:** 2026-09-08.
 
+---
+
+### F0-S22 — Cochrane Handbook, Chapter 23: variants on randomized trials
+
+**Citation:** Higgins JPT, Eldridge S, Li T. Chapter 23: Including variants on randomized trials. In: Higgins JPT, Thomas J, Chandler J, et al, eds. *Cochrane Handbook for Systematic Reviews of Interventions*. Version 6.5. Cochrane; 2024. Chapter last updated October 2019.
+
+**URL:** https://training.cochrane.org/handbook/current/chapter-23
+
+**Source type:** authoritative methods handbook chapter.
+
+**Question answered:** What design/analysis issues distinguish cluster-randomized, crossover and other randomized-trial variants from a standard individually randomized parallel trial?
+
+**Population/context:** randomized trials included in intervention evidence synthesis.
+
+**Key contribution:** explicitly distinguishes unit of allocation in cluster trials, dependence among individuals within clusters, within-person structure of crossover trials, carryover, period effects and suitability limits of crossover designs.
+
+**Key limitations:** chapter is written for systematic-review authors and includes technical analysis/meta-analysis detail beyond F0.2; the design concepts are used here without importing later statistical machinery.
+
+**Claims supported/contested:** non-standard randomized designs require analysis compatible with their dependence structure; crossover requires suitability/reversibility; ignoring clustering or pairing changes inferential validity.
+
+**Modules:** F0.2, F0.7, F0.8.
+
+**Last checked:** 2026-09-08.
+
+---
+
+### F0-S23 — CONSORT crossover extension
+
+**Citation:** Dwan K, Li T, Altman DG, Elbourne D. CONSORT 2010 statement: extension to randomised crossover trials. *BMJ*. 2019;366:l4378. doi:10.1136/bmj.l4378.
+
+**URL/DOI:** https://doi.org/10.1136/bmj.l4378
+
+**Source type:** design-specific CONSORT reporting extension.
+
+**Question answered:** What crossover-specific information is needed to understand and interpret randomized crossover trials?
+
+**Population/context:** randomized crossover trials, especially two-treatment designs with repeated periods.
+
+**Key contribution:** makes sequence allocation, periods, carryover-related considerations and crossover-specific reporting explicit; reinforces that each participant may serve as their own control.
+
+**Key limitations:** written as an extension to CONSORT 2010 rather than a newly rewritten CONSORT 2025 extension; use together with the current general CONSORT 2025 statement and do not treat the checklist as risk-of-bias scoring.
+
+**Claims supported/contested:** crossover is a distinct within-person randomized architecture whose validity depends on period/sequence structure and the absence/control of problematic persistent effects.
+
+**Modules:** F0.2, F0.9.
+
+**Last checked:** 2026-09-08.
+
+---
+
+### F0-S24 — CONSORT cluster-randomized extension
+
+**Citation:** Campbell MK, Piaggio G, Elbourne DR, Altman DG; CONSORT Group. CONSORT 2010 statement: extension to cluster randomised trials. *BMJ*. 2012;345:e5661. doi:10.1136/bmj.e5661.
+
+**URL/DOI:** https://doi.org/10.1136/bmj.e5661
+
+**Source type:** design-specific CONSORT reporting extension.
+
+**Question answered:** What additional design/reporting information is required when groups rather than individuals are randomized?
+
+**Population/context:** cluster-randomized trials.
+
+**Key contribution:** requires clarity about why cluster randomization was used, how clustering affects design/analysis and how both clusters and individuals flow through the trial.
+
+**Key limitations:** written against CONSORT 2010; the current general statement is CONSORT 2025. Use this extension for cluster-specific architecture until a current replacement is available, without treating reporting completeness as proof of methodological quality.
+
+**Claims supported/contested:** the randomized unit can be a cluster while outcomes are measured on individuals; analysis and interpretation must preserve that structure.
+
+**Modules:** F0.2, F0.9.
+
+**Last checked:** 2026-09-08.
+
+---
+
+### F0-S25 — CONSORT factorial-trial extension
+
+**Citation:** Kahan BC, Hall SS, Beller EM, et al. Reporting of Factorial Randomized Trials: Extension of the CONSORT 2010 Statement. *JAMA*. 2023;330(21):2106-2114. doi:10.1001/jama.2023.19793. Explanation/elaboration: Kahan BC, Juszczak E, Beller E, et al. *BMJ*. 2025;388:e080785. doi:10.1136/bmj-2024-080785.
+
+**URL/DOI:** https://doi.org/10.1001/jama.2023.19793 ; https://doi.org/10.1136/bmj-2024-080785
+
+**Source type:** design-specific CONSORT extension plus explanation/elaboration.
+
+**Question answered:** What must be made explicit when a randomized trial evaluates multiple factors/interventions, especially in a 2 × 2 factorial architecture?
+
+**Population/context:** factorial randomized trials.
+
+**Key contribution:** clarifies factor structure, main comparisons, rationale for factorial design, interaction assumptions/estimates and interpretation when effects may depend on another factor.
+
+**Key limitations:** extension was built from CONSORT 2010; general reporting should be aligned with CONSORT 2025 while retaining these factorial-specific concepts. Detailed interaction testing belongs later in F0.6.
+
+**Claims supported/contested:** factorial trials can efficiently study more than one randomized factor, but effects are not guaranteed to combine additively; interaction can change interpretation.
+
+**Modules:** F0.2, F0.6, F0.9.
+
+**Last checked:** 2026-09-08.
+
 ## 3. Research notes and version controls
 
 - `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010.
 - The current Cochrane Handbook located during this research is version 6.5, updated August 2024.
+- Current CONSORT/SPIRIT materials continue to expose design-specific extensions. The crossover (2019), cluster (2012) and factorial (2023; explanation/elaboration 2025) extensions used in F0.2 were developed against CONSORT 2010, so they are used only for design-specific concepts together with the general CONSORT 2025 standard; they are not mislabeled as 2025-rewritten extensions.
 - GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the official GRADE site states that the Book is the most current resource and is intended to replace the previous Handbook by the end of 2026. For a chapter not yet replaced/complete, consult the official GRADE living map/legacy guidance rather than silently assuming the old handbook is current.
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
 - Methodological sources above are the F0 backbone. Exercise/nutrition exemplars are labeled separately and must not be mistaken for general methodological authorities.
