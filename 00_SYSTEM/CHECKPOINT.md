@@ -2,7 +2,7 @@
 
 **Updated:** 2026-09-08
 **Canonical branch:** `main`
-**Project state:** `F0_2_INSTRUCTIONAL_UNIT_APPROVED`
+**Project state:** `F0_2_STUDY_PACKAGE_READY`
 
 ## Completed
 
@@ -31,9 +31,8 @@
 - sports-nutrition transfer exemplar `F0-S21` (Areta et al. 2013) registered in the local `SOURCE_INDEX.md` and explicitly restricted to inferential-boundary/operationalization teaching;
 - `F0-A03` completed: NotebookLM study package for F0.1 created and Study Package QA passed;
 - F0.1 NotebookLM manifest v1 created in `notebooklm/F0.1-scientific-questions/MANIFEST.md` with a six-source auditable corpus and `CORE`/`SUPPORT`/`CONTRAST` roles;
-- practical NotebookLM setup/study sequence created in `notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md`;
-- package source/file/link verification and copyright/answer-leakage controls recorded in `notebooklm/F0.1-scientific-questions/QA_REPORT.md`;
-- external study links verified on 2026-09-08 for Cochrane Handbook v6.5 Chapter 2, EMA ICH E9/E9(R1), GRADE Book, CONSORT 2025 and Areta et al. full text via PMC;
+- practical F0.1 NotebookLM setup/study sequence created in `notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md`;
+- F0.1 package source/file/link verification and copyright/answer-leakage controls recorded in `notebooklm/F0.1-scientific-questions/QA_REPORT.md`;
 - `F0-A04` completed: full instructional unit `F0.2 — Study designs and what they can answer` created and QA-approved;
 - F0.2 self-contained lesson created in `foundations/F0-scientific-literacy/F0.2-study-designs/LESSON.md`;
 - F0.2 active-recall/application assessment created in `EXERCISES.md`, including eight study-classification scenarios and mandatory strongest-defensible/tempting-invalid inference statements;
@@ -41,13 +40,22 @@
 - F0.2 production QA recorded in `QA_REPORT.md` with CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates passed;
 - F0.2 design-specific methodological sources `F0-S22`–`F0-S25` registered in `SOURCE_INDEX.md`: Cochrane Chapter 23 plus crossover, cluster-randomized and factorial CONSORT extensions;
 - target-trial source `F0-S17` expanded to F0.2 use after 2026-09-08 recheck;
-- source-version caveat recorded: CONSORT 2025 is the current general standard; older design-specific extensions are used only for their still-relevant architecture until updated replacements exist.
+- source-version caveat recorded: CONSORT 2025 is the current general standard; older design-specific extensions are used only for still-relevant architecture until updated replacements exist;
+- `F0-A05` completed: complete NotebookLM study package for `F0.2 — Study designs and what they can answer` created and Study Package QA passed;
+- F0.2 NotebookLM manifest v1 created in `notebooklm/F0.2-study-designs/MANIFEST.md`;
+- F0.2 initial NotebookLM corpus intentionally limited to six sources: canonical F0.2 lesson, Cochrane Chapter 23, CONSORT 2025, BMJ 2025 factorial explanation/elaboration, STROBE and Hernán et al. 2025 target-trial framework;
+- F0.2 package assigns `CORE`/`SUPPORT`/`CONTRAST` roles explicitly and explains the instructional function and limitation of every source;
+- F0.2 study sequence created in `notebooklm/F0.2-study-designs/STUDY_GUIDE.md` with unfamiliar-design classification, between/within-subject reasoning, washout/carryover, cluster allocation logic, factorial interaction intuition, observational-design discrimination, acute/chronic boundaries and target-trial limits;
+- F0.2 study sequence repeatedly requires `Strongest defensible inference` plus `Tempting unsupported inference` rather than design-name recall alone;
+- F0.2 package excludes `ANSWER_KEY.md` and keeps `EXERCISES.md` outside the initial NotebookLM corpus to prevent answer leakage;
+- F0.2 package QA and source/version/link verification recorded in `notebooklm/F0.2-study-designs/QA_REPORT.md`;
+- external verification on 2026-09-08 confirmed CONSORT 2025 as current general reporting statement, Cochrane Chapter 23 under Handbook v6.5 (2024; chapter last updated October 2019), current official STROBE site, the 2023 factorial CONSORT extension plus 2025 BMJ explanation/elaboration, and the 2025 target-trial framework article with PMC full text.
 
 ## Current curriculum position
 
 `F0 — Scientific Literacy and Quantitative Reasoning`
 
-Production position: `F0.2 APPROVED`; F0.1 remains `STUDY_PACKAGE_READY`; F0.2 NotebookLM packaging is the next production step.
+Production position: `F0.2 STUDY_PACKAGE_READY`; F0.1 and F0.2 now both have approved instructional units and NotebookLM packages. F0.3 is the next unproduced instructional unit.
 
 Learning position: `UNSEEN`
 
@@ -81,7 +89,6 @@ No module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MAS
 - `EXERCISES.md` remains outside the initial corpus and is completed independently after source-guided study;
 - CONSORT remains `SUPPORT` reporting guidance, never a risk-of-bias score;
 - Areta et al. is `CONTRAST`/transfer evidence for inferential-boundary practice, not a universal nutrition recommendation;
-- the GRADE Book is a living JavaScript resource; if NotebookLM ingestion fails, the official page remains a manual reference rather than being replaced with an unofficial copy;
 - package generation changed no learner state.
 
 ## F0.2 canonical production decisions
@@ -101,12 +108,26 @@ No module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MAS
 - target-trial emulation is introduced as a way to specify the hypothetical randomized causal design before using observational data; it does not create randomization or repair inadequate data;
 - the local F0.2 exercise gate is `>=80/100` with critical-fail conditions, but it affects learning state only after actual observed learner performance.
 
+## F0.2 NotebookLM package decisions
+
+- manifest version `1` uses exactly six initial sources to keep the corpus auditable;
+- canonical F0.2 lesson and Cochrane Chapter 23 are `CORE`;
+- CONSORT 2025, BMJ 2025 factorial explanation/elaboration and STROBE are `SUPPORT`;
+- Hernán et al. 2025 target-trial framework is `CONTRAST`;
+- separate crossover/cluster CONSORT extensions remain registered but are intentionally excluded from the first-pass NotebookLM corpus because Cochrane Chapter 23 plus the lesson already cover their essential F0.2 architecture;
+- the broader `Causal Inference: What If` source remains a teacher/deeper reference rather than initial corpus material so F0.3 is not pulled forward prematurely;
+- STROBE and CONSORT are used to expose study architecture/reporting, never as quality/risk-of-bias scores;
+- the factorial source is explicitly labeled as specialized guidance built against CONSORT 2010/SPIRIT 2013 while CONSORT 2025 remains the current general trial-reporting standard;
+- all retrieval/application prompts preserve the `design → strongest defensible inference → tempting unsupported inference` habit;
+- `ANSWER_KEY.md`, `EXERCISES.md`, QA metadata and full source registry are excluded from the first-pass corpus;
+- package creation changed no learner state.
+
 ## Pending learning validations
 
 - F0.1 has not yet been studied or assessed by the learner.
 - F0.2 has not yet been studied or assessed by the learner.
-- The approved F0.1 NotebookLM study sequence remains available in `notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md`.
-- F0.2 has an approved instructional unit but no NotebookLM study package yet.
+- The approved F0.1 NotebookLM study sequence is available in `notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md`.
+- The approved F0.2 NotebookLM study sequence is available in `notebooklm/F0.2-study-designs/STUDY_GUIDE.md`.
 - No mastery-state change is authorized from curriculum/package production alone.
 
 ## Operational constraints
@@ -123,4 +144,4 @@ No module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MAS
 
 ## NEXT_ACTION
 
-`F0-A05` — Create the complete NotebookLM study package for `F0.2 — Study designs and what they can answer`. Build `notebooklm/F0.2-study-designs/MANIFEST.md`, `STUDY_GUIDE.md` and package `QA_REPORT.md`. Use the canonical F0.2 lesson as `CORE`; select a deliberately small auditable corpus from the sources actually used in F0.2, prioritizing current/general CONSORT 2025 plus the most instructionally necessary cluster/crossover/factorial/Cochrane/target-trial resources rather than loading every registered methodology source. Assign explicit `CORE`/`SUPPORT`/`CONTRAST` roles and explain exactly what each source should teach. Exclude `ANSWER_KEY.md` and keep `EXERCISES.md` outside the initial NotebookLM corpus to prevent answer leakage. The study sequence must force classification of unfamiliar study descriptions, between- versus within-subject reasoning, washout/carryover, unit-of-allocation logic, cohort/case-control/cross-sectional discrimination, acute-versus-chronic inferential boundaries and target-trial limits; it must repeatedly require “strongest defensible inference” plus “tempting unsupported inference.” Verify every source/file/link and current version, preserve F0.1/F0.2 learning state as pending, run Study Package QA, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
+`F0-A06` — Produce the complete third instructional unit `F0.3 — Bias, confounding, causal reasoning and validity` using `COURSE_MAP.md`, `PREREQUISITE_GRAPH.md`, the approved F0.1/F0.2 units and the mapped current methodological sources. Create a self-contained `LESSON.md`, active-recall/application `EXERCISES.md`, commented `ANSWER_KEY.md` and production `QA_REPORT.md`. Explicitly teach systematic versus random error; confounding and residual confounding; selection mechanisms; measurement/information bias and misclassification; attrition/missingness as bias mechanisms; reverse causation; counterfactual intuition; confounder versus mediator versus collider at an introductory level; simple directed causal graphs as reasoning aids rather than proof generators; invalid adjustment strategies; target-trial thinking as a causal-design benchmark; internal validity versus external validity/applicability; and why randomization reduces some causal-identification problems without eliminating every source of bias. Build directly on F0.2 design architecture, but do **not** prematurely teach the full formal RoB 2/ROBINS-I/GRADE certainty framework reserved for F0.8 or the inferential-statistics content reserved for F0.4–F0.6. For applied scenarios, require the learner to identify the target causal question, draw or describe the relevant causal structure, explain the mechanism by which the estimate could be distorted, distinguish what can be repaired by design/measurement/analysis from what cannot be recovered from inadequate data, and state a conclusion whose certainty matches the assumptions. Research/recheck current authoritative causal-inference and bias sources as required, add only new sources actually used to `SOURCE_INDEX.md`, apply CONTENT/EVIDENCE/PEDAGOGICAL/MASTERY QA, preserve F0.1/F0.2 learning states as pending, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
