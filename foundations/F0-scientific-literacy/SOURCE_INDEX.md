@@ -29,6 +29,7 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S18 | current GRADE overview | F0.8–F0.10 |
 | F0-S19 | current GRADE certainty principles | F0.8–F0.10 |
 | F0-S20 | current GRADE indirectness/applicability guidance | F0.8, F0.10 |
+| F0-S21 | sports-nutrition transfer exemplar: acute protein-distribution experiment | F0.1, F0.9 |
 
 ## 2. Registered sources
 
@@ -510,14 +511,34 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Last checked:** 2026-09-08.
 
+---
+
+### F0-S21 — Areta et al. protein-distribution experiment
+
+**Citation:** Areta JL, Burke LM, Ross ML, et al. Timing and distribution of protein ingestion during prolonged recovery from resistance exercise alters myofibrillar protein synthesis. *J Physiol*. 2013;591(9):2319-2331. doi:10.1113/jphysiol.2012.244897.
+
+**URL/DOI:** https://doi.org/10.1113/jphysiol.2012.244897
+
+**Source type:** primary human exercise-nutrition experiment / transfer exemplar.
+
+**Question answered:** What did a concrete sports-nutrition experiment actually operationalize when comparing protein-feeding distributions during acute recovery from resistance exercise?
+
+**Population/context:** 24 healthy trained men; one resistance-exercise session; three distributions of a fixed total of 80 g whey protein across 12 h recovery.
+
+**Key contribution:** provides a real sports-nutrition example for reconstructing population, intervention contrast, outcome and time window, and for distinguishing an acute mechanistic outcome (integrated myofibrillar protein synthesis) from chronic hypertrophy or performance outcomes.
+
+**Key limitations:** small acute experiment; male trained sample; 12 h observation; specific total protein/source/distribution conditions; mechanistic outcome. It does not by itself establish a universal long-term feeding recommendation.
+
+**Claims supported/contested:** used in F0 only to teach inferential boundaries and operationalization. It supports the factual description of what the experiment measured; it is not treated as evidence that acute MPS differences automatically imply greater long-term hypertrophy or performance.
+
+**Modules:** F0.1; may be revisited in F0.9 as a full-paper appraisal exemplar if pedagogically appropriate.
+
+**Last checked:** 2026-09-08.
+
 ## 3. Research notes and version controls
 
 - `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010.
 - The current Cochrane Handbook located during this research is version 6.5, updated August 2024.
 - GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the official GRADE site states that the Book is the most current resource and is intended to replace the previous Handbook by the end of 2026. For a chapter not yet replaced/complete, consult the official GRADE living map/legacy guidance rather than silently assuming the old handbook is current.
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
-- Methodological sources above are the F0 backbone. Later lesson authoring should add carefully selected open-access nutrition/exercise exemplar papers to teach transfer, but those exemplars must not be mistaken for general methodological authorities.
-
-## 4. Public-repository rule
-
-Store citations, links, notes and original instructional synthesis in GitHub. Do **not** upload publisher PDFs or tool documents merely because they are accessible online. Redistribution must be permitted by license or explicit source terms.
+- Methodological sources above are the F0 backbone. Exercise/nutrition exemplars are labeled separately and must not be mistaken for general methodological authorities.
