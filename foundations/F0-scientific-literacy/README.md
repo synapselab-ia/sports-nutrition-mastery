@@ -32,16 +32,24 @@ A arquitetura canônica de F0 está em:
 
 ### F0.1 — Scientific questions, hypotheses and operationalization
 
-Estado de produção: `APPROVED`.
+Estado do conteúdo: `APPROVED`.
 
-Artefatos:
+Estado do pacote de estudo: `STUDY_PACKAGE_READY`.
+
+Artefatos instrucionais:
 
 - `F0.1-scientific-questions/LESSON.md` — aula autossuficiente;
 - `F0.1-scientific-questions/EXERCISES.md` — recuperação ativa e aplicação;
 - `F0.1-scientific-questions/ANSWER_KEY.md` — gabarito comentado e rubrica;
 - `F0.1-scientific-questions/QA_REPORT.md` — registro de QA de produção.
 
-Estado de aprendizagem: `UNSEEN`. Produção do material não equivale a estudo ou domínio.
+Pacote NotebookLM:
+
+- `../../notebooklm/F0.1-scientific-questions/MANIFEST.md` — corpus aprovado, prioridades, conceitos, limites e prompts;
+- `../../notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md` — sequência prática de configuração/estudo;
+- `../../notebooklm/F0.1-scientific-questions/QA_REPORT.md` — Study Package QA e verificação de links/fontes.
+
+Estado de aprendizagem: `UNSEEN`. Produção do material e prontidão do pacote NotebookLM não equivalem a estudo ou domínio.
 
 ## Gate de conclusão
 
@@ -57,4 +65,4 @@ F0 não termina quando o estudante reconhece os termos. Ele deve conseguir receb
 
 ## Estado
 
-`IN_PRODUCTION` — arquitetura detalhada aprovada; F0.1 produzido e QA-aprovado; F0.2–F0.10 ainda não possuem aulas completas. Nenhuma unidade foi marcada como estudada ou dominada.
+`IN_PRODUCTION` — arquitetura detalhada aprovada; F0.1 possui conteúdo QA-aprovado e pacote NotebookLM `STUDY_PACKAGE_READY`; F0.2–F0.10 ainda não possuem aulas completas. Nenhuma unidade foi marcada como estudada ou dominada.
