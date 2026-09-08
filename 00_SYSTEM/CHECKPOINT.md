@@ -2,7 +2,7 @@
 
 **Updated:** 2026-09-08
 **Canonical branch:** `main`
-**Project state:** `F0_1_STUDY_PACKAGE_READY`
+**Project state:** `F0_2_INSTRUCTIONAL_UNIT_APPROVED`
 
 ## Completed
 
@@ -33,13 +33,21 @@
 - F0.1 NotebookLM manifest v1 created in `notebooklm/F0.1-scientific-questions/MANIFEST.md` with a six-source auditable corpus and `CORE`/`SUPPORT`/`CONTRAST` roles;
 - practical NotebookLM setup/study sequence created in `notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md`;
 - package source/file/link verification and copyright/answer-leakage controls recorded in `notebooklm/F0.1-scientific-questions/QA_REPORT.md`;
-- external study links verified on 2026-09-08 for Cochrane Handbook v6.5 Chapter 2, EMA ICH E9/E9(R1), GRADE Book, CONSORT 2025 and Areta et al. full text via PMC.
+- external study links verified on 2026-09-08 for Cochrane Handbook v6.5 Chapter 2, EMA ICH E9/E9(R1), GRADE Book, CONSORT 2025 and Areta et al. full text via PMC;
+- `F0-A04` completed: full instructional unit `F0.2 — Study designs and what they can answer` created and QA-approved;
+- F0.2 self-contained lesson created in `foundations/F0-scientific-literacy/F0.2-study-designs/LESSON.md`;
+- F0.2 active-recall/application assessment created in `EXERCISES.md`, including eight study-classification scenarios and mandatory strongest-defensible/tempting-invalid inference statements;
+- F0.2 commented answer key and local progression rubric created in `ANSWER_KEY.md`;
+- F0.2 production QA recorded in `QA_REPORT.md` with CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates passed;
+- F0.2 design-specific methodological sources `F0-S22`–`F0-S25` registered in `SOURCE_INDEX.md`: Cochrane Chapter 23 plus crossover, cluster-randomized and factorial CONSORT extensions;
+- target-trial source `F0-S17` expanded to F0.2 use after 2026-09-08 recheck;
+- source-version caveat recorded: CONSORT 2025 is the current general standard; older design-specific extensions are used only for their still-relevant architecture until updated replacements exist.
 
 ## Current curriculum position
 
 `F0 — Scientific Literacy and Quantitative Reasoning`
 
-Production position: `F0.1 STUDY_PACKAGE_READY`; F0.2 is the next unproduced instructional unit.
+Production position: `F0.2 APPROVED`; F0.1 remains `STUDY_PACKAGE_READY`; F0.2 NotebookLM packaging is the next production step.
 
 Learning position: `UNSEEN`
 
@@ -76,10 +84,29 @@ No module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MAS
 - the GRADE Book is a living JavaScript resource; if NotebookLM ingestion fails, the official page remains a manual reference rather than being replaced with an unofficial copy;
 - package generation changed no learner state.
 
+## F0.2 canonical production decisions
+
+- F0.2 teaches study design as architecture relative to a scientific question, not as a universal evidence pyramid;
+- every major design requires two outputs: the strongest defensible inference and at least one tempting inference not established by the design;
+- randomization is taught as an allocation mechanism that strengthens causal comparability in expectation, not as a guarantee of perfect baseline balance, flawless execution or universal generalizability;
+- parallel randomized trials are separated from crossover by between-subject versus within-subject comparison structure;
+- crossover suitability requires a sufficiently stable setting, reversible/transient effects and explicit washout/carryover/period-effect reasoning;
+- cluster trials distinguish unit of allocation from unit of observation/analysis; individual observations inside one randomized cluster must not be treated as independent randomizations;
+- factorial trials introduce multiple randomized factors and interaction intuition without prematurely teaching interaction-testing/multiplicity mathematics;
+- non-randomized intervention studies are neither treated as automatically causal nor dismissed as intrinsically useless; formal confounding/identification is deferred to F0.3;
+- retrospective cohort versus case-control is distinguished by where sampling starts, not by whether historical data are used;
+- cross-sectional designs are limited to prevalence/association unless temporal/causal information comes from additional structure;
+- acute mechanistic studies and chronic adaptation/outcome studies are explicitly separated;
+- diagnostic, prognostic and intervention questions are treated as distinct design problems rather than forced into an RCT hierarchy;
+- target-trial emulation is introduced as a way to specify the hypothetical randomized causal design before using observational data; it does not create randomization or repair inadequate data;
+- the local F0.2 exercise gate is `>=80/100` with critical-fail conditions, but it affects learning state only after actual observed learner performance.
+
 ## Pending learning validations
 
 - F0.1 has not yet been studied or assessed by the learner.
-- The approved NotebookLM study sequence is available in `notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md`.
+- F0.2 has not yet been studied or assessed by the learner.
+- The approved F0.1 NotebookLM study sequence remains available in `notebooklm/F0.1-scientific-questions/STUDY_GUIDE.md`.
+- F0.2 has an approved instructional unit but no NotebookLM study package yet.
 - No mastery-state change is authorized from curriculum/package production alone.
 
 ## Operational constraints
@@ -90,9 +117,10 @@ No module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MAS
 - current scientific claims must be researched and sourced, not generated from memory alone;
 - NotebookLM is a study layer; GitHub remains canonical;
 - F0 source versions must be rechecked if a living methodological resource materially changes before its dependent lesson is authored;
+- legacy CONSORT design extensions must be clearly distinguished from the current general CONSORT 2025 statement;
 - lesson exemplars must not be promoted into practical recommendations beyond the evidence they directly provide;
 - answer keys must not contaminate first-pass retrieval/application assessments.
 
 ## NEXT_ACTION
 
-`F0-A04` — Produce the complete second instructional unit `F0.2 — Study designs and what they can answer` using `COURSE_MAP.md`, `PREREQUISITE_GRAPH.md` and the mapped methodological sources. Create a self-contained `LESSON.md`, active-recall/application `EXERCISES.md`, commented `ANSWER_KEY.md` and production `QA_REPORT.md`. Explicitly teach randomized parallel, crossover, cluster and factorial trials; non-randomized intervention studies; cohort, case-control and cross-sectional designs; acute mechanistic versus chronic outcome studies; temporal ordering; within-subject versus between-subject comparisons; washout/carryover intuition; unit of allocation versus unit of analysis; and the introductory target-trial concept where useful. For every design, require the learner to state the strongest defensible inference and at least one tempting inference the design does not establish. Do **not** prematurely teach the full bias/confounding/causal-identification content reserved for F0.3. Research/recheck current authoritative design/reporting sources as required, add only new sources actually used to `SOURCE_INDEX.md`, apply CONTENT/EVIDENCE/PEDAGOGICAL/MASTERY QA, preserve F0.1 learning state as pending, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
+`F0-A05` — Create the complete NotebookLM study package for `F0.2 — Study designs and what they can answer`. Build `notebooklm/F0.2-study-designs/MANIFEST.md`, `STUDY_GUIDE.md` and package `QA_REPORT.md`. Use the canonical F0.2 lesson as `CORE`; select a deliberately small auditable corpus from the sources actually used in F0.2, prioritizing current/general CONSORT 2025 plus the most instructionally necessary cluster/crossover/factorial/Cochrane/target-trial resources rather than loading every registered methodology source. Assign explicit `CORE`/`SUPPORT`/`CONTRAST` roles and explain exactly what each source should teach. Exclude `ANSWER_KEY.md` and keep `EXERCISES.md` outside the initial NotebookLM corpus to prevent answer leakage. The study sequence must force classification of unfamiliar study descriptions, between- versus within-subject reasoning, washout/carryover, unit-of-allocation logic, cohort/case-control/cross-sectional discrimination, acute-versus-chronic inferential boundaries and target-trial limits; it must repeatedly require “strongest defensible inference” plus “tempting unsupported inference.” Verify every source/file/link and current version, preserve F0.1/F0.2 learning state as pending, run Study Package QA, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
