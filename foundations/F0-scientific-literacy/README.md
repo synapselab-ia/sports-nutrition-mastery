@@ -28,6 +28,21 @@ A arquitetura canônica de F0 está em:
 - `SOURCE_INDEX.md`;
 - `ASSESSMENT_BLUEPRINT.md`.
 
+## Unidade produzida
+
+### F0.1 — Scientific questions, hypotheses and operationalization
+
+Estado de produção: `APPROVED`.
+
+Artefatos:
+
+- `F0.1-scientific-questions/LESSON.md` — aula autossuficiente;
+- `F0.1-scientific-questions/EXERCISES.md` — recuperação ativa e aplicação;
+- `F0.1-scientific-questions/ANSWER_KEY.md` — gabarito comentado e rubrica;
+- `F0.1-scientific-questions/QA_REPORT.md` — registro de QA de produção.
+
+Estado de aprendizagem: `UNSEEN`. Produção do material não equivale a estudo ou domínio.
+
 ## Gate de conclusão
 
 F0 não termina quando o estudante reconhece os termos. Ele deve conseguir receber um artigo de nutrição/esporte e:
@@ -42,4 +57,4 @@ F0 não termina quando o estudante reconhece os termos. Ele deve conseguir receb
 
 ## Estado
 
-`ARCHITECTED` — arquitetura detalhada, fontes-base e avaliação de saída definidas; aulas completas ainda não produzidas nem estudadas.
+`IN_PRODUCTION` — arquitetura detalhada aprovada; F0.1 produzido e QA-aprovado; F0.2–F0.10 ainda não possuem aulas completas. Nenhuma unidade foi marcada como estudada ou dominada.
