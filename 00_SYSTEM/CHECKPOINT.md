@@ -2,7 +2,7 @@
 
 **Updated:** 2026-09-09
 **Canonical branch:** `main`
-**Project state:** `F0_5_UNIT_APPROVED`
+**Project state:** `F0_5_STUDY_PACKAGE_READY`
 
 ## Completed
 
@@ -53,85 +53,94 @@
 
 #### `F0-A10` — instructional unit
 
-- `F0-A10` completed: complete fifth instructional unit created and production QA passed;
-- approved unit path: `foundations/F0-scientific-literacy/F0.5-estimates-confidence-pvalues-effect-sizes/`;
+- complete approved unit exists at `foundations/F0-scientific-literacy/F0.5-estimates-confidence-pvalues-effect-sizes/` with `LESSON.md`, `EXERCISES.md`, `ANSWER_KEY.md` and production `QA_REPORT.md`;
+- production QA passed CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates;
+- F0.5 separates parameter, estimator and estimate; point and interval estimates; SD versus SE; frequentist CI coverage; p-value interpretation; effect magnitude; practical thresholds and unsupported claims;
+- frequentist 95% CI is a repeated-sampling procedure property under assumptions, not posterior probability that a fixed parameter lies inside one observed interval;
+- all six ASA p-value principles are taught explicitly;
+- `p<0.05` is not truth/importance and `p>0.05` is not proof of no effect;
+- MD/SMD and RD/RR/OR remain distinct; RR and OR are not interchangeable;
+- relative-effect interpretation requires baseline absolute context for practical meaning;
+- smallest effect of interest / decision threshold is contextual and justified rather than generated from the observed p-value;
+- narrow near-null intervals can be informative when they exclude meaningful effects; wide intervals can remain compatible with important benefit/harm;
+- canonical interpretation sequence is `Target/measure → Direction → Magnitude → Precision/CI → Statistical output → Practical meaning + unsupported claims`;
+- formal Type I/II-error, power, multiplicity, FWER/FDR and analytical-flexibility machinery remain deferred to F0.6;
+- `F0-S28` Greenland et al. 2016 was added for CI/p-value misinterpretation safeguards;
+- all F0.5 methodological sources were rechecked on 2026-09-09.
+
+#### `F0-A11` — NotebookLM study package
+
+- complete package created at `notebooklm/F0.5-estimates-confidence-pvalues-effect-sizes/`;
 - verified canonical files:
-  - `LESSON.md` — `APPROVED`;
-  - `EXERCISES.md` — 100-point active-recall/application assessment;
-  - `ANSWER_KEY.md` — commented scoring key;
-  - `QA_REPORT.md` — CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates passed;
-- F0.5 begins by separating parameter, estimator and estimate, then point versus interval estimates;
-- standard error is carried forward from F0.4 as uncertainty/precision of an estimate rather than individual spread;
-- generic CI structure is introduced as `estimate ± critical value × SE`, with `1.96` explicitly restricted to a simple normal-approximation example rather than treated as universal;
-- a frequentist 95% CI is taught as a repeated-sampling coverage property of the procedure under assumptions, not as a 95% posterior probability that the fixed parameter lies inside one observed interval;
-- compatibility language is used cautiously: a CI identifies values relatively compatible with the data/model under assumptions, without claiming equal probability inside the interval or impossibility outside it;
-- null value is explicitly scale-specific: `0` for difference measures and `1` for ratio measures;
-- the six ASA p-value principles are taught explicitly and operationally;
-- p-values are treated as model-conditional incompatibility measures, not probabilities that H0 is true, not effect magnitude and not practical importance;
-- `p=0.049` versus `p=0.051` is not represented as a scientific discontinuity;
-- binary significance labels are repeatedly replaced by direction + magnitude + precision + model/statistical output + practical threshold/context;
-- mean difference (MD) and standardized mean difference (SMD) are separated; SMD labels such as small/medium/large are not treated as universal importance thresholds;
-- binary effect measures explicitly distinguish risk difference (RD), risk ratio (RR), odds and odds ratio (OR);
-- RR and OR are never treated as interchangeable;
-- relative-effect interpretation requires absolute baseline context when practical meaning depends on baseline;
-- the same `RR=0.50` is contrasted across `20%→10%` and `2%→1%` to show different absolute effects (`−10 pp` versus `−1 pp`);
-- logarithmic-scale intuition for ratio measures is introduced only at P1 level: null `1`, reciprocal symmetry after log transformation, no manual log calculation required;
-- smallest effect of interest / decision threshold is taught as a context-dependent, justifiable target rather than a universal statistical constant;
-- CI interpretation is explicitly tied to practical zones/thresholds so the learner can distinguish:
-  - statistically detectable but practically small effects;
-  - imprecise results compatible with both trivial and relevant effects;
-  - precise near-null results that can exclude effects considered important;
-- “absence of evidence” is separated from sufficiently precise evidence excluding a prespecified meaningful magnitude;
-- forest-plot reading uses the required six-block sequence `Target/measure → Direction → Magnitude → Precision/CI → Statistical output → Practical meaning + unsupported claims`;
-- the independent performance task includes both a synthetic continuous forest-plot row and a synthetic binary trial table;
-- continuous integrated example was independently recalculated before publication: `MD=1.4`, `SE≈1.141`, normal-approximate 95% CI `≈−0.84 to +3.64`, two-sided p `≈0.22`;
-- binary integrated example was independently recalculated: A `12/100`, B `20/100`, `RR=0.60`, log-RR 95% CI `≈0.31–1.16`, p `≈0.13`, RD point estimate `−8 percentage points`;
-- critical-fail conditions block `p<0.05 = true/important`, `p>0.05 = no effect`, p-value as probability of H0/chance, frequentist CI as posterior probability, CI crossing null as proof of uselessness, CI excluding null as proof of importance, relative effects without baseline context, universal SMD importance labels, OR=RR and precision as a cure for systematic bias;
-- local exercise gate is `>=80/100` plus no critical fail and applies only after observed learner performance;
-- formal Type I/II-error operating characteristics, power calculations, multiplicity, FWER/FDR, analytical flexibility and prespecification machinery remain deliberately deferred to F0.6;
-- no substantive sports-nutrition recommendation is made from the synthetic examples.
-
-#### F0.5 source/version decisions
-
-- `F0-S06` Cochrane Handbook Chapter 6 rechecked on 2026-09-09; current Handbook version remains v6.5 and the chapter page states last update August 2023; used for MD/SMD/RD/RR/OR scale logic;
-- `F0-S08` ASA p-value statement rechecked on 2026-09-09 and all six official principles preserved in paraphrased form;
-- `F0-S09` ASA 2021 Task Force rechecked on 2026-09-09; used to avoid both ritual thresholding and the false lesson that p-values are intrinsically useless;
-- `F0-S12` NIST/SEMATECH rechecked for frequentist CI/repeated-sampling concepts;
-- `F0-S13` Lakens 2022 rechecked and used only for smallest-effect/informativeness reasoning in F0.5; formal power/sample-size planning remains F0.6;
-- `F0-S27` Altman & Bland remains the F0.4→F0.5 bridge for SD versus SE;
-- new `F0-S28` added: Greenland et al. 2016, *Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations*, used specifically for CI/p-value misinterpretation safeguards and compatibility language; open-access source status recorded;
-- `SOURCE_INDEX.md` updated on 2026-09-09 with all F0.5 source checks and F0-S28.
+  - `MANIFEST.md`;
+  - `STUDY_GUIDE.md`;
+  - `QA_REPORT.md`;
+- package decision: `PASS — READY_FOR_STUDY`;
+- first-pass corpus intentionally limited to exactly six sources:
+  1. canonical F0.5 lesson — `CORE`;
+  2. Cochrane Handbook Chapter 6 — `CORE`;
+  3. ASA Statement on p-values (2016) — `CORE`;
+  4. Greenland et al. 2016 — `SUPPORT`;
+  5. Lakens 2022 — `SUPPORT`;
+  6. ASA Task Force 2021 — `CONTRAST`;
+- source roles are intentionally non-redundant: Cochrane anchors effect-measure scales; ASA 2016 anchors six p-value principles; Greenland targets CI/p-value misinterpretations; Lakens anchors smallest-effect/informativeness reasoning; ASA 2021 prevents the overcorrection that p-values are intrinsically useless;
+- NIST and Altman/Bland remain registered methodological references but are not needed in the first-pass corpus because the canonical lesson carries the SD/SE bridge and Greenland supplies the CI safeguard;
+- external verification on 2026-09-09 confirmed Cochrane Chapter 6 in Handbook v6.5 (chapter last updated August 2023), the official ASA p-value statement, Greenland open-access PMC article, Lakens 2022 UCP article and ASA Task Force 2021 page;
+- no source-version change required modification of the approved F0.5 lesson;
+- study sequence repeatedly enforces the six-block interpretation format and requires correct null values before interpretation;
+- frequentist CI training explicitly blocks posterior-probability language;
+- p-value training requires all six ASA principles plus explicit repair of false statements rather than simple true/false labeling;
+- practice includes p-small/practically-trivial, p-large/imprecise, and precise-near-null scenarios so threshold categories cannot substitute for magnitude/precision reasoning;
+- MD/SMD practice rejects universal Cohen-label importance conclusions;
+- RD/RR/OR practice requires baseline risk, absolute difference and explicit RR-versus-OR separation;
+- practical-threshold practice distinguishes intervals entirely meaningful, entirely trivial, spanning multiple practical zones and precise exclusion of meaningful effects;
+- ratio-scale practice preserves null `1` and reciprocal/log-scale intuition without pulling advanced meta-analysis forward;
+- forest-plot-row and synthetic trial-table passes require the complete six-block interpretation;
+- ASA 2016 versus ASA Task Force 2021 contrast explicitly rejects both `p<0.05 decides truth` and `p-values should always be banned`;
+- F0.5 `EXERCISES.md`, `ANSWER_KEY.md`, production QA, full source registry and F0.4 `ENTRY_DIAGNOSTIC.md` are excluded from the initial NotebookLM corpus;
+- formal Type I/II error, power, multiplicity, FWER/FDR and analytical-flexibility machinery remains deferred to F0.6;
+- no third-party full text was committed to GitHub; only project-authored Markdown, citations and links were added;
+- package creation changed no learner state and did not change the F0.4 quantitative diagnostic.
 
 ## Current curriculum position
 
 `F0 — Scientific Literacy and Quantitative Reasoning`
 
-**Production position:** `F0.5 APPROVED`.
+**Production position:** `F0.5 STUDY_PACKAGE_READY`.
 
-F0.1–F0.4 each have an approved instructional unit and approved NotebookLM package. F0.5 now has an approved instructional unit, independent assessment, commented answer key and production QA.
+F0.1–F0.5 each now have:
 
-The F0.5 NotebookLM study package is the next production artifact.
+- approved instructional unit;
+- independent active-recall/application assessment;
+- commented answer key;
+- production QA;
+- approved NotebookLM study package.
+
+F0.4 additionally has the quantitative entry diagnostic, which remains `UNOBSERVED`.
+
+`F0.6 — Power, Type I/II error, multiplicity and analytical flexibility` is the next unproduced instructional unit.
 
 **Learning position:** `UNSEEN`.
 
 No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MASTERED` from production activity.
 
-## F0.5 canonical production decisions
+## F0.5 canonical production/package decisions
 
 - interpretation sequence is `Target/measure → Direction → Magnitude → Precision/CI → Statistical output → Practical meaning + unsupported claims`;
-- point estimate is never interpreted without its scale/context and, when available, interval uncertainty;
+- point estimate is not interpreted without scale/context and interval uncertainty when available;
 - CI precision is not causal validity;
-- frequentist confidence level is a property of repeated-sampling procedure coverage, not posterior probability of the fixed parameter;
+- frequentist confidence is repeated-sampling procedure coverage, not posterior probability of the fixed parameter;
 - p-values are model-conditional outputs and never probability statements about H0;
 - binary significance categories are insufficient summaries;
-- p-value does not measure effect magnitude or practical importance;
-- MD remains in original units; SMD standardizes by a dispersion quantity and is not automatically clinically/practically meaningful;
+- p-value does not measure magnitude or practical importance;
+- MD preserves original units; SMD standardizes by dispersion and has no universal practical-importance threshold;
 - RD is absolute; RR and OR are relative ratio measures with null `1`; RR and OR remain distinct;
-- practical interpretation of relative effects requires baseline absolute context;
-- smallest effect of interest/decision threshold is contextual and should be justified rather than inferred from the observed p-value;
-- precise near-zero estimates can be informative when they exclude prespecified meaningful magnitudes;
-- wide CIs crossing the null can remain compatible with important benefit/harm and must not be summarized as “no effect”;
+- relative effects require baseline absolute context for practical interpretation;
+- smallest-effect/decision thresholds are contextual and justified independently of observed p-values;
+- precise near-zero estimates may exclude effects considered important; wide intervals may leave meaningful benefit/harm unresolved;
 - systematic bias, design validity and applicability remain separate from statistical precision;
+- first-pass NotebookLM manifest v1 uses exactly six sources with `CORE`/`SUPPORT`/`CONTRAST` roles recorded above;
+- F0.5 exercises and answer key remain outside the initial notebook to preserve independent assessment;
 - formal power/multiplicity/analytical-flexibility machinery remains F0.6.
 
 ## Pending learning validations
@@ -142,7 +151,7 @@ No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `
 - F0.4 has not yet been studied or assessed by the learner;
 - F0.4 quantitative diagnostic = `UNOBSERVED`;
 - F0.5 has not yet been studied or assessed by the learner;
-- approved NotebookLM guides exist for F0.1–F0.4;
+- approved NotebookLM guides exist for F0.1–F0.5;
 - no mastery-state change is authorized from curriculum/package production alone.
 
 ## Operational constraints
@@ -160,4 +169,4 @@ No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `
 
 ## NEXT_ACTION
 
-`F0-A11` — Produce the complete NotebookLM study package for `F0.5 — Estimates, confidence intervals, p-values, effect sizes and practical relevance`. Create `notebooklm/F0.5-estimates-confidence-pvalues-effect-sizes/MANIFEST.md`, `STUDY_GUIDE.md` and package `QA_REPORT.md` using the approved F0.5 lesson and a deliberately limited, auditable source corpus drawn only from sources needed for the learning objectives. Assign `CORE`/`SUPPORT`/`CONTRAST` roles and explain the instructional function and limitation of every source. The package must repeatedly enforce `Target/measure → Direction → Magnitude → Precision/CI → Statistical output → Practical meaning + unsupported claims`; require correct frequentist CI interpretation without posterior-probability language; require all six ASA p-value principles and explicit repair of common p-value errors; contrast MD/SMD and RD/RR/OR; require absolute baseline context for relative effects; use smallest-effect/decision-threshold reasoning to distinguish imprecision, practically trivial effects and precise exclusion of meaningful effects; and include forest-plot-row plus synthetic trial-table practice. Preserve the F0.4 SD-versus-SE distinction and keep formal Type I/II error, power, multiplicity and analytical-flexibility machinery deferred to F0.6. Exclude F0.5 `EXERCISES.md` and `ANSWER_KEY.md` from the initial NotebookLM corpus so independent assessment remains uncontaminated; exclude the F0.4 entry diagnostic as well and preserve its state as `UNOBSERVED`. Recheck all external source links/version status used in the manifest, apply STUDY PACKAGE QA and copyright/public-repository controls, preserve F0.1–F0.5 learner states as pending, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
+`F0-A12` — Produce the complete sixth instructional unit `F0.6 — Power, Type I/II error, multiplicity and analytical flexibility`. Use `COURSE_MAP.md`, `PREREQUISITE_GRAPH.md`, `ASSESSMENT_BLUEPRINT.md`, the approved F0.4/F0.5 units and current mapped quantitative/methodological sources. Create `foundations/F0-scientific-literacy/F0.6-power-multiplicity-analytical-flexibility/LESSON.md`, `EXERCISES.md`, `ANSWER_KEY.md` and production `QA_REPORT.md`. Explicitly teach Type I and Type II errors in repeated-use/decision-rule terms; alpha and beta; statistical power as a design- and assumed-effect-dependent pre-study probability rather than a posterior probability about one completed study; why post hoc/observed power is generally uninformative for interpreting an observed estimate; power versus precision; sample-size justification tied to inferential goal and smallest effect of interest; multiplicity from endpoints, time points, subgroups, models and stopping/analysis choices; family-wise false-positive risk at conceptual/applied level; endpoint hierarchies and multiplicity-adjustment concepts without turning the module into an exhaustive correction-method catalog; subgroup/secondary/exploratory analyses; researcher degrees of freedom / analytical flexibility; preregistration, trial registration, protocol and statistical analysis plan; and confirmatory versus exploratory outputs. Preserve F0.5 magnitude/CI interpretation and teach that an observed nonsignificant result cannot be rescued/interpreted by computed observed power. The performance task must audit a synthetic study with many outcomes/time points/subgroups/models, reconstruct the effective family of hypotheses, identify planned versus data-driven analyses, explain false-positive/informativeness consequences and propose a transparent prespecification/reporting strategy. Critical fails must include `power = probability H1 is true`, `1-power = probability this nonsignificant result is a false negative`, post hoc observed power as evidence for absence/presence of effect, treating many unadjusted tests as independent confirmatory proof, and treating preregistration as a guarantee of low bias. Keep full meta-analysis/heterogeneity machinery deferred to F0.7. Recheck current sources including CONSORT 2025, ASA 2016/2021, FDA multiple-endpoints guidance and Lakens 2022; add only sources actually used to `SOURCE_INDEX.md`; apply CONTENT/EVIDENCE/PEDAGOGICAL/MASTERY QA; preserve F0.1–F0.5 learner states and F0.4 diagnostic `UNOBSERVED`; then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
