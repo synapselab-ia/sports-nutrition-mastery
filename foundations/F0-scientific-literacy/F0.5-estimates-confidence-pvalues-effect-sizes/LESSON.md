@@ -1,6 +1,6 @@
 # F0.5 — Estimativas, intervalos de confiança, p-values, effect sizes e relevância prática
 
-**Production state:** `APPROVED_PENDING_QA`
+**Production state:** `APPROVED`
 
 **Prerequisite P2:** F0.4 — estatística descritiva, distribuições e variação amostral.
 
