@@ -35,6 +35,7 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S24 | cluster-randomized-trial reporting/design extension | F0.2, F0.9 |
 | F0-S25 | factorial-trial reporting/design extension | F0.2, F0.6, F0.9 |
 | F0-S26 | current DAG/causal-adjustment guide | F0.3, F0.9 |
+| F0-S27 | standard deviation versus standard error | F0.4, F0.5 |
 
 ## 2. Registered sources
 
@@ -310,19 +311,19 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Source type:** institutional statistical reference.
 
-**Question answered:** How are core descriptive distributions, hypothesis tests and confidence intervals defined and related in frequentist practice?
+**Question answered:** How are descriptive distributions, exploratory graphics and core frequentist statistical concepts defined and related in applied analysis?
 
 **Population/context:** general applied statistics; examples are often engineering/process-oriented.
 
-**Key contribution:** stable reference for distributions, descriptive methods, hypothesis testing and confidence-interval mechanics/interpretation.
+**Key contribution:** stable reference for exploratory data analysis, graphical examination of distributions, outliers/anomalies, descriptive methods and later inferential-statistics concepts.
 
-**Key limitations:** context is not sports/biomedicine and some presentation is traditional; F0 must pair it with ASA guidance and domain examples to avoid binary testing habits.
+**Key limitations:** context is not sports/biomedicine and some presentation is traditional; F0 supplies domain-flavored examples and pairs later inferential use with ASA guidance rather than binary-testing habits.
 
-**Claims supported/contested:** confidence intervals quantify sampling uncertainty under assumptions; hypothesis tests and confidence intervals are mathematically related but answer should not collapse to a yes/no label.
+**Claims supported/contested:** distribution shape and graphical analysis matter before modeling; descriptive summaries should be interpreted with the underlying data structure; later inferential quantities depend on sampling/statistical assumptions.
 
 **Modules:** F0.4, F0.5.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -366,11 +367,11 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Key limitations:** regulatory drug-trial scope and technicality exceed what F0 initially needs; use conceptually rather than importing all regulatory detail.
 
-**Claims supported/contested:** ambiguous treatment-effect questions create ambiguous analyses; sensitivity analysis explores robustness relative to assumptions and the estimand.
+**Claims supported/contested:** ambiguous treatment-effect questions create ambiguous analyses; statistical summaries/analyses must remain aligned with the variable/estimand being targeted; sensitivity analysis explores robustness relative to assumptions and the estimand.
 
 **Modules:** F0.1, F0.2, F0.4, F0.5.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -660,12 +661,39 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Last checked:** 2026-09-09.
 
+---
+
+### F0-S27 — Standard deviations and standard errors
+
+**Citation:** Altman DG, Bland JM. Standard deviations and standard errors. *BMJ*. 2005;331(7521):903. doi:10.1136/bmj.331.7521.903.
+
+**URL/DOI:** https://doi.org/10.1136/bmj.331.7521.903
+
+**Source type:** peer-reviewed medical-statistics educational note.
+
+**Question answered:** What is the conceptual difference between standard deviation and standard error, and how does sample size affect the standard error of the mean?
+
+**Population/context:** applied biomedical statistics; the distinction is general mathematical/statistical methodology rather than a changing clinical recommendation.
+
+**Key contribution:** directly separates SD as variability of observations from SE as variability/precision of an estimate across hypothetical repeated samples; presents the simple mean relation `SE = SD/√n` and warns against using SE to describe the spread of individuals.
+
+**Key limitations:** concise educational note from 2005; it is not a comprehensive modern statistics textbook and its confidence-interval discussion belongs to later F0.5. F0.4 uses only the stable SD/SE/sampling-variation distinction.
+
+**Claims supported/contested:** SD and SE describe different objects; increasing n reduces the mean SE approximately with `1/√n` when SD is comparable, whereas the individual-level SD does not automatically shrink because sample size increased.
+
+**Modules:** F0.4, F0.5.
+
+**Last checked:** 2026-09-09.
+
 ## 3. Research notes and version controls
 
 - `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010.
 - The current Cochrane Handbook located during this research is version 6.5, updated August 2024.
 - Current CONSORT/SPIRIT materials continue to expose design-specific extensions. The crossover (2019), cluster (2012) and factorial (2023; explanation/elaboration 2025) extensions used in F0.2 were developed against CONSORT 2010, so they are used only for design-specific concepts together with the general CONSORT 2025 standard; they are not mislabeled as 2025-rewritten extensions.
 - The official risk-of-bias site rechecked on 2026-09-09 states that the revised `ROBINS-I V2` draft was posted 20 November 2025 and remains explicitly a draft subject to change. F0.3 uses the webpage only to support bias-domain separation and version literacy; formal tool application remains reserved for F0.8.
+- NIST/SEMATECH e-Handbook and its exploratory-data-analysis material were rechecked on 2026-09-09 and remain the institutional F0.4 backbone for distributions, graphics and descriptive analysis.
+- The EMA ICH E9 page rechecked on 2026-09-09 continues to list ICH E9 Step 5 and E9(R1) Step 5 as the current adopted statistical-principles/estimand guidance; F0.4 uses them only for alignment of question/variable/summary, not regulatory detail.
+- Altman & Bland's SD-versus-SE note remains available through BMJ and is used only for the stable mathematical distinction between individual variability and sampling variability/precision; CI material is deferred to F0.5.
 - GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the official GRADE site states that the Book is the most current resource and is intended to replace the previous Handbook by the end of 2026. For a chapter not yet replaced/complete, consult the official GRADE living map/legacy guidance rather than silently assuming the old handbook is current.
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
 - Methodological sources above are the F0 backbone. Exercise/nutrition exemplars are labeled separately and must not be mistaken for general methodological authorities.
