@@ -1,6 +1,6 @@
 # F0.7 — Revisões sistemáticas, meta-análises e heterogeneidade
 
-**Production state:** `APPROVED_PENDING_QA`
+**Production state:** `APPROVED`
 
 **Prerequisites P2:** F0.2 — desenhos de estudo e limites de inferência; F0.5 — estimativas, intervalos de confiança, effect measures e relevância prática; F0.6 — multiplicidade, prespecification e flexibilidade analítica. F0.3 é fortemente recomendado antes de interpretar formalmente risk of bias dentro de uma síntese.
 
@@ -12,712 +12,427 @@
 
 ## 1. Competência-alvo
 
-Ao terminar esta unidade, você deve conseguir abrir uma revisão sistemática/meta-análise e responder, em sequência:
+Ao terminar esta unidade, você deve conseguir auditar uma revisão/meta-análise perguntando:
 
-1. qual pergunta e eligibility criteria definem o corpo de evidência?
-2. como os estudos foram procurados, selecionados e extraídos?
-3. quais estudos e resultados realmente alimentam cada síntese?
-4. os effect measures e outcomes são suficientemente compatíveis para pooling?
-5. o que cada marcador, intervalo, peso e diamond representa no forest plot?
-6. qual quantity o modelo fixed-effect ou random-effects está resumindo?
-7. qual heterogeneidade clínica, metodológica e estatística existe?
-8. o que I² informa e, principalmente, o que ele **não** prova?
-9. a média pooled continua cientificamente útil diante da diversidade observada?
-10. subgroup/meta-regression/sensitivity analyses foram prespecified ou escolhidas depois dos resultados?
-11. existem sinais de small-study effects ou missing evidence, e quais explicações alternativas permanecem?
-12. PRISMA torna o processo visível, mas o que ainda precisa de appraisal separado?
-13. qual conclusão final preserva magnitude + CI de F0.5 e multiplicidade/prespecification de F0.6?
+1. qual pergunta e eligibility criteria definem o evidence body?
+2. como estudos foram procurados, selecionados e extraídos?
+3. quais studies/results alimentam cada synthesis?
+4. os effect measures/outcomes são compatíveis para pooling?
+5. o que estimates, CIs, weights e diamond representam no forest plot?
+6. qual quantity o fixed-effect ou random-effects model resume?
+7. qual clinical, methodological e statistical heterogeneity existe?
+8. o que I² informa e o que não prova?
+9. a pooled quantity permanece cientificamente útil diante da diversidade?
+10. sensitivity/subgroup/meta-regression foram prespecified ou result-driven?
+11. existem small-study/missing-evidence signals e quais alternative explanations permanecem?
+12. PRISMA torna o processo visível, mas o que ainda exige appraisal separado?
 
 Regra central:
 
-> **Uma meta-análise é uma operação de síntese sobre estudos; ela não converte estudos incompatíveis ou enviesados em verdade por média. Antes de perguntar “qual é o pooled effect?”, pergunte “o que exatamente está sendo combinado, por que essas estimativas são comparáveis e que diversidade a média pode estar escondendo?”.**
+> **Uma meta-análise é uma síntese model-dependent de estimates selecionados por um processo de revisão. Ela não transforma estudos incompatíveis ou enviesados em verdade por média. Antes do pooled effect, pergunte o que está sendo combinado, por que é comparável e que diversidade a média pode esconder.**
 
 ---
 
-# 2. Systematic review não é sinônimo de meta-analysis
+# 2. Systematic review ≠ meta-analysis
 
-## 2.1 Systematic review
-
-Uma **systematic review** é um processo estruturado para responder uma pergunta por meio de métodos explícitos de:
-
-- protocolo/pergunta;
-- eligibility criteria;
-- busca de estudos;
-- seleção;
-- extração;
-- avaliação dos estudos/resultados;
-- síntese;
-- interpretação.
-
-Ela pode terminar com:
-
-- síntese narrativa estruturada;
-- tabelas;
-- gráficos;
-- meta-analysis;
-- ou uma combinação dessas formas.
-
-## 2.2 Meta-analysis
+Uma **systematic review** usa métodos explícitos para question/protocol, eligibility, search, selection, extraction, appraisal, synthesis e interpretation.
 
 Uma **meta-analysis** é a combinação estatística de resultados de dois ou mais estudos.
 
-Logo:
+Portanto:
 
-`systematic review ≠ meta-analysis`
+- uma systematic review pode legitimamente não fazer pooling;
+- uma numerical meta-analysis pode ser fraca se os studies foram selecionados de forma não sistemática.
 
-Uma revisão sistemática pode legitimamente concluir:
-
-> “não faremos pooling porque os estudos não respondem a uma quantity suficientemente comum.”
-
-Isso não é fracasso. Às vezes é a conclusão metodologicamente correta.
-
-## 2.3 Uma meta-analysis sem processo sistemático também é possível
-
-É possível alguém combinar numericamente alguns estudos escolhidos sem ter conduzido uma busca e seleção sistemáticas.
-
-O número pooled pode parecer sofisticado, mas a seleção do que entrou pode ser enviesada.
-
-F0.7, portanto, separa:
-
-`qualidade/transparência do processo de revisão` de `matemática da combinação`.
+`review process` e `combination mathematics` são problemas diferentes.
 
 ---
 
-# 3. O workflow de uma revisão sistemática
+# 3. Workflow da systematic review
 
-Use esta cadeia:
+Use:
 
 `Protocol/question → Eligibility → Search → Screening → Extraction → Study/result appraisal → Effect measure → Synthesis plan → Heterogeneity → Missing evidence → Interpretation`
 
-## 3.1 Protocol e pergunta
+## Protocol/question
 
-Antes de ver quais estudos “dão certo”, a revisão deve definir claramente:
+Defina antes de examinar resultados favoráveis:
 
-- população/contexto;
-- intervenção/exposição e comparator;
-- outcomes e time windows;
-- desenhos elegíveis;
-- análises/sínteses principais;
-- moderators/subgroups importantes quando possível.
+- population/context;
+- intervention/exposure e comparator;
+- outcomes/time windows;
+- eligible designs;
+- primary syntheses;
+- important moderators/subgroups quando possível.
 
-F0.6 já mostrou por que timing e prespecification importam. A mesma lógica vale para reviews.
+## Eligibility
 
-## 3.2 Eligibility criteria
+Eligibility criteria delimitam qual evidence universe a review representa.
 
-Eligibility criteria determinam o universo que a revisão pretende representar.
+Mudanças pós-resultados podem alterar materialmente o body of evidence.
 
-Perguntas:
+## Search
 
-- quais populações entram?
-- qual intervention/exposure?
-- qual comparator?
-- quais outcomes?
-- quais desenhos?
-- quais durations/time points?
-- idiomas/status de publicação foram restringidos?
+Audite:
 
-Modificar critérios depois de conhecer resultados pode alterar o evidence body.
+- databases/information sources;
+- registries quando pertinentes;
+- search date;
+- reproducible strategy;
+- language/publication-status restrictions;
+- additional search methods quando justificadas.
 
-## 3.3 Search
+## Screening
 
-Uma busca deve ser suficientemente sensível à pergunta e às fontes relevantes.
+Um **study** pode gerar vários **reports**. Não conte relatórios duplicados como studies independentes.
 
-Em uma auditoria, procure:
+## Extraction
 
-- bases pesquisadas;
-- registros/trial registries quando pertinentes;
-- data da última busca;
-- termos/estratégia reproduzível;
-- restrições de idioma/publication status;
-- busca de referências/citações ou fontes adicionais quando justificadas.
+Preserve:
 
-Não localizar evidência existente é uma forma de o corpo disponível deixar de representar o corpo real.
-
-## 3.4 Screening
-
-Screening responde:
-
-> “quais registros/relatórios realmente correspondem a estudos elegíveis?”
-
-Cuidado: um **study** pode gerar vários **reports**.
-
-Contar artigos como se fossem estudos independentes pode duplicar participantes/resultados.
-
-## 3.5 Extraction
-
-Data extraction precisa preservar:
-
-- desenho;
-- sample;
+- design/sample;
 - intervention/comparator;
-- outcome definition;
-- time point;
+- outcome/timepoint;
 - effect measure;
-- estimate;
-- SE/CI ou informação equivalente;
+- estimate + SE/CI;
 - analysis population;
-- dados necessários para unit-of-analysis issues;
-- decisões de transformação/conversão.
+- unit-of-analysis structure;
+- transformations/conversions.
 
-Erros de extração podem criar heterogeneidade artificial ou pesos incorretos.
+Extraction errors podem criar weights errados e heterogeneity artificial.
 
 ---
 
-# 4. PRISMA: transparência, não certificado de qualidade
+# 4. PRISMA: reporting, não quality certificate
 
-`F0-S03` é PRISMA 2020, a guideline de reporting para systematic reviews.
+`F0-S03` — PRISMA 2020 — é a reporting guideline vigente para systematic reviews.
 
-Ela organiza o que deve ser reportado sobre:
+Ela expõe objective, eligibility, information sources/search, selection, synthesis, heterogeneity investigations, sensitivity analyses, protocol/registration e related reporting.
 
-- objetivo;
-- eligibility;
-- information sources/search;
-- selection;
-- appraisal;
-- synthesis;
-- resultados;
-- heterogeneity investigations;
-- sensitivity analyses;
-- protocol/registration;
-- certainty e materiais relacionados.
-
-PRISMA 2020 contém 27 itens, além de expanded checklist, abstract checklist e flow diagrams.
-
-### PRISMA ajuda a perguntar
-
-> “consigo ver o que os autores fizeram?”
-
-### PRISMA não responde sozinho
-
-> “o que eles fizeram foi metodologicamente correto e o evidence body tem low risk of bias?”
+PRISMA 2020 contém 27 itens, expanded checklist, abstract checklist e flow diagrams.
 
 Critical distinction:
 
 `PRISMA-complete ≠ low risk of bias ≠ high certainty`
 
-Uma review pode reportar perfeitamente um método ruim.
+PRISMA responde principalmente:
 
-F0.8 tratará formalmente risk of bias/certainty. Em F0.7, PRISMA é usado para tornar o processo auditável.
+> “consigo ver o que os autores fizeram?”
+
+Não:
+
+> “o que fizeram foi necessariamente correto?”
+
+Formal risk of bias/certainty permanece F0.8.
 
 ---
 
 # 5. Antes de pooling: effect-measure compatibility
 
-F0.5 ensinou MD, SMD, RD, RR e OR. Agora essas escolhas tornam-se estrutura de síntese.
+F0.5 permanece obrigatório.
 
-## 5.1 Mesma pergunta não garante mesma escala
+Não faça:
 
-Exemplo:
-
-- Study A: `MD = +2 unidades`;
-- Study B: `SMD = +0.50`;
-- Study C: `RR = 0.80`.
-
-Não é válido simplesmente calcular:
-
-`(+2 + 0.50 + 0.80) / 3`.
-
-São quantities diferentes.
-
-## 5.2 Compatibility exige mais do que converter números
+`MD + SMD + RR` como se fossem números da mesma scale.
 
 Pergunte:
 
-1. o outcome representa o mesmo construct?
-2. maior/menor valor tem o mesmo significado?
-3. os time points são comparáveis?
-4. o effect measure responde ao mesmo contraste?
-5. existe transformação/conversão metodologicamente defensável?
-6. a unit of analysis foi respeitada?
+1. same construct?
+2. same outcome direction?
+3. comparable timepoint?
+4. same target contrast?
+5. valid conversion/transformation?
+6. unit-of-analysis preserved?
 
-## 5.3 MD versus SMD
+## MD versus SMD
 
-- MD é adequado quando outcomes estão em unidade comparável;
-- SMD pode permitir combinar escalas diferentes que medem um construct semelhante, mas padronização não torna constructs diferentes equivalentes.
+- MD combina original units quando scales são comparáveis;
+- SMD pode harmonizar different instruments de um similar construct, mas não transforma different constructs em equivalentes.
 
-SMD também herda a dependência da dispersion usada na padronização.
+## Ratio measures
 
-## 5.4 Ratio measures
+RR e OR continuam distintos e ratio measures são normalmente analisadas em log scale em meta-analysis.
 
-RR e OR continuam diferentes.
-
-Ratio measures costumam ser analisadas na log scale; isso preserva a geometria adequada em torno do null `1`.
-
-Não converta OR em RR por hábito sem considerar baseline risk e método.
+Directional agreement não é numerical compatibility.
 
 ---
 
-# 6. O que uma meta-analysis está fazendo matematicamente
+# 6. Meta-analysis como weighted average
 
-Em forma simples:
-
-> combinar estimates de estudos dando pesos diferentes a cada estimate.
-
-A maior parte dos métodos é uma forma de weighted average.
-
-Se os effects dos estudos forem `theta_i` e os weights `w_i`:
+Em forma simplificada:
 
 `pooled estimate ≈ Σ(w_i × theta_i) / Σw_i`
 
-Isso não significa que o pooled estimate é a “média das pessoas”.
-
-É uma média **de estimates**, sob um modelo de síntese.
+É uma média de **study estimates**, não “média das pessoas”.
 
 ---
 
 # 7. P1 — inverse-variance weighting
 
-## 7.1 Intuição
+Em um simple inverse-variance framework:
 
-Um estimate com menor standard error contém mais informação estatística sobre sua target quantity.
+`weight ≈ 1 / SE²`
 
-Por isso, em um inverse-variance framework simples:
+Menor SE → maior statistical weight.
 
-`weight ≈ 1 / variance = 1 / SE²`
+Exemplo:
 
-Menor SE → maior weight.
+- `SE=0.20 → 1/0.20² = 25`;
+- `SE=0.40 → 1/0.40² = 6.25`.
 
-## 7.2 O peso não mede qualidade
+O primeiro recebe cerca de quatro vezes o inverse-variance weight.
 
-Um estudo pode ter:
+Mas:
 
-- n enorme;
-- SE pequeno;
-- weight alto;
-- e ainda assim ter bias relevante.
+`weight ≠ study quality ≠ certainty`
 
-Logo:
-
-`weight estatístico ≠ methodological quality ≠ certainty`
-
-F0.3 continua valendo.
-
-## 7.3 Exemplo
-
-- Study A: `SE=0.20` → variance `0.04` → inverse variance `25`;
-- Study B: `SE=0.40` → variance `0.16` → inverse variance `6.25`.
-
-No mesmo fixed-effect inverse-variance framework, A receberia aproximadamente quatro vezes o peso de B.
-
-Isso é precisão, não autoridade epistemológica.
+Um estimate muito preciso ainda pode ser biased.
 
 ---
 
 # 8. Fixed-effect meta-analysis
 
-Em uma interpretação comum do fixed-effect model:
+Em uma common interpretation, fixed-effect assume que os studies estimam o mesmo underlying effect e que observed differences decorrem de sampling variation.
 
-> os estudos estão estimando o mesmo underlying intervention effect, e diferenças observadas decorrem de sampling variation.
+A pooled quantity é uma common/typical-effect estimate sob esse model.
 
-Nesse framework, weights dependem principalmente da within-study variance.
-
-### O pooled estimate responde
-
-> “qual é o melhor estimate do common/typical effect sob esse modelo para os estudos incluídos?”
-
-### Problema
-
-Se os true effects realmente diferem materialmente por population, intervention, setting ou método, uma única common-effect quantity pode ser pouco defensável.
-
-### Critical safeguard
-
-Não escolha fixed-effect apenas porque um heterogeneity test “não foi significativo”.
-
-Poucos estudos podem dar baixa capacidade de detectar heterogeneity.
+Não escolha fixed-effect apenas porque um heterogeneity test não foi statistically significant: com poucos studies, a capacidade de detectar heterogeneity pode ser baixa.
 
 ---
 
 # 9. Random-effects meta-analysis
 
-Um random-effects model assume que os estudos podem estimar **effects diferentes, porém relacionados**, representáveis por uma distribution de effects.
+Random effects permite **different but related effects** representáveis por uma distribution.
 
-O pooled estimate representa a **média dessa distribution assumida** para o conjunto/modelo.
+O pooled estimate representa a **average effect** dessa assumed distribution.
 
-## 9.1 Between-study variance
-
-Além da within-study variance, o modelo incorpora uma estimate de between-study variance, frequentemente representada por `tau²`.
-
-Intuição de weight:
+A weight intuition inclui between-study variance `tau²`:
 
 `weight_i ≈ 1 / (SE_i² + tau²)`
 
-Quando `tau²` aumenta:
-
-- diferenças de weight entre studies podem diminuir;
-- estudos menores tendem a receber relativamente mais weight do que receberiam em fixed-effect.
-
-## 9.2 Random-effects não “resolve” heterogeneity
+Quando tau² aumenta, weights tendem a ficar mais semelhantes e small studies recebem relativamente mais weight que em fixed effect.
 
 Critical rule:
 
-> **Adicionar tau² ao modelo não transforma diversidade em irrelevância.**
+> **Random effects modela heterogeneity; não a elimina, não explica suas causas e não corrige bias.**
 
-Uma random-effects average pode ser precisa sobre o **mean effect** e ainda esconder ampla variation entre settings.
-
-## 9.3 Fixed versus random não é campeonato
-
-Não existe regra:
-
-- fixed = errado;
-- random = sempre melhor.
-
-A escolha depende da target quantity e da plausibilidade do model.
-
-A pergunta é:
-
-> “qual quantity queremos resumir e quais assumptions tornam essa summary interpretable?”
+A escolha fixed/random deve seguir target quantity e model plausibility, não apenas um heterogeneity-test p-value.
 
 ---
 
-# 10. Prediction interval — intuição útil
+# 10. CI do pooled mean versus prediction interval
 
-Em random-effects, o CI do pooled mean responde à uncertainty sobre a **média dos effects**.
+Em random effects:
 
-Ele não mostra diretamente toda a spread de effects entre estudos/contextos.
+- pooled CI = uncertainty sobre a **mean effect**;
+- prediction interval = tentativa de representar onde um effect de um comparable new study/context pode cair sob o model.
 
-Uma **prediction interval** tenta representar uma faixa na qual um effect de um novo estudo/contexto comparável poderia cair sob o model.
+Uma narrow pooled CI pode coexistir com ampla between-study variation.
 
-F0.7 não exige derivação matemática de prediction intervals.
-
-A habilidade é reconhecer:
-
-- `CI of pooled mean` e
-- `between-study variation / prediction interval`
-
-como objetos diferentes.
+F0.7 exige a distinção conceitual, não derivação matemática.
 
 ---
 
 # 11. Forest plot: anatomia
 
-Um forest plot normalmente contém:
+Identifique:
 
-1. nome/ID do study;
-2. effect estimate de cada study;
-3. marker (square/point) para o estimate;
-4. horizontal line para o CI;
-5. marker size relacionado ao weight em muitos plots;
-6. vertical null line;
-7. scale do effect measure;
-8. pooled diamond quando há synthesis;
-9. heterogeneity statistics;
-10. subgroup labels quando aplicável.
+1. study label;
+2. study effect estimate;
+3. study CI;
+4. marker size/weight quando mostrado;
+5. null/reference line;
+6. effect scale;
+7. pooled diamond;
+8. pooled CI;
+9. subgroup labels;
+10. heterogeneity statistics.
 
-## 11.1 Null line
+Null:
 
-- MD/SMD/RD: null geralmente `0`;
-- RR/OR: null `1`.
+- MD/SMD/RD → normalmente `0`;
+- RR/OR → `1`.
 
-## 11.2 Diamond
+Diamond centre = pooled point estimate.
+Diamond width = pooled CI.
 
-Centro:
-
-- pooled point estimate.
-
-Largura:
-
-- pooled CI.
-
-O diamond não é “a verdade”. Ele é o output do model aplicado aos inputs escolhidos.
+`diamond ≠ truth`.
 
 ---
 
-# 12. Como ler um forest plot sem cair no threshold trap
+# 12. Leitura correta de forest plot
 
-A sequência F0.5 continua obrigatória.
-
-Para cada study e para o pooled result:
+F0.5 sequence continua:
 
 `Target/measure → Direction → Magnitude → Precision/CI → Statistical output → Practical meaning + unsupported claims`
 
-F0.7 adiciona quatro blocos:
+F0.7 adiciona:
 
 `Compatibility → Weight/model → Heterogeneity → Synthesis defensibility`
 
-Portanto, um forest plot deve ser lido assim:
-
-1. qual effect measure?
-2. qual null?
-3. directions/magnitudes individuais;
-4. CIs individuais;
-5. weights;
-6. pooled estimate/CI;
-7. variability entre studies;
-8. clinical/methodological differences;
-9. model used;
-10. se a pooled quantity faz sentido.
+Não reduza a leitura a “cruza ou não cruza o null”.
 
 ---
 
-# 13. Heterogeneity: três camadas
+# 13. Heterogeneity em três camadas
 
-## 13.1 Clinical diversity
+## Clinical diversity
 
-Diferenças em:
+Diferenças em participants, intervention dose/duration, comparator, outcome, follow-up, baseline context e setting.
 
-- participants;
-- baseline risk/status;
-- intervention dose/form/duration;
-- comparator;
-- outcome definition;
-- follow-up;
-- setting.
+## Methodological diversity
 
-Essas diferenças podem alterar o true effect.
+Diferenças em design, measurement, analysis population, missing-data handling, unit-of-analysis treatment e bias mechanisms.
 
-## 13.2 Methodological diversity
+## Statistical heterogeneity
 
-Diferenças em:
+Observed effect estimates variam mais do que seria esperado apenas por sampling error sob o model.
 
-- study design;
-- allocation/blinding;
-- measurement;
-- analysis population;
-- missing-data handling;
-- risk of bias;
-- unit-of-analysis treatment.
+Statistical heterogeneity pode refletir real effect modification, methodological differences, measurement variation, extraction problems ou combinações.
 
-Isso pode produzir diferenças no observed effect até sem real effect modification.
-
-## 13.3 Statistical heterogeneity
-
-É a variation observada entre effect estimates que excede o esperado apenas por sampling error sob o model relevante.
-
-Statistical heterogeneity pode refletir:
-
-- real effect modification;
-- methodological bias differences;
-- measurement differences;
-- extraction/analysis problems;
-- combinação desses fatores.
-
-Não existe tradução automática:
-
-`heterogeneity = biological variability`.
+`heterogeneity ≠ automaticamente biological variability`.
 
 ---
 
-# 14. I²: útil, mas facilmente abusado
+# 14. I²: informação sem threshold worship
 
-I² é uma statistic que descreve, em termos aproximados, a proportion da variability observada entre effect estimates atribuível à heterogeneity em vez de sampling error no framework usado.
+I² descreve aproximadamente a proportion da observed variability entre study effects atribuível a heterogeneity em vez de sampling error no framework usado.
 
-## 14.1 I² NÃO é
+I² NÃO é:
 
-- percentual de studies “heterogêneos”;
-- percentual do effect “explicado”;
-- study-quality score;
-- probabilidade de a meta-analysis estar errada;
-- prova de que studies são equivalentes quando baixo;
-- veto automático ao pooling quando alto.
+- percent of studies “heterogeneous”;
+- percent effect “explained”;
+- quality score;
+- probability meta-analysis is wrong;
+- proof of study equivalence when low;
+- automatic pooling ban when high.
 
-## 14.2 Thresholds são rough guides
-
-Cochrane fornece ranges aproximados, mas alerta que thresholds podem enganar.
-
-A importância de I² depende de:
+Cochrane oferece rough ranges, mas alerta que thresholds podem mislead. Interprete junto com:
 
 - magnitude/direction dos effects;
-- quantidade de studies;
-- uncertainty do I²;
-- clinical/methodological context.
+- number of studies;
+- uncertainty of heterogeneity estimates;
+- clinical/methodological diversity.
 
-Com poucos studies, a estimate de heterogeneity pode ser muito incerta.
-
-## 14.3 Dois traps
-
-### Trap A
-
-`I²=0% → todos os studies são iguais.`
-
-Errado. Pode haver pouca informação para detectar variation e pode existir clinical/methodological diversity não refletida por I².
-
-### Trap B
-
-`I²=85% → meta-analysis é inválida por definição.`
-
-Também errado. Pode haver uma meaningful average, subgroups legítimos ou uma synthesis útil, mas a heterogeneity precisa ser explicada/representada e a pooled mean pode não ser suficiente.
+Com poucos studies, I² pode ser impreciso.
 
 ---
 
-# 15. Quando NÃO fazer pooling
+# 15. Quando pooling pode ser inadequado
 
-Meta-analysis deve ser considerada apenas quando os studies são suficientemente comparáveis para que a summary responda algo meaningful.
+Sinais contra pooling:
 
-Sinais contra pooling incluem:
+- materially different questions/estimands;
+- incompatible outcome constructs;
+- incompatible effect scales sem defensible conversion;
+- reversed/mis-harmonized directions;
+- excessive clinical diversity que torna average pouco útil;
+- methodological diversity dominada por different biases;
+- unresolved extraction/unit-of-analysis problems;
+- incompatible time horizons;
+- insufficient information para useful model;
+- opposing effects onde uma average esconderia decisões diferentes.
 
-1. perguntas/estimands materialmente diferentes;
-2. outcomes que parecem semelhantes mas medem constructs diferentes;
-3. effect measures incompatíveis sem conversão defensável;
-4. directions/scales invertidas ou mal harmonizadas;
-5. clinical diversity tão ampla que uma average perde utilidade;
-6. methodological diversity que sugere diferentes bias mechanisms dominantes;
-7. data/extraction/unit-of-analysis problems não resolvidos;
-8. mistura de time horizons que muda a scientific question;
-9. tão poucos dados que o random-effects distribution/heterogeneity é mal estimado e a summary seria enganosa;
-10. divergência de direção/magnitude que torna uma single number inadequada para decisão.
+`não poolar ≠ não sintetizar`.
 
-Importante:
-
-> “não poolar” não significa “não sintetizar”.
-
-A review ainda deve organizar e interpretar os evidence patterns de forma estruturada.
+Narrative/tabular synthesis continua possível.
 
 ---
 
 # 16. Sensitivity analysis
 
-Uma **sensitivity analysis** pergunta:
+Sensitivity analysis pergunta:
 
-> “a conclusão muda se uma assumption ou decisão razoável mudar?”
+> “a conclusion muda sob outra reasonable methodological assumption/decision?”
 
 Exemplos:
 
-- excluir studies com unit-of-analysis problem;
-- fixed versus random-effects;
-- diferentes reasonable effect conversions;
-- excluir um study extremamente influential;
-- usar alternative missing-data assumptions;
-- restringir a um outcome definition mais consistente.
+- excluir unit-of-analysis error;
+- fixed vs random;
+- alternative defensible conversions;
+- remove influential study;
+- alternative missing-data assumptions.
 
-Sensitivity analysis não é:
+Não é sensitivity analysis defensável:
 
-> tentar infinitas versões até encontrar o resultado desejado.
+> testar versões até encontrar a mais favorável e reportar só aquela.
 
-F0.6 applies: ideally define important sensitivity analyses before outcomes direcionarem as escolhas e report all material variants.
-
----
-
-# 17. Subgroup analyses em meta-analysis
-
-Subgroups podem investigar effect modification por:
-
-- population;
-- dose/duration;
-- setting;
-- study design;
-- outcome method;
-- outras characteristics justificadas.
-
-## 17.1 O erro que continua proibido
-
-`subgroup A significant + subgroup B nonsignificant = subgroups differ`
-
-Isso não prova interaction.
-
-A pergunta correta exige uma direct comparison/interaction.
-
-## 17.2 Prespecification
-
-Um subgroup definido depois de observar a forest plot é diferente de um moderator prespecified por rationale científico.
-
-Post hoc subgroup patterns podem gerar hypotheses.
-
-Não devem ser apresentados como mecanismos comprovados de heterogeneity.
+Aplique F0.6 prespecification/transparency.
 
 ---
 
-# 18. Meta-regression — conceito, não catálogo
+# 17. Subgroup analyses
+
+Subgroups podem investigar effect modification por population, dose/duration, setting, study design e outras characteristics.
+
+Proibido:
+
+`subgroup A significant + subgroup B nonsignificant = interaction`
+
+É necessária direct interaction reasoning.
+
+Post hoc subgroup patterns são normalmente hypothesis-generating, especialmente com poucos studies e múltiplas moderators testadas.
+
+---
+
+# 18. Meta-regression
 
 Meta-regression relaciona study-level effect estimates a study-level characteristics.
 
-Exemplo conceitual:
+Exemplo:
 
 `effect estimate ~ intervention duration`
 
-Pode perguntar se studies mais longos tendem a mostrar effects diferentes.
+Limitações:
 
-Limites críticos:
+- poucos studies;
+- multiplicity de candidate moderators;
+- study-level confounding;
+- collinearity;
+- post hoc selection;
+- ecological interpretation limits.
 
-- normalmente há poucos studies;
-- múltiplos candidate moderators criam multiplicity;
-- study-level associations podem sofrer confounding;
-- moderator distributions podem ser estreitas;
-- post hoc model selection aumenta false-story risk;
-- association não prova causal explanation da heterogeneity.
-
-Logo:
-
-`meta-regression pattern ≠ proven mechanism`.
+`meta-regression association ≠ proven cause of heterogeneity`.
 
 ---
 
 # 19. Small-study effects e missing evidence
 
-Uma review tenta representar **toda** evidência elegível, mas alguns studies/results podem estar missing.
+Small-study effect = smaller/less precise studies mostram systematically different effects dos larger/more precise studies.
 
-Isso pode ocorrer quando dissemination/reporting depende de:
-
-- direction;
-- magnitude;
-- p-value;
-- perceived novelty.
-
-## 19.1 Small-study effect
-
-É o pattern em que smaller studies tendem a mostrar effects diferentes de larger studies.
-
-Isso pode ocorrer por:
+Possible causes:
 
 - non-reporting/publication bias;
-- maior risk of bias em small studies;
+- higher bias in small studies;
 - real clinical differences;
-- artefatos do effect measure;
+- effect-measure artefacts;
 - chance.
 
-Portanto:
+Therefore:
 
 `small-study effect ≠ publication bias proven`.
 
-## 19.2 Funnel plot
+---
 
-Um funnel plot mostra effect estimates contra uma medida de precision/size.
+# 20. Funnel plots
 
-Asymmetry pode levantar suspeitas, mas não diagnostica missing evidence sozinha.
+Funnel plot = effect estimates versus study size/precision measure.
 
-Cochrane recomenda cautela: tests de funnel-plot asymmetry geralmente têm baixo power e são tipicamente considerados apenas quando há número suficiente de studies; a regra prática clássica é cerca de 10 ou mais studies para muitos desses tests.
+Asymmetry pode levantar suspeita, mas não diagnostica publication/non-reporting bias.
 
-Mesmo com ≥10, interpretation precisa considerar explicações alternativas.
+Symmetry também não prova ausência de missing evidence.
 
-## 19.3 Symmetry também não prova ausência de bias
+Current Cochrane guidance continua alertando que formal funnel-asymmetry tests têm low power e, como common rule of thumb, muitos são considerados apenas com ~10 ou mais studies.
 
-Um funnel plot aparentemente symmetric não garante que todos os studies/results existem.
+Mesmo com número suficiente, asymmetry exige alternative explanations.
 
-A evidence audit precisa combinar:
-
-- search completeness;
-- registries/protocols;
-- known studies;
-- selective outcome reporting;
-- funnel/small-study patterns quando aplicável.
+Formal ROB-ME permanece F0.8.
 
 ---
 
-# 20. Publication bias versus non-reporting bias
+# 21. Worked example — heterogeneous synthesis
 
-“Publication bias” é um termo familiar, mas a missing-evidence problem é mais ampla.
-
-Pode faltar:
-
-- o study inteiro;
-- um outcome;
-- um time point;
-- um subgroup;
-- uma analysis;
-- uma unfavorable estimate.
-
-Por isso, F0.7 prefere perguntar:
-
-> “qual evidence pode estar missing em função do resultado?”
-
-em vez de procurar apenas journals que não publicaram estudos negativos.
-
-Formal ROB-ME pertence à F0.8.
-
----
-
-# 21. Worked example — weights
-
-Considere cinco studies com o mesmo MD scale e SEs:
+Cinco studies usam o mesmo MD scale:
 
 | Study | MD | SE |
 |---|---:|---:|
@@ -727,7 +442,7 @@ Considere cinco studies com o mesmo MD scale e SEs:
 | D | +2.4 | 0.45 |
 | E | +3.0 | 0.50 |
 
-Approximate inverse-variance weights em fixed-effect:
+Approximate fixed-effect inverse-variance weights:
 
 - A ≈ 23.7%;
 - B ≈ 18.1%;
@@ -735,362 +450,206 @@ Approximate inverse-variance weights em fixed-effect:
 - D ≈ 14.3%;
 - E ≈ 11.6%.
 
-Study C pesa mais porque tem menor SE.
-
-Não porque seja automaticamente “melhor study”.
-
----
-
-# 22. Worked example — heterogeneous forest plot
-
-Synthetic software output para os cinco studies acima:
+Synthetic outputs:
 
 - fixed-effect pooled MD ≈ `+1.18`;
-- heterogeneity: `I² ≈ 87%`;
+- `I² ≈ 87%`;
 - illustrative random-effects pooled MD ≈ `+1.40`;
 - random-effects 95% CI ≈ `+0.44 a +2.36`.
 
-Não memorize esses números.
+Interpretation:
 
-A interpretação é:
-
-1. individual effects variam de +0.2 a +3.0;
-2. variation é grande em relação à within-study uncertainty;
-3. random-effects average resume o centre de uma assumed distribution;
-4. o pooled CI não representa toda between-study spread;
-5. precisamos perguntar por que studies diferem antes de converter +1.40 em universal effect.
+- study effects vary strongly;
+- pooled random-effects value summarizes an average, not universal effect;
+- pooled CI is uncertainty around the mean, not full effect distribution;
+- clinical/methodological explanations must be examined.
 
 ---
 
-# 23. Worked example — duas explicações antes de subgroup story
+# 22. Antes de aceitar uma subgroup story
 
-Imagine que A–C recrutaram recreational athletes e D–E elite athletes.
+Imagine larger effects nos elite studies, mas esses studies também têm longer duration e different measurement setting.
 
-Também imagine que:
+Possible stories:
 
-- A–C usaram intervention duration de 2–4 weeks;
-- D–E usaram 12 weeks;
-- measurement setting também difere.
+- training status effect modification;
+- duration effect modification;
+- measurement/methodological differences;
+- combination.
 
-Forest plot mostra maiores effects em D–E.
+Não selecione uma story apenas porque combina com o observed pattern.
 
-Temos pelo menos três stories possíveis:
+Verifique:
 
-1. training status modifica o effect;
-2. duration modifica o effect;
-3. measurement/methodological differences produzem parte do pattern.
-
-Se você escolher “elite athletes respondem melhor” só porque isso encaixa no pattern observado, está fazendo post hoc storytelling.
-
-A análise correta:
-
-- verificar prespecified moderators;
-- avaliar collinearity entre study characteristics;
-- olhar interaction/meta-regression com cautela;
-- reconhecer poucos studies;
-- manter hipóteses alternativas vivas.
+- prespecified moderator;
+- direct interaction/meta-regression estimate + CI;
+- multiplicity;
+- collinearity;
+- number of studies;
+- alternative explanations.
 
 ---
 
-# 24. Integrated review audit framework
+# 23. Integrated 12-field review audit
 
-Use estes **12 campos**:
+Use:
 
-`1. Review question → 2. Eligibility → 3. Search/selection → 4. Extraction/unit structure → 5. Effect measure compatibility → 6. Study estimates/precision → 7. Weight/model → 8. Clinical/methodological heterogeneity → 9. Statistical heterogeneity → 10. Sensitivity/subgroup/meta-regression prespecification → 11. Missing-evidence/small-study signals → 12. Pooling/conclusion defensibility`
+`1. Review question → 2. Eligibility → 3. Search/selection → 4. Extraction/unit structure → 5. Effect compatibility → 6. Study estimates/precision → 7. Weight/model → 8. Clinical/methodological heterogeneity → 9. Statistical heterogeneity → 10. Sensitivity/subgroup/meta-regression prespecification → 11. Missing-evidence/small-study signals → 12. Pooling/conclusion defensibility`
 
-## 24.1 Review question
-
-O que exatamente a review quer estimar/sintetizar?
-
-## 24.2 Eligibility
-
-Que evidence universe foi definido?
-
-## 24.3 Search/selection
-
-Há chance material de studies/reports elegíveis terem sido perdidos ou selecionados por result?
-
-## 24.4 Extraction/unit structure
-
-Studies duplicados? Cluster/crossover/repeated measures tratados corretamente? Time points harmonizados?
-
-## 24.5 Effect measure compatibility
-
-Todos os estimates representam a mesma quantity ou houve conversão defensável?
-
-## 24.6 Study estimates/precision
-
-Magnitude + CI por study, preservando F0.5.
-
-## 24.7 Weight/model
-
-Qual model e qual lógica de weight?
-
-## 24.8 Clinical/methodological heterogeneity
-
-Quais diferenças substantivas existem?
-
-## 24.9 Statistical heterogeneity
-
-O que I²/Q/tau²/prediction information sugere sem threshold worship?
-
-## 24.10 Exploration/prespecification
-
-Subgroups/meta-regressions/sensitivity analyses eram planned? Quantos caminhos foram testados?
-
-## 24.11 Missing evidence
-
-Small-study/funnel patterns, protocols/registries e selective result availability sugerem o quê?
-
-## 24.12 Pooling/conclusion
-
-Poolar o quê, sob qual model, com qual caveat? Ou não poolar?
+Esse é o framework obrigatório do módulo.
 
 ---
 
-# 25. Integrated synthetic audit scenario
+# 24. Integrated synthetic scenario
 
-Uma systematic review avalia `Intervention X versus control` sobre um synthetic performance score; maior valor = melhor.
+Review de `Intervention X versus control` em synthetic performance score; higher = better.
 
-Protocol anterior à busca especificou:
+Protocol anterior à busca:
 
-- adult trained/recreational athletes;
+- trained/recreational adults;
 - randomized parallel trials;
-- primary outcome: performance score at 8–12 weeks;
-- MD como preferred effect quando a mesma scale estivesse disponível;
-- random-effects synthesis devido a expected clinical diversity;
-- prespecified subgroup: trained versus recreational;
+- primary outcome at 8–12 weeks;
+- MD quando same scale;
+- random-effects devido a expected clinical diversity;
+- prespecified subgroup trained vs recreational;
 - sensitivity analysis excluindo high attrition.
 
-Busca:
+Search reporta four databases + trial registry + no language restriction + search date.
 
-- quatro bibliographic databases;
-- trial registry;
-- sem language restriction;
-- search date reportada.
+Five compatible studies:
 
-Cinco studies usam a mesma scale:
-
-| Study | Population / context | MD | 95% CI | SE |
+| Study | Population/context | MD | 95% CI | SE |
 |---|---|---:|---:|---:|
-| A | recreational, 2–4 wk extension accepted by protocol amendment before extraction | +0.2 | −0.5 to +0.9 | 0.35 |
+| A | recreational; shorter duration | +0.2 | −0.5 to +0.9 | 0.35 |
 | B | recreational | +0.5 | −0.3 to +1.3 | 0.40 |
 | C | trained | +1.1 | +0.5 to +1.7 | 0.30 |
-| D | elite, different measurement setting | +2.4 | +1.5 to +3.3 | 0.45 |
-| E | elite, different measurement setting | +3.0 | +2.0 to +4.0 | 0.50 |
+| D | elite; different measurement setting | +2.4 | +1.5 to +3.3 | 0.45 |
+| E | elite; different measurement setting | +3.0 | +2.0 to +4.0 | 0.50 |
 
-Software reports:
+Software:
 
 - random-effects pooled MD `+1.4 [0.4,+2.4]`;
 - `I²=87%`;
-- fixed-effect estimate `+1.18`;
-- strong difference in weights between fixed and random effects.
+- fixed-effect `+1.18`.
 
-Sixth study F uses a different questionnaire/construct and reports `SMD=+0.60 [0.10,+1.10]`.
+Study F usa different questionnaire/construct e reports `SMD=+0.60 [0.10,+1.10]`.
 
-Authors propose adding `0.60` directly into the MD meta-analysis “because both favor intervention”.
+Não adicione `0.60` diretamente ao MD pool.
 
-After seeing I²=87%, they additionally test:
+Post hoc, autores testam duration, elite status, indoor/outdoor, baseline score e leave-one-out variants. Destacam elite status com interaction `p=0.04`, embora elite status seja collinear com measurement setting e não prespecified.
 
-- duration `<8 vs ≥8 weeks`;
-- elite vs non-elite;
-- indoor vs outdoor;
-- high vs low baseline score;
-- one leave-one-out analysis per study.
+Com apenas five compatible studies, funnel plot parece symmetric e autores claim “no publication bias”. Isso não é defensável.
 
-They highlight elite status because subgroup interaction `p=0.04`, even though elite status is nearly collinear with measurement setting and was not prespecified.
-
-Only five compatible studies exist, but authors draw a funnel plot and state:
-
-> “The plot looks symmetric, proving no publication bias.”
-
-Their report completes every PRISMA checklist item and concludes:
-
-> “The meta-analysis proves Intervention X improves performance by approximately 1.4 units in athletes; high heterogeneity merely justifies random effects and does not affect interpretation.”
-
-### Auditoria esperada
-
-Uma resposta defensável deve identificar:
-
-- systematic process strengths without turning PRISMA into quality certification;
-- why Study F cannot be numerically appended as 0.60 to an MD synthesis;
-- inverse-variance weight as precision, not quality;
-- random-effects mean as an average, not universal effect;
-- I²=87% as a signal requiring interpretation, not automatic invalidity;
-- clinical/methodological alternatives for the heterogeneity;
-- post hoc moderator multiplicity and collinearity;
-- why subgroup p=0.04 does not prove a causal explanation;
-- why funnel symmetry with five studies cannot prove absence of missing evidence;
-- whether a pooled MD should be shown and, if shown, what caveats/alternative synthesis are required.
+Complete PRISMA reporting também não transforma essa synthesis em high-certainty evidence.
 
 ---
 
-# 26. Critical-fail statements
+# 25. Critical fails
 
-Rejeite explicitamente:
+Rejeite:
 
-1. `pooled estimate = automaticamente true/superior evidence`;
-2. `I² baixo = studies clinically/methodologically identical`;
-3. `I² alto = meta-analysis automaticamente inválida`;
-4. `PRISMA completo = low risk of bias / high study quality`;
-5. “se numbers favorecem o mesmo lado, MD/SMD/RR/OR podem ser pooled diretamente”;
+1. `pooled estimate = automatically true/superior`;
+2. `low I² = studies clinically/methodologically identical`;
+3. `high I² = meta-analysis automatically invalid`;
+4. `PRISMA-complete = low risk/high quality`;
+5. direct pooling of incompatible effect measures/scales by sign;
 6. `random effects resolves heterogeneity`;
-7. `study weight = study quality`;
-8. `significant subgroup + nonsignificant subgroup = interaction`;
-9. post hoc subgroup/meta-regression pattern tratado como proven explanation;
-10. funnel-plot symmetry tratado como proof of no publication bias;
-11. funnel asymmetry tratado como proof of publication bias;
-12. pooled p-value usado para substituir magnitude/CI/context;
-13. fixed versus random escolhido apenas pelo p-value do heterogeneity test;
-14. sensitivity analysis escolhida/reported apenas porque muda o conclusion favoravelmente;
-15. meta-analysis usada para esconder that studies answer materially different questions.
+7. `weight = quality`;
+8. significant/non-significant subgroup comparison as interaction;
+9. post hoc subgroup/meta-regression as proven explanation;
+10. funnel symmetry as proof of no publication bias;
+11. funnel asymmetry as proof of publication bias;
+12. pooled p-value replacing magnitude/CI/context;
+13. fixed/random choice made only from heterogeneity-test p-value;
+14. outcome-driven sensitivity analysis relabeled prespecified;
+15. meta-analysis used to hide materially different questions.
 
 ---
 
-# 27. Active recall
+# 26. Active recall
 
 Sem consultar:
 
-1. Diferencie systematic review e meta-analysis.
-2. Dê o workflow mínimo de uma systematic review.
-3. Por que um study pode ter múltiplos reports?
-4. O que effect-measure compatibility exige antes de pooling?
-5. Explique inverse-variance weighting.
-6. Por que weight não é quality?
-7. Defina fixed-effect em linguagem de target quantity.
-8. Defina random-effects em linguagem de distribution/average effect.
-9. O que tau² representa conceitualmente?
-10. Diferencie pooled CI e prediction interval.
-11. Identifique os elementos de um forest plot.
-12. Diferencie clinical, methodological e statistical heterogeneity.
-13. O que I² informa?
-14. Cite cinco coisas que I² não informa.
-15. Dê três situações em que pooling pode ser inadequado.
-16. Defina sensitivity analysis.
-17. Por que subgroup A significant/B nonsignificant não prova interaction?
-18. O que meta-regression tenta fazer?
-19. Por que post hoc moderator stories são frágeis?
-20. Defina small-study effects.
-21. Por que funnel asymmetry não prova publication bias?
-22. Por que funnel symmetry não prova ausência de missing evidence?
-23. O que PRISMA faz?
-24. O que PRISMA não faz?
-25. Execute os 12 campos do integrated audit sem consultar a lista.
+1. systematic review vs meta-analysis;
+2. review workflow;
+3. study vs report;
+4. effect-measure compatibility;
+5. inverse-variance weighting;
+6. weight vs quality;
+7. fixed-effect target;
+8. random-effects target;
+9. tau² intuition;
+10. pooled CI vs prediction interval;
+11. forest-plot anatomy;
+12. clinical/methodological/statistical heterogeneity;
+13. what I² says;
+14. what I² does not say;
+15. when not to pool;
+16. sensitivity analysis;
+17. subgroup interaction trap;
+18. meta-regression limits;
+19. small-study effects;
+20. funnel asymmetry limits;
+21. PRISMA function/limit;
+22. execute the 12-field audit from memory.
 
 ---
 
-# 28. Integração com F0.2, F0.5 e F0.6
+# 27. Integração com anteriores
 
-## F0.2 fornece
+F0.2: design/unit/inference boundaries.
 
-- study-design architecture;
-- unit-of-allocation/analysis awareness;
-- inference boundaries.
+F0.5: effect measures + estimate/CI/magnitude.
 
-## F0.5 fornece
+F0.6: prespecification + multiplicity + analytical flexibility.
 
-- effect measures;
-- estimate + CI;
-- magnitude/practical meaning;
-- ratio log-scale intuition.
+F0.7: evidence-body assembly + weighted synthesis + heterogeneity + missing-evidence reasoning.
 
-## F0.6 fornece
-
-- prespecification;
-- multiplicity;
-- analytical paths;
-- subgroup interaction caution;
-- transparency of deviations.
-
-## F0.7 adiciona
-
-- evidence-body assembly;
-- weighted synthesis;
-- heterogeneity;
-- sensitivity/subgroup/meta-regression at review level;
-- missing-evidence/small-study reasoning.
-
-Nenhuma layer substitui as anteriores.
+Nenhuma camada substitui a anterior.
 
 ---
 
-# 29. Limites deliberados
+# 28. Limites deliberados
 
-F0.7 não ensina em profundidade:
+Não entram em profundidade:
 
 - derivation of Q/I²/tau² estimators;
-- Hartung-Knapp, REML, Paule-Mandel ou exhaustive random-effects estimator catalog;
+- exhaustive random-effects estimator catalogs;
 - network meta-analysis;
-- individual-participant-data meta-analysis;
-- multivariate/meta-analytic structural equation models;
-- formal ROB-ME application;
-- detailed publication-bias correction models;
-- formal GRADE certainty judgments;
-- recommendation formulation.
+- IPD meta-analysis;
+- advanced multivariate synthesis;
+- formal ROB-ME;
+- publication-bias correction models;
+- formal GRADE certainty judgments.
 
-RoB/certainty/applicability formal entram em F0.8.
+RoB/certainty/applicability entram em F0.8.
 
 ---
 
-# 30. Fontes e função
+# 29. Fontes e versão
 
 ## `F0-S03` — PRISMA 2020
 
-Função:
+Current reporting guideline; 27 items + expanded/abstract checklists and flow diagrams. Reporting transparency only; no low-bias certification.
 
-- reporting transparency para systematic reviews;
-- eligibility/search/selection/synthesis flow;
-- protocol/registration, heterogeneity investigation e sensitivity reporting.
+## `F0-S04` — Cochrane Chapter 10
 
-Limite:
+Current chapter page remains *Analysing data and undertaking meta-analyses*, citing Handbook v6.5 and chapter last updated November 2024. Provides weighting, fixed/random effects, heterogeneity, I², subgroup/meta-regression, sensitivity and pooling cautions.
 
-- reporting guideline; não é risk-of-bias ou certainty score.
+Cochrane’s versions page records patch-level `6.5.1` changes through 2026; none replaces the Chapter-10 methods used here.
 
-## `F0-S04` — Cochrane Handbook Chapter 10
+## `F0-S05` — Cochrane Handbook current methods
 
-Função:
+Review workflow plus current Chapter 13 missing-evidence/small-study cautions. Funnel asymmetry is non-diagnostic.
 
-- meta-analysis principles;
-- inverse-variance weighting;
-- fixed/random-effects;
-- heterogeneity/I²/tau²;
-- subgroups/meta-regression;
-- sensitivity analyses;
-- quando não poolar.
+## `F0-S06` — Cochrane Chapter 6
 
-Version note rechecked 2026-09-09:
-
-- chapter page cites Handbook v6.5 and chapter last update November 2024;
-- Cochrane versions page records patch-level 6.5.1 changes through 2026, but none changes the F0.7 Chapter-10 teaching points used here.
-
-## `F0-S05` — Cochrane Handbook current core methods
-
-Função:
-
-- systematic-review workflow across question, eligibility, search, synthesis and missing-evidence appraisal;
-- current Chapter 13 supports introductory small-study/non-reporting-bias cautions.
-
-Limit:
-
-- Handbook chapters have different update dates; version literacy is required.
-
-## `F0-S06` — Cochrane Chapter 6 effect measures
-
-Função:
-
-- compatibility of data types/effect measures;
-- MD/SMD/RD/RR/OR scale logic;
-- unit-of-analysis awareness;
-- log scale for ratio measures.
+Effect-measure/data compatibility, unit structure and log-scale ratio logic.
 
 ---
 
-# 31. Regra final
+# 30. Regra final
 
-Ao encontrar uma meta-analysis, não pergunte primeiro:
+Ao encontrar uma meta-analysis, não pergunte primeiro “qual o pooled effect?”. Pergunte:
 
-> “qual o pooled effect?”
-
-Pergunte:
-
-> **qual evidence universe foi construído, que quantities entram na synthesis, como os studies foram weighted, que diversity existe, quais analytical choices foram prespecified, o que pode estar missing e se uma pooled average ainda representa uma scientific question útil?**
+> **qual evidence universe foi construído, que quantities entram na synthesis, como studies foram weighted, que diversity existe, quais analytical choices foram prespecified, o que pode estar missing e se uma pooled average ainda responde uma scientific question útil?**
