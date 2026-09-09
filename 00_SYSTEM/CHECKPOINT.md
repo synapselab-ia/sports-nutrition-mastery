@@ -2,7 +2,7 @@
 
 **Updated:** 2026-09-09
 **Canonical branch:** `main`
-**Project state:** `F0_6_UNIT_APPROVED`
+**Project state:** `F0_6_STUDY_PACKAGE_READY`
 
 ## Completed
 
@@ -55,92 +55,109 @@
 - frequentist CI is not posterior probability; p-value is not `P(H0|data)` and does not measure importance;
 - MD/SMD and RD/RR/OR remain distinct; relative effects require baseline absolute context;
 - smallest-effect/decision thresholds remain contextual;
-- formal power/multiplicity/analytical-flexibility machinery is now taught in F0.6 rather than retrofitted into F0.5;
 - learner state remains unvalidated.
 
 ### F0.6 — Power, Type I/II error, multiplicity and analytical flexibility
 
 #### `F0-A12` — instructional unit
 
-- `F0-A12` completed: complete sixth instructional unit created and production QA passed;
+- `F0-A12` completed: approved lesson, 100-point active-recall/application assessment, commented answer key and production QA;
 - approved unit path: `foundations/F0-scientific-literacy/F0.6-power-multiplicity-analytical-flexibility/`;
-- verified canonical files on `main`:
-  - `LESSON.md` — `APPROVED`;
-  - `EXERCISES.md` — 100-point active-recall/application assessment;
-  - `ANSWER_KEY.md` — commented scoring key;
-  - `QA_REPORT.md` — CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates passed;
-- F0.6 defines Type I error/alpha and Type II error/beta in repeated-use/decision-rule terms rather than as posterior probabilities;
-- power is defined as `1−beta` for a specified true effect/design/model and is explicitly a pre-study conditional rejection probability, not probability that H1 is true;
-- a power statement is incomplete without the effect size and assumptions for which it was calculated;
-- simple power-curve intuition is taught: power varies with the assumed effect, n, variability, alpha and design efficiency;
-- power and precision are explicitly separated: prospective power describes behavior of a planned procedure under assumed effects, while post-study informativeness is read primarily from estimate + CI + practical threshold;
-- post hoc/observed power calculated by substituting the observed effect is explicitly rejected as a completed-study interpretation tool;
-- `1−power` is explicitly not the posterior probability that a specific nonsignificant result is a false negative;
-- sample-size justification is tied to inferential goal and can use a-priori power, desired precision/accuracy, near-census/population constraints, resource constraints or another transparent rationale rather than a universal magic N;
-- smallest effect of interest/planning effect is treated as a quantity that requires independent justification rather than being inferred from the observed p-value;
+- Type I/alpha and Type II/beta are taught in repeated-use/decision-rule terms rather than as posterior probabilities;
+- power is defined as `1−beta` for a specified true effect/design/model and is explicitly not `P(H1 true)`;
+- `1−power` is explicitly not the posterior probability that one nonsignificant result is a false negative;
+- power is effect/design/assumption dependent and remains a prospective planning quantity;
+- completed-study interpretation remains estimate + CI + practical threshold rather than observed-power rescue;
+- observed/post hoc power calculated from the observed effect is explicitly rejected as an interpretation tool;
+- sample-size justification follows inferential goal and can use a-priori power, desired precision/accuracy, near-census/population constraints, resource constraints or another transparent rationale;
 - multiplicity is taught across endpoints, time points, subgroups, alternative models/analytical paths and stopping/data-dependent choices;
-- `family of hypotheses` is defined relative to scientific claims/decision strategy rather than mechanically as every p-value in a paper;
-- illustrative FWER calculation `1−(1−alpha)^m` is explicitly restricted to the simplifying case of independent tests with relevant nulls true; worked values include m=5 ≈22.6% and m=20 ≈64.2%;
-- conceptual multiplicity strategies include a prespecified primary endpoint, hierarchy/gatekeeping, alpha allocation/adjusted outputs and explicit exploratory classification;
-- Bonferroni is used only as a simple illustration (`0.05/5=0.01`), not as a universally optimal correction;
-- subgroup training explicitly rejects `significant in A + nonsignificant in B = interaction`; direct interaction estimation/testing plus CI/multiplicity/prespecification is required;
-- researcher degrees of freedom / analytical flexibility includes outcome definitions, time windows, exclusions, missing-data handling, transformations, covariates, subgroups, models, analysis populations, outlier rules and stopping/reporting choices;
-- trial registration, preregistration, protocol and SAP are distinguished rather than treated as synonyms;
-- timing/versioning and transparent rationale for deviations are required for an audit trail;
-- preregistration/prespecification improves transparency but is explicitly not a guarantee of low risk of bias, valid measurement, correct model or important effect;
-- confirmatory versus exploratory outputs are separated without treating exploratory science as inherently invalid;
-- integrated audit framework is `Target claims → Decision rules → Power/sample-size assumptions → Effective hypothesis family → Analytical paths → Prespecification evidence → Multiplicity control → Estimate/CI interpretation → Confirmatory vs exploratory → Transparent conclusion`;
-- performance assessment audits a synthetic trial with 20 outcomes × 4 time points, multiple subgroup definitions and covariate models, selected favorable p-values, incomplete reporting and observed-power misuse;
-- local assessment gate is `>=80/100 + no critical fail`, applicable only after observed learner performance;
-- critical fails include `power=P(H1 true)`, `1−power=P(this result is false negative)`, observed-power rescue, many nominal unadjusted tests treated as independent confirmation, subgroup p-value comparison as interaction proof, preregistration as low-bias guarantee and ignoring estimate/CI in completed-study interpretation;
-- full meta-analysis, heterogeneity/I², publication-bias methods and meta-regression remain deferred to F0.7.
+- family of hypotheses is claim/decision dependent rather than mechanically equal to every p-value in a paper;
+- independent-test FWER arithmetic is used only as a simplified illustration and is not generalized to correlated outcomes;
+- hierarchy/gatekeeping, alpha allocation/adjusted outputs and exploratory classification are taught conceptually without an exhaustive correction-method catalog;
+- subgroup training rejects `significant in A + nonsignificant in B = interaction`;
+- trial registration, preregistration, protocol and SAP are distinguished with timing/versioning/deviation checks;
+- prespecification improves auditability but does not guarantee low bias or correct design;
+- confirmatory versus exploratory outputs are separated without treating exploratory science as invalid;
+- integrated audit sequence is `Target claims → Decision rules → Power/sample-size assumptions → Effective hypothesis family → Analytical paths → Prespecification evidence → Multiplicity control → Estimate/CI interpretation → Confirmatory vs exploratory → Transparent conclusion`;
+- full systematic-review/meta-analysis/heterogeneity machinery remains deferred to F0.7.
 
-#### F0.6 source/version decisions
+#### `F0-A13` — NotebookLM study package
 
-- `F0-S01` CONSORT 2025 rechecked on 2026-09-09; current 30-item general statement remains current and is used for trial registration, protocol/SAP access, prespecified versus post hoc transparency, timing/versioning and deviations; it remains a reporting guideline rather than a risk-of-bias score;
-- `F0-S08` ASA 2016 rechecked on 2026-09-09; the six principles remain the p-value/transparency boundary;
-- `F0-S09` ASA Task Force 2021 rechecked on 2026-09-09; used for uncertainty, variability, multiplicity, replicability and the balanced position that correctly used p-values remain statistical tools;
-- `F0-S10` FDA *Multiple Endpoints in Clinical Trials* rechecked on 2026-09-09 and remains Final Guidance (October 2022); used conceptually for multiple-endpoint false-conclusion risk, grouping/ordering and multiplicity control without universalizing regulatory requirements to sports science;
-- `F0-S13` Lakens 2022 rechecked on 2026-09-09 and now used for F0.6 sample-size justification, a-priori power, precision/accuracy and smallest-effect planning;
-- `F0-S28` Greenland et al. 2016 remains the probability-reversal safeguard for p-values/CIs/power;
-- new `F0-S29` added: Heinsberg LW, Weeks DE. *Post hoc Power is Not Informative*. Genetic Epidemiology. 2022;46(7):390-394. doi:10.1002/gepi.22464; used specifically to block observed/post hoc power as an interpretation of completed-study results;
-- `SOURCE_INDEX.md` updated on 2026-09-09 with the F0.6 source rechecks and F0-S29;
-- no third-party full text was copied into the public repository.
+- `F0-A13` completed: complete F0.6 NotebookLM package created at `notebooklm/F0.6-power-multiplicity-analytical-flexibility/`;
+- verified canonical files on `main`:
+  - `MANIFEST.md`;
+  - `STUDY_GUIDE.md`;
+  - `QA_REPORT.md`;
+- package decision: `PASS — READY_FOR_STUDY`;
+- first-pass corpus intentionally limited to exactly eight sources:
+  1. canonical F0.6 lesson — `CORE`;
+  2. ASA Statement on p-values 2016 — `CORE`;
+  3. FDA *Multiple Endpoints in Clinical Trials* 2022 — `CORE`;
+  4. Lakens 2022 *Sample Size Justification* — `CORE`;
+  5. Greenland et al. 2016 — `SUPPORT`;
+  6. Heinsberg & Weeks 2022 — `SUPPORT`;
+  7. CONSORT 2025 — `SUPPORT`;
+  8. ASA Task Force 2021 — `CONTRAST`;
+- source roles are intentionally non-redundant: ASA 2016 anchors threshold/transparency safeguards; FDA anchors multiple-endpoint/family architecture; Lakens anchors sample-size justification; Greenland anchors probability-reversal/error-rate safeguards; Heinsberg & Weeks anchors observed-power misuse; CONSORT anchors registration/protocol/SAP/deviation auditability; ASA 2021 prevents categorical p-value abolition;
+- external verification on 2026-09-09 confirmed:
+  - ASA official six-principle statement remains accessible;
+  - FDA multiple-endpoints guidance remains Final Guidance dated October 2022;
+  - Lakens 2022 remains accessible at University of California Press;
+  - Greenland et al. 2016 and Heinsberg & Weeks 2022 remain accessible in PMC;
+  - CONSORT 2025 remains the current general CONSORT statement, superseding CONSORT 2010, with 30 items and explicit registration/protocol/SAP/change-reporting provisions;
+  - ASA Task Force 2021 remains accessible and continues to emphasize uncertainty, variability, multiplicity, replicability, model choice and selective reporting while retaining properly used p-values/significance tests as statistical tools;
+- no source-version/access change required modification of the approved F0.6 lesson;
+- study sequence uses 17 ordered passes from alpha/beta/power definitions through observed-power traps, sample-size goals, FWER/family reconstruction, analytical paths, subgroup interaction, degrees of freedom, registration/protocol/SAP, confirmatory/exploratory classification and integrated auditing;
+- package repeatedly rejects `power=P(H1 true)`, `1−power=P(this nonsignificant result is false negative)`, observed-power rescue, nominal-p-value cherry-picking across many analyses, subgroup significance comparison as interaction proof and preregistration as low-bias certification;
+- simple `1−.95^m` FWER exercises always require independent-test/all-null assumptions and a warning against universal application to correlated outcomes;
+- sample-size practice contrasts a-priori power, desired precision, near-census, resource constraints and other transparent justifications instead of enforcing a universal target-power convention;
+- analytical-flexibility practice separates hypothesis multiplicity from alternative model/outlier/covariate/time-window paths while preserving selection-risk reasoning;
+- document-audit practice distinguishes trial registration, preregistration, protocol and SAP and requires timestamp/version/deviation checks;
+- integrated study task reproduces the F0.6 synthetic many-outcome/timepoint/subgroup/model audit and requires all ten audit fields;
+- F0.5 magnitude/CI/practical-threshold interpretation remains mandatory in every completed-study audit;
+- F0.6 `EXERCISES.md`, `ANSWER_KEY.md`, production QA, full `SOURCE_INDEX.md` and F0.4 `ENTRY_DIAGNOSTIC.md` remain outside the initial NotebookLM corpus;
+- full meta-analysis, heterogeneity/I², publication-bias methods and meta-regression remain deferred to F0.7;
+- no third-party full text was committed to the public repository; package files contain only project-authored Markdown, citations and links;
+- package creation changed no learner state and did not change the F0.4 quantitative diagnostic.
 
 ## Current curriculum position
 
 `F0 — Scientific Literacy and Quantitative Reasoning`
 
-**Production position:** `F0.6 APPROVED`.
+**Production position:** `F0.6 STUDY_PACKAGE_READY`.
 
-F0.1–F0.5 each have an approved instructional unit and approved NotebookLM package.
+F0.1–F0.6 each now have:
 
-F0.6 now has:
-
-- approved self-contained lesson;
-- 100-point active-recall/application assessment;
+- approved instructional unit;
+- independent active-recall/application assessment;
 - commented answer key;
-- approved production QA.
+- production QA;
+- approved NotebookLM study package.
 
-The F0.6 NotebookLM study package is the next production artifact.
+F0.4 additionally has the quantitative entry diagnostic, which remains `UNOBSERVED`.
+
+`F0.7 — Systematic reviews, meta-analyses and heterogeneity` is the next unproduced instructional unit.
 
 **Learning position:** `UNSEEN`.
 
 No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MASTERED` from production activity.
 
-## F0.6 canonical production decisions
+## F0.6 canonical production/package decisions
 
-- `alpha` and `beta/power` are repeated-use properties conditional on the statistical procedure and assumptions, not posterior probabilities about one study;
+- alpha and beta/power are repeated-use properties conditional on procedure/effect/design/model assumptions, not posterior probabilities about one study;
 - power must always be tied to an assumed effect and design;
 - prospective power is a planning concept; observed precision/CI is the primary post-study uncertainty object;
 - observed/post hoc power based on the observed effect is not an independent explanation of nonsignificance;
-- sample-size justification must follow the inferential goal rather than a universal power convention;
-- multiplicity is about families/claims and selection opportunities, not merely the raw number of p-values printed;
-- alternative models may represent analytical paths rather than independent scientific hypotheses, but data-driven path selection still threatens error control/interpretability;
-- subgroup conclusions require direct interaction reasoning rather than comparing two significance labels;
+- sample-size justification follows inferential goal rather than a universal power convention;
+- multiplicity is about confirmatory families/claims and data-dependent selection opportunities, not merely the count of printed p-values;
+- alternative models may be analytical paths rather than independent scientific hypotheses, but data-driven path selection still threatens interpretation/error control;
+- subgroup conclusions require direct interaction reasoning rather than comparison of significance labels;
+- registration/preregistration/protocol/SAP are distinct evidence about prespecification and require timing/versioning/deviation audit;
 - prespecification creates auditability, not guaranteed validity;
-- exploratory findings are legitimate when labeled and interpreted as exploratory;
+- exploratory findings are legitimate when transparently labeled;
 - F0.5 magnitude/CI/practical-threshold reasoning remains mandatory for completed-study interpretation;
+- first-pass NotebookLM manifest v1 uses exactly eight sources with `CORE`/`SUPPORT`/`CONTRAST` roles recorded above;
+- F0.6 exercises and answer key remain outside the initial notebook to preserve independent assessment;
 - full systematic-review/meta-analysis/heterogeneity machinery remains F0.7.
 
 ## Pending learning validations
@@ -152,7 +169,7 @@ No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `
 - F0.4 quantitative diagnostic = `UNOBSERVED`;
 - F0.5 has not yet been studied or assessed by the learner;
 - F0.6 has not yet been studied or assessed by the learner;
-- approved NotebookLM guides exist for F0.1–F0.5;
+- approved NotebookLM guides exist for F0.1–F0.6;
 - no mastery-state change is authorized from curriculum/package production alone.
 
 ## Operational constraints
@@ -165,9 +182,9 @@ No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `
 - living/versioned sources must be rechecked when materially relevant;
 - answer keys and prerequisite diagnostics must not contaminate first-pass retrieval/assessment;
 - synthetic sports/nutrition numerical examples must not become substantive nutrition recommendations;
-- production can proceed while learner validation remains pending, but F0.6 learner validation requires F0.4 + F0.5 as P2;
+- production can proceed while learner validation remains pending, but F0.7 learner validation requires F0.2 + F0.5 + F0.6 as P2 and F0.3 before formal risk-of-bias synthesis;
 - F0.4 diagnostic remains `UNOBSERVED` until actual learner responses are produced.
 
 ## NEXT_ACTION
 
-`F0-A13` — Produce the complete NotebookLM study package for `F0.6 — Power, Type I/II error, multiplicity and analytical flexibility`. Create `notebooklm/F0.6-power-multiplicity-analytical-flexibility/MANIFEST.md`, `STUDY_GUIDE.md` and package `QA_REPORT.md` using the approved F0.6 lesson and a deliberately limited, auditable source corpus drawn only from sources needed for the learning objectives. Assign `CORE`/`SUPPORT`/`CONTRAST` roles and explain the instructional function and limitation of every source. The package must repeatedly require correct Type I/alpha versus Type II/beta reasoning; define power only relative to a specified effect/design and reject `power=P(H1 true)` or `1−power=P(this nonsignificant result is a false negative)`; distinguish prospective power from observed precision/CI; explicitly train against observed/post hoc power calculated from the observed effect; compare a-priori power, precision/accuracy and other transparent sample-size justifications; reconstruct effective families of confirmatory claims across endpoints/timepoints/subgroups and distinguish hypothesis multiplicity from analytical-path multiplicity; calculate/interpret simple illustrative family-wise false-positive risk without treating independent-test formulas as universal; reason about endpoint hierarchies/alpha allocation at conceptual level; audit subgroup and secondary analyses; identify researcher degrees of freedom; distinguish trial registration, preregistration, protocol and SAP with timing/versioning/deviation checks; and separate confirmatory from exploratory outputs without treating exploration as invalid. Preserve the F0.5 requirement to interpret completed results through magnitude + CI + practical threshold rather than observed power. Include an integrated synthetic study audit with many outcomes/time points/subgroups/models and require the ten-field F0.6 audit sequence. Keep F0.6 `EXERCISES.md` and `ANSWER_KEY.md` outside the initial NotebookLM corpus so independent assessment remains uncontaminated; keep the F0.4 entry diagnostic outside and preserve it as `UNOBSERVED`. Recheck every external source/link/version actually used in the manifest, apply STUDY PACKAGE QA plus copyright/public-repository controls, preserve F0.1–F0.6 learner states as pending, keep full meta-analysis/heterogeneity machinery deferred to F0.7, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
+`F0-A14` — Produce the complete seventh instructional unit `F0.7 — Systematic reviews, meta-analyses and heterogeneity`. Use `COURSE_MAP.md`, `PREREQUISITE_GRAPH.md`, `ASSESSMENT_BLUEPRINT.md`, the approved F0.2/F0.5/F0.6 units and current mapped evidence-synthesis sources. Create `foundations/F0-scientific-literacy/F0.7-systematic-reviews-meta-analysis-heterogeneity/LESSON.md`, `EXERCISES.md`, `ANSWER_KEY.md` and production `QA_REPORT.md`. Explicitly teach the systematic-review workflow from protocol/question/eligibility/search/screening/extraction to synthesis; distinguish systematic review from meta-analysis; teach effect-measure compatibility before pooling; fixed-effect versus random-effects conceptual models without presenting either as automatically superior; inverse-variance weighting intuition at P1 level; forest-plot anatomy and interpretation; statistical versus clinical/methodological heterogeneity; cautious interpretation of I² without treating it as a study-quality score or proof of homogeneity/heterogeneity by itself; when pooling is inappropriate; sensitivity analyses, subgroup analyses and meta-regression at conceptual level; small-study effects/publication bias at introductory level; and the role/limits of PRISMA as a reporting guideline rather than a risk-of-bias score. Preserve F0.5 magnitude/CI reasoning and F0.6 multiplicity/prespecification reasoning when interpreting review results. The performance task must require interpretation of a heterogeneous forest plot/evidence-synthesis summary, identification of effect scale and weighting logic, at least two plausible clinical/methodological explanations for heterogeneity before accepting a subgroup story, and a defensible judgment about whether/what should be pooled. Critical fails must include `pooled estimate = automatically true/superior`, `low I² = studies are clinically/methodologically identical`, `high I² = meta-analysis is automatically invalid`, `PRISMA-complete = low risk of bias/high study quality`, ignoring incompatible effect measures/scales before pooling, and treating a post hoc subgroup/meta-regression pattern as proven explanation of heterogeneity. Recheck current Cochrane Handbook/PRISMA and other mapped synthesis-method sources before authoring; add only sources actually used to `SOURCE_INDEX.md`; apply CONTENT/EVIDENCE/PEDAGOGICAL/MASTERY QA; preserve F0.1–F0.6 learner states and F0.4 diagnostic `UNOBSERVED`; then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
