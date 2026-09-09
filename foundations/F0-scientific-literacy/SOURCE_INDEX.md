@@ -1,6 +1,6 @@
 # F0 — SOURCE INDEX
 
-**Last researched:** 2026-09-08
+**Last researched:** 2026-09-09
 **Scope:** authoritative methodological backbone for F0.1–F0.10
 
 This is the local source registry for F0. Sources are included only when they have a defined instructional function. A reporting guideline is not treated as a risk-of-bias instrument, and no source type is treated as automatically decisive for questions it was not designed to answer.
@@ -194,7 +194,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** systematic review and study-level risk-of-bias assessment.
 
-**Key contribution:** access point for RoB 2, ROBINS-I, ROBINS-E and ROB ME. As rechecked on 2026-09-08, the site exposes the current RoB 2 resources and a revised draft of `ROBINS-I V2` announced 30 November 2025; the revised draft reorganizes/expands domains including classification, selection and missing data.
+**Key contribution:** access point for RoB 2, ROBINS-I, ROBINS-E and ROB ME. As rechecked on 2026-09-09, the official ROBINS-I V2 page states that the revised V2 draft was posted 20 November 2025; it reorganizes/expands domains including classification, selection and missing data and remains explicitly a draft subject to change.
 
 **Key limitations:** tool use requires guidance/training; domain judgments cannot be replaced by a total score. `ROBINS-I V2` must be identified by its current draft/version state rather than silently treated as a finalized universal standard. Licensing must be respected; do not republish protected tool documents into the public repository unless permitted.
 
@@ -202,7 +202,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Modules:** F0.3, F0.8, F0.9.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -298,7 +298,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Modules:** F0.3, F0.8.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -412,13 +412,13 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Key contribution:** formal foundation for counterfactuals, causal questions, exchangeability/confounding, selection and time-varying settings.
 
-**Key limitations:** substantially deeper than F0 entry level; F0 should use selected concepts/figures as teacher reference rather than assign the whole book initially.
+**Key limitations:** substantially deeper than F0 entry level; F0 should use selected concepts/figures as teacher reference rather than assign the whole book initially. The authors' page states that the online text can be revised without a change log and should be accessed there for the latest version.
 
 **Claims supported/contested:** causal inference requires explicit causal questions and assumptions; statistical association alone does not identify a causal effect.
 
 **Modules:** F0.2, F0.3.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -442,7 +442,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Modules:** F0.2, F0.3.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -658,14 +658,14 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Modules:** F0.3, F0.9.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ## 3. Research notes and version controls
 
 - `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010.
 - The current Cochrane Handbook located during this research is version 6.5, updated August 2024.
 - Current CONSORT/SPIRIT materials continue to expose design-specific extensions. The crossover (2019), cluster (2012) and factorial (2023; explanation/elaboration 2025) extensions used in F0.2 were developed against CONSORT 2010, so they are used only for design-specific concepts together with the general CONSORT 2025 standard; they are not mislabeled as 2025-rewritten extensions.
-- The official risk-of-bias site rechecked on 2026-09-08 exposes a revised draft of `ROBINS-I V2` announced 30 November 2025. Until its status changes, project materials must label it by the current draft/version state rather than silently treating it as a finalized replacement. F0.3 uses the hub only to support bias-domain separation; formal tool application remains reserved for F0.8.
+- The official risk-of-bias site rechecked on 2026-09-09 states that the revised `ROBINS-I V2` draft was posted 20 November 2025 and remains explicitly a draft subject to change. F0.3 uses the webpage only to support bias-domain separation and version literacy; formal tool application remains reserved for F0.8.
 - GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the official GRADE site states that the Book is the most current resource and is intended to replace the previous Handbook by the end of 2026. For a chapter not yet replaced/complete, consult the official GRADE living map/legacy guidance rather than silently assuming the old handbook is current.
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
 - Methodological sources above are the F0 backbone. Exercise/nutrition exemplars are labeled separately and must not be mistaken for general methodological authorities.
