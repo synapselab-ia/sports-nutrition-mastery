@@ -37,6 +37,7 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S26 | current DAG/causal-adjustment guide | F0.3, F0.9 |
 | F0-S27 | standard deviation versus standard error | F0.4, F0.5 |
 | F0-S28 | CI/p-value/power misinterpretation guide | F0.5, F0.6, F0.10 |
+| F0-S29 | post hoc/observed power misuse | F0.6 |
 
 ## 2. Registered sources
 
@@ -52,15 +53,15 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** randomized trials; primarily common two-group parallel trials, with broader applicability and extensions.
 
-**Key contribution:** current CONSORT revision; 30-item checklist; explicitly includes trial registration, accessible protocol/statistical analysis plan, data/code sharing, funding/conflicts, harms and transparent reporting of analyses. It supersedes CONSORT 2010.
+**Key contribution:** current CONSORT revision; 30-item checklist; explicitly includes trial registration, accessible protocol/statistical analysis plan, data/code sharing, funding/conflicts, harms and transparent reporting of analyses. It supersedes CONSORT 2010. The 2025 explanation/elaboration additionally makes clear why access to protocol/SAP, timing/versioning and identification of prespecified versus post hoc analyses matter for auditability.
 
-**Key limitations:** reporting guidance, not a study-quality score and not a substitute for causal/risk-of-bias appraisal.
+**Key limitations:** reporting guidance, not a study-quality score and not a substitute for causal/risk-of-bias appraisal. Prespecification can make analytical choices auditable without proving those choices were scientifically optimal.
 
-**Claims supported/contested:** transparent reporting is necessary for appraisal; prespecification and access to protocol/SAP are relevant to detecting undeclared analytical changes; complete reporting does not itself prove valid design/conduct.
+**Claims supported/contested:** transparent reporting is necessary for appraisal; prespecification and access to protocol/SAP are relevant to detecting undeclared analytical changes/selective outcome reporting; complete reporting does not itself prove valid design/conduct.
 
 **Modules:** F0.1, F0.2, F0.6, F0.9.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -246,7 +247,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Key contribution:** clarifies that p-values and significance tests remain useful when properly applied and interpreted; emphasizes uncertainty, variability, multiplicity, replicability and context rather than simplistic thresholding.
 
-**Key limitations:** high-level principles rather than a technical training manual; F0.5 uses it for balanced interpretation while formal multiplicity remains F0.6.
+**Key limitations:** high-level principles rather than a technical training manual; F0.5 uses it for balanced interpretation while F0.6 uses it for multiplicity/replicability context.
 
 **Claims supported/contested:** neither ritual thresholding nor wholesale abandonment of statistical methods is adequate; multiple uncertainty measures and scientific context matter.
 
@@ -270,13 +271,13 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Key contribution:** explicit treatment of endpoint multiplicity, grouping/order and recognized methods to control erroneous conclusions.
 
-**Key limitations:** regulatory scope; sports-science exploratory studies may have different decision contexts, but the mathematical multiplicity problem remains.
+**Key limitations:** regulatory scope; sports-science exploratory studies may have different decision contexts, but the mathematical multiplicity problem remains. F0.6 transfers the error-control principles without treating FDA regulatory requirements as universal sports-science rules.
 
-**Claims supported/contested:** unaddressed multiplicity can produce false/misleading claims; endpoint hierarchy and prespecified analysis matter.
+**Claims supported/contested:** unaddressed multiplicity can produce false/misleading claims; endpoint hierarchy, grouping/order and prespecified analysis matter.
 
 **Modules:** F0.6.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -340,11 +341,11 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** quantitative empirical research broadly.
 
-**Key contribution:** distinguishes multiple sample-size-justification goals and explicitly links informativeness to desired accuracy, smallest effects of interest and effect sizes the study needs to inform or exclude.
+**Key contribution:** distinguishes multiple sample-size-justification goals and explicitly links informativeness to desired accuracy, a-priori power, smallest effects of interest and effect sizes the study needs to inform or exclude.
 
-**Key limitations:** not a universal consensus guideline; examples/emphasis arise largely from behavioral-science methodology. F0.5 uses only smallest-effect/informativeness concepts; formal power/sample-size calculations remain F0.6.
+**Key limitations:** not a universal consensus guideline; examples/emphasis arise largely from behavioral-science methodology. F0.6 uses the framework for design reasoning rather than claiming one mandatory power target for all studies.
 
-**Claims supported/contested:** statistical informativeness depends on the inferential goal and effect magnitudes that matter, not a magical universal N or significance threshold.
+**Claims supported/contested:** statistical informativeness depends on the inferential goal and effect magnitudes that matter, not a magical universal N or significance threshold; a-priori power and precision-based planning answer different design goals.
 
 **Modules:** F0.5, F0.6.
 
@@ -700,28 +701,56 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** statistical inference across biomedical/scientific research.
 
-**Key contribution:** provides explicit definitions and 25 common misinterpretations; reinforces that p-values are conditional on the statistical model, large p-values do not establish the null, confidence level is a repeated-sampling property rather than posterior probability for one observed interval, and effect estimates/confidence limits should not be reduced to significance labels.
+**Key contribution:** provides explicit definitions and 25 common misinterpretations; reinforces that p-values and power are conditional/repeated-sampling quantities rather than posterior probabilities about hypotheses, and that observed-data power provides no independent test of alternatives when computed from the observed results.
 
-**Key limitations:** intentionally broad/critical and includes power discussion that exceeds F0.5. F0.5 uses only CI/p-value interpretation and compatibility-language safeguards; formal power belongs to F0.6.
+**Key limitations:** intentionally broad/critical. F0.5 uses CI/p-value interpretation; F0.6 uses its power probability-reversal safeguards but relies on F0-S29 for a focused observed-power treatment.
 
-**Claims supported/contested:** probability reversals such as `P(H0|data)=p` are invalid; `p>0.05` is not evidence that H0 is true; one frequentist CI should not be read as a posterior probability distribution; magnitude, interval limits and assumptions need explicit interpretation.
+**Claims supported/contested:** probability reversals such as `P(H0|data)=p` are invalid; `p>0.05` is not evidence that H0 is true; one frequentist CI should not be read as a posterior probability distribution; power is a repeated-use design quantity rather than `P(H1|data)`.
 
 **Modules:** F0.5, F0.6, F0.10.
 
 **Last checked:** 2026-09-09.
 
+---
+
+### F0-S29 — Post hoc Power is Not Informative
+
+**Citation:** Heinsberg LW, Weeks DE. Post hoc Power is Not Informative. *Genetic Epidemiology*. 2022;46(7):390-394. doi:10.1002/gepi.22464.
+
+**URL/DOI:** https://doi.org/10.1002/gepi.22464
+
+**Open access record:** https://pmc.ncbi.nlm.nih.gov/articles/PMC9452450/
+
+**Source type:** peer-reviewed methodological commentary with simulation.
+
+**Question answered:** Why is power calculated after a study by substituting the observed effect into a prospective power formula unhelpful for interpreting the observed result?
+
+**Population/context:** statistical inference broadly; examples are simulated research experiments.
+
+**Key contribution:** directly demonstrates that observed/post hoc power is misleading/redundant for interpreting completed-study results, is tightly related to the observed p-value/estimate in common settings, and cannot distinguish whether nonsignificance reflects no meaningful effect versus an imprecise realization. It recommends using design context plus effect estimates/confidence intervals for interpretation rather than observed-power rescue.
+
+**Key limitations:** focused commentary/simulation, not a complete power-analysis text; it does not replace prospective sample-size/power planning guidance. F0.6 uses it only for the observed-power misuse it directly addresses.
+
+**Claims supported/contested:** prospective power is useful for design under specified effects/assumptions; observed-effect post hoc power does not provide independent evidence about the truth/presence of an effect and should not be used to explain away a nonsignificant result.
+
+**Modules:** F0.6.
+
+**Last checked:** 2026-09-09.
+
 ## 3. Research notes and version controls
 
-- `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010.
+- `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010. On recheck 2026-09-09, its explanation/elaboration continues to expose trial registration, protocol/SAP access and transparent documentation of prespecified/post hoc analyses and deviations.
 - The current Cochrane Handbook located during this research is version 6.5, updated August 2024.
 - Current CONSORT/SPIRIT materials continue to expose design-specific extensions. The crossover (2019), cluster (2012) and factorial (2023; explanation/elaboration 2025) extensions used in F0.2 were developed against CONSORT 2010, so they are used only for design-specific concepts together with the general CONSORT 2025 standard; they are not mislabeled as 2025-rewritten extensions.
 - The official risk-of-bias site rechecked on 2026-09-09 states that the revised `ROBINS-I V2` draft was posted 20 November 2025 and remains explicitly a draft subject to change. F0.3 uses the webpage only to support bias-domain separation and version literacy; formal tool application remains reserved for F0.8.
 - NIST/SEMATECH e-Handbook and its confidence-interval pages were rechecked on 2026-09-09; F0.5 uses them for frequentist repeated-sampling/precision concepts, not as a binary-testing authority.
 - Cochrane Chapter 6 was rechecked on 2026-09-09 and remains Chapter 6 of Handbook v6.5; its page states last update August 2023. F0.5 uses it for MD/SMD/RD/RR/OR scale logic.
-- The ASA official p-value statement and its six principles were directly rechecked on 2026-09-09; the 2021 ASA Task Force statement remains accessible and is used to avoid both ritual thresholding and the false lesson that p-values are intrinsically useless.
-- Lakens 2022 remains openly available and is used only for smallest-effect/informativeness reasoning in F0.5; formal power/sample-size planning remains F0.6.
+- The ASA official p-value statement and its six principles were directly rechecked on 2026-09-09; the 2021 ASA Task Force statement remains accessible and is used in F0.6 to connect transparency, uncertainty, multiplicity and replicability without teaching that p-values are intrinsically useless.
+- FDA *Multiple Endpoints in Clinical Trials* remains Final Guidance (October 2022) on recheck 2026-09-09; F0.6 uses its grouping/ordering/multiplicity principles at a conceptual level without generalizing regulatory requirements to all exercise/nutrition research.
+- Lakens 2022 remains openly available; F0.6 uses its sample-size-justification framework to separate a-priori power, desired precision/accuracy, population/resource constraints and other transparent rationales.
 - Altman & Bland remains the F0.4→F0.5 bridge for SD versus SE; CI interpretation itself is anchored by NIST and Greenland et al.
-- Greenland et al. 2016 was added in F0-A10 because F0.5 explicitly requires common CI/p-value misinterpretation safeguards; the article is open access under CC BY 4.0 and no third-party full text was copied to GitHub.
+- Greenland et al. 2016 remains open access under CC BY 4.0; F0.6 now uses its power probability-reversal cautions in addition to the F0.5 CI/p-value safeguards.
+- Heinsberg & Weeks 2022 was added in F0-A12 specifically because the unit requires a direct safeguard against observed/post hoc power as a completed-study interpretation tool; no third-party full text was copied into GitHub.
 - The EMA ICH E9 page rechecked on 2026-09-09 continues to list ICH E9 Step 5 and E9(R1) Step 5 as the current adopted statistical-principles/estimand guidance.
 - GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the official GRADE site states that the Book is the most current resource and is intended to replace the previous Handbook by the end of 2026. For a chapter not yet replaced/complete, consult the official GRADE living map/legacy guidance rather than silently assuming the old handbook is current.
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
