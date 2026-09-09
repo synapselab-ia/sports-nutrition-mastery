@@ -1,6 +1,6 @@
 # F0.6 — Power, Type I/II error, multiplicidade e flexibilidade analítica
 
-**Production state:** `APPROVED_PENDING_QA`
+**Production state:** `APPROVED`
 
 **Prerequisites P2:** F0.4 — estatística descritiva, distribuições e variação amostral; F0.5 — estimativas, intervalos de confiança, p-values, effect sizes e relevância prática.
 
