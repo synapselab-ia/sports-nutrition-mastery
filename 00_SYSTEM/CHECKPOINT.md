@@ -2,7 +2,7 @@
 
 **Updated:** 2026-09-09
 **Canonical branch:** `main`
-**Project state:** `F0_7_STUDY_PACKAGE_READY`
+**Project state:** `F0_8_UNIT_APPROVED`
 
 ## Completed
 
@@ -35,8 +35,6 @@
 - `F0-A07` completed: approved NotebookLM package;
 - causal appraisal remains `target causal question/estimand → causal structure → distortion mechanism → adjustment/conditioning → repairability/data limitation → calibrated conclusion`;
 - DAGs encode assumptions and do not prove arrows;
-- formal RoB 2/ROBINS-I/GRADE application remains F0.8;
-- current `ROBINS-I V2` remains recorded as a draft posted 20 November 2025 and subject to recheck before F0.8 production;
 - learner state remains unvalidated.
 
 ### F0.4 — Descriptive statistics, distributions and sampling variation
@@ -65,109 +63,123 @@
 - observed/post hoc power calculated from the observed effect is not an interpretation tool;
 - completed-study interpretation remains estimate + CI + practical threshold;
 - multiplicity includes endpoints, time points, subgroups, models/analytical paths and stopping/data-dependent choices;
-- family of hypotheses is claim/decision dependent;
 - prespecification improves auditability but does not guarantee low bias/correct design;
-- subgroup inference requires direct interaction reasoning;
 - learner state remains unvalidated.
 
 ### F0.7 — Systematic reviews, meta-analyses and heterogeneity
 
 #### `F0-A14` — instructional unit
 
-- `F0-A14` completed: complete seventh instructional unit created and production QA passed;
-- approved unit path: `foundations/F0-scientific-literacy/F0.7-systematic-reviews-meta-analysis-heterogeneity/`;
-- verified canonical files on `main`:
-  - `LESSON.md` — `APPROVED`;
-  - `EXERCISES.md` — 100-point active-recall/application assessment;
-  - `ANSWER_KEY.md` — commented scoring key;
-  - `QA_REPORT.md` — CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates passed;
-- systematic review and meta-analysis are explicitly distinct; a review can legitimately avoid pooling when a meaningful common synthesis is not defensible;
-- canonical review workflow is `Protocol/question → Eligibility → Search → Screening → Extraction → Study/result appraisal → Effect measure → Synthesis plan → Heterogeneity → Missing evidence → Interpretation`;
-- effect-measure compatibility is required before pooling; same direction does not make MD/SMD/RR/OR numerically interchangeable;
+- `F0-A14` completed: approved F0.7 lesson, 100-point independent assessment, commented answer key and production QA;
+- systematic review and meta-analysis are distinct; pooling is optional and requires defensible compatibility;
 - inverse-variance weighting is precision weighting, not study quality/certainty;
-- fixed-effect and random-effects models are separated by target quantity/model assumptions; neither is universally superior;
-- random effects is not a heterogeneity cure or bias correction;
+- fixed-effect and random-effects models target different model-dependent quantities;
+- random effects does not erase, explain or repair heterogeneity;
 - pooled-mean CI is not the same object as between-study spread/prediction interval;
-- clinical diversity, methodological diversity and statistical heterogeneity are distinct;
-- I² is not percent of heterogeneous studies, quality score, proof of sameness when low or automatic pooling ban when high;
-- sensitivity analyses are robustness checks, not result-shopping;
-- subgroup/meta-regression reasoning preserves F0.6 multiplicity/prespecification and direct interaction reasoning;
-- small-study effects are separated from publication/non-reporting bias; funnel asymmetry is non-diagnostic and symmetry is not proof of complete evidence;
-- PRISMA is reporting transparency, not risk-of-bias/high-quality/high-certainty certification;
-- formal RoB/GRADE/applicability machinery remains F0.8;
-- integrated 12-field audit is `Review question → Eligibility → Search/selection → Extraction/unit structure → Effect compatibility → Study estimates/precision → Weight/model → Clinical/methodological heterogeneity → Statistical heterogeneity → Sensitivity/subgroup/meta-regression prespecification → Missing-evidence/small-study signals → Pooling/conclusion defensibility`;
-- performance task uses a synthetic five-study heterogeneous MD synthesis plus one incompatible SMD study, post hoc moderators, collinearity, funnel-plot overclaim and PRISMA overclaim;
-- local assessment gate is `>=80/100 + no critical fail`, applicable only after observed learner performance.
-
-#### F0.7 source/version decisions
-
-- only already-registered `F0-S03`, `F0-S04`, `F0-S05`, `F0-S06` are required for F0.7; no duplicate source ID was created;
-- PRISMA 2020 rechecked on 2026-09-09 and remains the current main PRISMA reporting guideline with statement paper, 27-item checklist, expanded checklist, abstract checklist and flow diagrams;
-- Cochrane Chapter 10 rechecked on 2026-09-09: current page remains *Analysing data and undertaking meta-analyses*, cites Handbook v6.5 and chapter last updated November 2024;
-- Cochrane Chapter 6 rechecked on 2026-09-09 and remains last updated August 2023;
-- Cochrane Chapter 13 rechecked on 2026-09-09 and remains last updated August 2024; funnel asymmetry remains a non-diagnostic small-study signal with multiple possible causes;
-- no third-party full text was copied into the public repository;
-- all numerical performance examples are synthetic and do not constitute nutrition/performance recommendations.
+- clinical, methodological and statistical heterogeneity remain distinct;
+- I² is not a quality/sameness/automatic-invalidity score;
+- subgroup/meta-regression/sensitivity analyses preserve F0.6 prespecification/multiplicity/direct-comparison safeguards;
+- small-study/funnel signals are non-diagnostic for publication/non-reporting bias;
+- PRISMA is reporting guidance, not risk-of-bias/certainty certification.
 
 #### `F0-A15` — NotebookLM study package
 
-- `F0-A15` completed: complete F0.7 NotebookLM package created at `notebooklm/F0.7-systematic-reviews-meta-analysis-heterogeneity/`;
-- verified canonical files on `main`:
-  - `MANIFEST.md`;
-  - `STUDY_GUIDE.md`;
-  - `QA_REPORT.md`;
+- `F0-A15` completed: approved F0.7 NotebookLM package at `notebooklm/F0.7-systematic-reviews-meta-analysis-heterogeneity/`;
 - package decision: `PASS — READY_FOR_STUDY`;
-- first-pass corpus is intentionally limited to exactly five sources:
-  1. canonical F0.7 lesson — `CORE`;
-  2. Cochrane Handbook Chapter 10 — `CORE`;
-  3. Cochrane Handbook Chapter 6 — `SUPPORT`;
-  4. Cochrane Handbook Chapter 13 — `SUPPORT`;
-  5. PRISMA 2020 — `CONTRAST`;
-- source roles are deliberately non-redundant: Chapter 10 anchors synthesis/weight/model/heterogeneity; Chapter 6 anchors effect/unit compatibility; Chapter 13 anchors missing-evidence/small-study/funnel limits; PRISMA is used as the explicit reporting-versus-validity contrast;
-- external source/link/version verification on 2026-09-09 confirmed all four external URLs and the cited chapter/update states used in the manifest;
-- study sequence uses 16 ordered passes from systematic-review/meta-analysis distinction through workflow, study-versus-report, compatibility, forest plots, weighting, fixed/random targets, pooled CI versus effect spread, heterogeneity layers, I² misconception repair, pool/no-pool decisions, sensitivity, subgroup/meta-regression, small-study/funnel reasoning, PRISMA contrast and the integrated audit;
-- package repeatedly blocks `pooled estimate = truth`, `weight = quality`, `random effects solves heterogeneity`, low-I² sameness, high-I² automatic invalidity, post hoc moderator causal proof, funnel asymmetry/symmetry diagnoses and PRISMA-complete certification;
-- integrated study task reproduces the canonical five-compatible-MD + one-incompatible-SMD scenario and requires all twelve F0.7 audit fields in order;
-- F0.5 magnitude/CI reasoning remains mandatory before pooled interpretation;
-- F0.6 prespecification/multiplicity/direct-comparison reasoning remains mandatory for sensitivity/subgroup/meta-regression interpretation;
-- F0.7 `EXERCISES.md`, `ANSWER_KEY.md`, production QA, full `SOURCE_INDEX.md` and F0.4 `ENTRY_DIAGNOSTIC.md` remain outside the initial NotebookLM corpus;
-- formal RoB 2/ROBINS-I/ROB-ME/GRADE certainty/applicability machinery remains deferred to F0.8;
-- no third-party full text was committed; package files contain only project-authored Markdown, citations and links;
-- package creation changed no learner state and did not change the F0.4 quantitative diagnostic.
+- first-pass corpus uses exactly five sources: canonical lesson, Cochrane Chapters 10/6/13 and PRISMA 2020;
+- integrated study task requires the canonical 12-field F0.7 audit;
+- F0.7 exercises/answer key and F0.4 diagnostic remain outside the initial notebook;
+- learner state remains unvalidated.
+
+### F0.8 — Risk of bias, certainty of evidence and applicability
+
+#### `F0-A16` — instructional unit
+
+- `F0-A16` completed: complete eighth instructional unit created and production QA passed;
+- approved unit path: `foundations/F0-scientific-literacy/F0.8-risk-of-bias-certainty-applicability/`;
+- verified canonical files on `main`:
+  - `LESSON.md` — `APPROVED`;
+  - `EXERCISES.md` — 100-point independent assessment;
+  - `ANSWER_KEY.md` — commented scoring key;
+  - `QA_REPORT.md` — CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates passed;
+- F0.8 explicitly separates reporting completeness, broad critical appraisal, result-level risk of bias, certainty of a body of evidence, applicability/transportability and recommendation strength;
+- CONSORT/STROBE/PRISMA are used only as reporting-transparency resources and never as low-risk/high-quality certification;
+- risk of bias is result-specific and domain-based rather than a single study-quality score;
+- bias and imprecision remain distinct: a precise estimate can be systematically biased;
+- RoB 2 is taught at conceptual/applied domain level for individually randomized parallel-group trials with the five domains randomization process, deviations from intended interventions, missing outcome data, outcome measurement and selection of reported result;
+- randomized design is explicitly not treated as automatically low risk of bias;
+- current RoB 2 version rechecked on 2026-09-09 remains `22 August 2019` for individually randomized parallel-group trials;
+- ROBINS-I target-trial logic is taught as a benchmark for non-randomized intervention-effect studies, not retroactive randomization;
+- current `ROBINS-I V2` was rechecked on 2026-09-09 and remains the revised **draft posted 20 November 2025**, explicitly subject to change;
+- current Nov-2025 ROBINS-I V2 draft is represented with six main domains: confounding, classification of intervention, selection into the study, missing data, outcome measurement and selection of reported result, plus triage to Critical risk when appropriate;
+- observational/non-randomized evidence is explicitly not treated as automatically unusable;
+- GRADE certainty is taught at body-of-evidence + outcome/question level rather than as a prestige label for a paper;
+- current four certainty categories are `High`, `Moderate`, `Low`, `Very low`;
+- core downgrading domains taught are risk of bias, inconsistency, indirectness, imprecision and dissemination/publication/non-reporting bias;
+- current GRADE principles are taught as threshold/range aware, preserving F0.5 magnitude + CI + practical/decision-threshold reasoning;
+- high certainty is explicitly compatible with a trivial/near-null effect; low certainty is explicitly not evidence of no effect;
+- statistical significance is explicitly not a certainty rating;
+- intervention-effect RCT bodies generally start high in basic GRADE reasoning; NRSI generally start low, while the advanced structured-ROBINS-I approach allowing NRSI to start high and then be rated down is explicitly acknowledged rather than hidden;
+- F0.7 heterogeneity reasoning is preserved in the inconsistency domain: I² alone does not determine a certainty downgrade;
+- current GRADE indirectness/applicability reasoning compares evidence PICO to target PICO and extends operationally to time horizon, setting and decision context;
+- internal validity and applicability remain separate: direct evidence can still be biased and low-bias evidence can remain narrowly applicable;
+- dissemination/missing-evidence reasoning preserves F0.7 funnel/small-study safeguards and does not diagnose publication bias from symmetry/asymmetry alone;
+- certainty of one outcome is kept distinct from recommendation strength, which may additionally depend on net effects, other outcomes, values, resources, equity, acceptability and feasibility;
+- integrated evidence-body task compares two synthetic bodies with similar point estimates but materially different bias, consistency, directness, precision and applicability;
+- required 13-field F0.8 audit is `Target question/outcome → Reporting visibility → Design/effect of interest → Result-level RoB mechanisms → RoB judgment/rationale → Body estimate + threshold → Inconsistency → Indirectness → Imprecision → Missing/dissemination evidence → Overall certainty → Applicability to target → Recommendation-strength boundary`;
+- local assessment gate is `>=80/100 + no critical fail`, applicable only after observed learner performance;
+- critical fails include reporting-checklist certification, total quality-score substitution, randomized=low-risk, observational=unusable, low-certainty=no-effect, high-certainty=large-effect, significance=high-certainty, direct=unbiased, representative-sample-as-internal-bias-repair, certainty=paper-score, certainty=recommendation strength and ROBINS-I V2 mislabeled as finalized;
+- formal full-paper integrated appraisal remains F0.9.
+
+#### F0.8 source/version decisions
+
+- only already-registered `F0-S01`, `F0-S02`, `F0-S03`, `F0-S05`, `F0-S07`, `F0-S18`, `F0-S19`, `F0-S20` were used; no duplicate/new source ID was needed in `SOURCE_INDEX.md`;
+- riskofbias.info rechecked on 2026-09-09: RoB 2 current individually randomized version remains 22 August 2019; ROBINS-I V2 remains draft 20 November 2025 and subject to change;
+- Cochrane Handbook landing page remains Version 6.5 (2024); Chapter 8 continues to describe RoB 2 as result-specific/domain-based for randomized trials;
+- GRADE overview rechecked on 2026-09-09: current living chapter last modified 12 May 2026, with four certainty categories and the five principal downgrading domains;
+- GRADE intervention-certainty principles rechecked: current chapter last modified 21 August 2025 and uses body/outcome, threshold/range-aware reasoning including nuanced RCT/NRSI starting approaches;
+- GRADE indirectness rechecked: current chapter last modified 12 May 2026 and links PICO mismatch to material effect/absolute-impact transfer concerns rather than automatic downgrade for every difference;
+- STROBE official site continues to state that its checklist is for reporting and is not an instrument to evaluate study quality;
+- PRISMA 2020 remains the main PRISMA reporting guideline with a 27-item checklist and supporting expanded/abstract/flow materials;
+- no third-party full text was copied into the public repository;
+- all athlete/intervention examples are synthetic methodological examples and not substantive nutrition recommendations.
 
 ## Current curriculum position
 
 `F0 — Scientific Literacy and Quantitative Reasoning`
 
-**Production position:** `F0.7 STUDY_PACKAGE_READY`.
+**Production position:** `F0.8 APPROVED`.
 
-F0.1–F0.7 now have approved instructional material and approved NotebookLM study packages. F0.7 additionally has the verified independent 100-point assessment, commented answer key and production QA described above.
+F0.1–F0.7 have approved instructional units and approved NotebookLM study packages.
 
-`F0.8 — Risk of bias, certainty of evidence and applicability` is the next unproduced instructional unit.
+F0.8 now has:
+
+- approved self-contained lesson;
+- 100-point independent assessment;
+- commented answer key;
+- approved production QA.
+
+The F0.8 NotebookLM study package is the next production artifact.
 
 **Learning position:** `UNSEEN`.
 
 No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MASTERED` from production activity.
 
-## F0.7 canonical production/package decisions
+## F0.8 canonical production decisions
 
-- systematic review is a structured evidence process; meta-analysis is an optional statistical combination;
-- review workflow and evidence-universe construction precede pooled interpretation;
-- numerical pooling requires defensible compatibility of question, construct, scale, timepoint and unit structure;
-- inverse-variance weight measures statistical precision, not methodological quality/certainty;
-- fixed-effect and random-effects answer different model-dependent synthesis questions;
-- random-effects average does not erase, explain or repair heterogeneity;
-- pooled CI for an average is not the same object as between-study spread/prediction interval;
-- forest-plot interpretation starts with effect measure/null/magnitude/CI before pooled labels;
-- clinical, methodological and statistical heterogeneity remain distinct;
-- I² requires context and is never a quality/sameness/automatic-invalidity score;
-- pooling is a scientific decision, not an obligatory final step;
-- sensitivity/subgroup/meta-regression analyses preserve F0.6 prespecification/multiplicity/direct-comparison safeguards;
-- small-study/funnel patterns are signals with multiple possible explanations, not publication-bias diagnostics;
-- PRISMA is reporting guidance, not review-quality/risk-of-bias/certainty certification;
-- first-pass NotebookLM manifest v1 uses exactly five sources with roles recorded above;
-- F0.7 exercises and answer key remain outside the initial notebook to preserve independent assessment;
-- formal study/body-of-evidence risk-of-bias, certainty and applicability machinery remains F0.8.
+- reporting completeness, risk of bias, certainty, applicability and recommendation strength must remain separate objects;
+- RoB judgments are result-specific/domain-based, not total study-quality scores;
+- randomized design prevents some bias mechanisms but does not certify a result;
+- non-randomized evidence requires explicit confounding/selection reasoning but is not dismissed by label;
+- ROBINS-I V2 Nov-2025 must be labeled as a draft until its official status changes;
+- GRADE certainty is body/outcome/question specific and threshold/range aware;
+- certainty describes confidence in the effect range, not effect magnitude itself;
+- F0.5 magnitude/CI/threshold reasoning remains mandatory for imprecision;
+- F0.7 heterogeneity/missing-evidence reasoning remains mandatory for inconsistency/dissemination-bias judgments;
+- applicability requires a mechanism-based comparison of evidence versus target population/intervention/comparator/outcome/time/setting/context;
+- internal validity and applicability are not interchangeable;
+- certainty of one outcome does not determine recommendation strength;
+- full F0.1–F0.8 integration on an actual complete paper remains F0.9.
 
 ## Pending learning validations
 
@@ -179,8 +191,9 @@ No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `
 - F0.5 has not yet been studied or assessed by the learner;
 - F0.6 has not yet been studied or assessed by the learner;
 - F0.7 has not yet been studied or assessed by the learner;
+- F0.8 has not yet been studied or assessed by the learner;
 - approved NotebookLM guides exist for F0.1–F0.7;
-- no mastery-state change is authorized from curriculum/package production alone.
+- no mastery-state change is authorized from curriculum production alone.
 
 ## Operational constraints
 
@@ -194,8 +207,9 @@ No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `
 - synthetic sports/nutrition numerical examples must not become substantive nutrition recommendations;
 - production can proceed while learner validation remains pending;
 - F0.8 learner validation requires F0.2 + F0.3 + F0.5 + F0.7 as P2;
+- F0.9 learner validation requires F0.1–F0.8;
 - F0.4 diagnostic remains `UNOBSERVED` until actual learner responses are produced.
 
 ## NEXT_ACTION
 
-`F0-A16` — Produce the complete eighth instructional unit `F0.8 — Risk of bias, certainty of evidence and applicability`. Use `COURSE_MAP.md`, `PREREQUISITE_GRAPH.md`, `ASSESSMENT_BLUEPRINT.md`, the approved F0.2/F0.3/F0.5/F0.7 units and the current mapped appraisal/certainty sources. Create `foundations/F0-scientific-literacy/F0.8-risk-of-bias-certainty-applicability/LESSON.md`, `EXERCISES.md`, `ANSWER_KEY.md` and production `QA_REPORT.md`. Explicitly separate reporting completeness, critical appraisal, study/result-level risk of bias, certainty of a body of evidence and applicability/transportability; teach RoB 2 at conceptual/applied domain level without converting domains into a total quality score; teach current ROBINS-I/target-trial logic with explicit version status and without treating non-randomized evidence as automatically unusable; teach certainty as outcome/question-specific rather than a prestige label for a paper; introduce GRADE certainty categories and the core domains risk of bias, inconsistency, indirectness, imprecision and publication/non-reporting bias at the level needed to compare evidence bodies; preserve F0.5 magnitude/CI/practical-threshold reasoning for imprecision and F0.7 heterogeneity/missing-evidence reasoning for inconsistency/publication-bias judgments; teach directness/applicability by structured comparison of population, intervention/exposure, comparator, outcome, time horizon, setting and decision context; distinguish internal validity from applicability; and keep recommendation strength distinct from certainty of one outcome. The performance task must compare two synthetic evidence bodies with similar pooled effects but materially different bias, precision, consistency, directness and target-population applicability, requiring separate judgments for study/result bias, body-of-evidence certainty and applicability. Critical fails must include `CONSORT/STROBE/PRISMA complete = low risk of bias`, use of a single quality score as a substitute for domain reasoning, `randomized = automatically low risk of bias`, `observational = automatically high/unusable`, `low certainty = no effect`, `high certainty = large/important effect`, `statistical significance = high certainty`, `direct evidence = unbiased evidence`, and collapsing certainty with recommendation strength/applicability. Recheck current RoB 2, ROBINS-I version/status, current GRADE guidance and relevant reporting/appraisal sources before authoring; add only sources actually used to `SOURCE_INDEX.md`; apply CONTENT/EVIDENCE/PEDAGOGICAL/MASTERY QA; preserve F0.1–F0.7 learner states and F0.4 diagnostic `UNOBSERVED`; then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
+`F0-A17` — Produce the complete NotebookLM study package for `F0.8 — Risk of bias, certainty of evidence and applicability`. Create `notebooklm/F0.8-risk-of-bias-certainty-applicability/MANIFEST.md`, `STUDY_GUIDE.md` and package `QA_REPORT.md` using the approved F0.8 lesson and a deliberately limited, auditable corpus drawn only from sources needed for the learning objectives. Assign `CORE`/`SUPPORT`/`CONTRAST` roles and explain each source’s instructional function and limitation. The package must repeatedly separate reporting completeness, broad critical appraisal, result-level risk of bias, body/outcome certainty, applicability/transportability and recommendation strength; require result-specific/domain-based RoB 2 reasoning without total quality scores; preserve the current RoB 2 version and ROBINS-I V2 Nov-2025 **draft** status; train target-trial reasoning for non-randomized intervention studies without treating observational evidence as automatically unusable; require the four GRADE certainty categories and the core risk-of-bias/inconsistency/indirectness/imprecision/dissemination-bias reasoning; preserve F0.5 magnitude + CI + decision-threshold reasoning for imprecision and F0.7 heterogeneity/missing-evidence reasoning for inconsistency/dissemination bias; compare evidence versus target population, intervention/exposure, comparator, outcome, time horizon, setting and decision context; distinguish internal validity from applicability; and keep certainty of one outcome distinct from recommendation strength. Include the integrated synthetic two-evidence-body comparison and require the 13-field F0.8 audit sequence. Keep F0.8 `EXERCISES.md` and `ANSWER_KEY.md` outside the initial NotebookLM corpus so independent assessment remains uncontaminated; keep F0.4 `ENTRY_DIAGNOSTIC.md` outside and preserve it as `UNOBSERVED`. Recheck every external source/link/version actually used in the manifest, apply STUDY PACKAGE QA plus copyright/public-repository controls, preserve F0.1–F0.8 learner states as pending, keep full-paper practicum/integration deferred to F0.9, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
