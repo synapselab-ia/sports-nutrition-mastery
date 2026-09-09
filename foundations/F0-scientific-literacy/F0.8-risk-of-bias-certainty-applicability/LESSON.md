@@ -1,6 +1,6 @@
 # F0.8 — Risk of bias, certeza da evidência e aplicabilidade
 
-**Production state:** `APPROVED_PENDING_QA`
+**Production state:** `APPROVED`
 
 **Prerequisites P2:** F0.2 — desenhos de estudo e limites de inferência; F0.3 — viés, confounding, raciocínio causal e validade; F0.5 — estimativas, intervalos de confiança, magnitude e relevância prática; F0.7 — revisão sistemática, meta-análise, heterogeneidade e missing evidence.
 
