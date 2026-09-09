@@ -21,7 +21,7 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S10 | multiplicity in trials | F0.6 |
 | F0-S11 | taxonomy/examples of bias | F0.3, F0.8 |
 | F0-S12 | descriptive/inferential statistics reference | F0.4, F0.5 |
-| F0-S13 | sample-size/power justification | F0.5, F0.6 |
+| F0-S13 | sample-size/power justification and smallest-effect reasoning | F0.5, F0.6 |
 | F0-S14 | trial objectives, estimands and statistical principles | F0.1–F0.5 |
 | F0-S15 | structured answerable questions | F0.1 |
 | F0-S16 | causal inference foundations | F0.2, F0.3 |
@@ -36,6 +36,7 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S25 | factorial-trial reporting/design extension | F0.2, F0.6, F0.9 |
 | F0-S26 | current DAG/causal-adjustment guide | F0.3, F0.9 |
 | F0-S27 | standard deviation versus standard error | F0.4, F0.5 |
+| F0-S28 | CI/p-value/power misinterpretation guide | F0.5, F0.6, F0.10 |
 
 ## 2. Registered sources
 
@@ -161,9 +162,9 @@ This is the local source registry for F0. Sources are included only when they ha
 
 ### F0-S06 — Cochrane Handbook, Chapter 6: Effect measures
 
-**Citation:** Higgins JPT, Li T, Deeks JJ, et al. Chapter 6: Choosing effect measures and computing estimates of effect. In: Higgins JPT, Thomas J, Chandler J, et al, eds. *Cochrane Handbook for Systematic Reviews of Interventions*. Version 6.5. Cochrane; 2024.
+**Citation:** Higgins JPT, Li T, Deeks JJ, et al. Chapter 6: Choosing effect measures and computing estimates of effect. In: Higgins JPT, Thomas J, Chandler J, et al, eds. *Cochrane Handbook for Systematic Reviews of Interventions*. Version 6.5. Cochrane; 2024. Chapter last updated August 2023.
 
-**URL:** https://training.cochrane.org/handbook/current/chapter-06
+**URL:** https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-06
 
 **Source type:** methods handbook chapter.
 
@@ -171,15 +172,15 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** intervention studies and evidence synthesis.
 
-**Key contribution:** anchors raw/standardized continuous effects and relative/absolute dichotomous effects to the outcome scale and synthesis problem.
+**Key contribution:** anchors mean difference, standardized mean difference, risk difference, risk ratio, odds ratio and the distinction between difference and ratio measures to the underlying outcome scale.
 
-**Key limitations:** not intended as a first exposure to arithmetic; must be taught with worked examples and practical thresholds.
+**Key limitations:** designed for evidence synthesis and substantially broader than an introductory effect-size lesson; F0.5 uses only the definitions, scale logic and interpretation needed before meta-analysis.
 
-**Claims supported/contested:** effect measure choice changes interpretation; absolute and relative effects answer different practical questions.
+**Claims supported/contested:** effect-measure choice changes interpretation; absolute and relative effects answer different practical questions; ratio and difference measures have different null values and scales.
 
 **Modules:** F0.5, F0.7.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -219,15 +220,15 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** quantitative scientific inference broadly.
 
-**Key contribution:** six core principles: p-values address incompatibility under a specified statistical model; they do not measure probability a hypothesis is true, effect magnitude/importance or evidential worth in isolation; selective reporting invalidates interpretation.
+**Key contribution:** six core principles: p-values can indicate incompatibility with a specified statistical model; they do not measure the probability that a hypothesis is true, effect magnitude/importance or evidential worth in isolation; threshold-only decisions and incomplete/selective reporting are unsafe.
 
-**Key limitations:** does not prescribe one universal replacement inferential framework.
+**Key limitations:** does not prescribe one universal replacement inferential framework and should not be used as a formula sheet.
 
-**Claims supported/contested:** `p < 0.05` is not a truth threshold; scientific conclusions require design, effect magnitude, uncertainty, transparency and context.
+**Claims supported/contested:** `p < 0.05` is not a truth threshold; `p > 0.05` is not proof of absence; scientific conclusions require design, magnitude, uncertainty, transparency and context.
 
 **Modules:** F0.5, F0.6, F0.10.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -243,15 +244,15 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** scientific inference broadly.
 
-**Key contribution:** clarifies that p-values and significance tests can be useful when properly applied; emphasizes uncertainty, variability, multiplicity, replicability and context rather than simplistic thresholding.
+**Key contribution:** clarifies that p-values and significance tests remain useful when properly applied and interpreted; emphasizes uncertainty, variability, multiplicity, replicability and context rather than simplistic thresholding.
 
-**Key limitations:** high-level principles rather than a technical training manual.
+**Key limitations:** high-level principles rather than a technical training manual; F0.5 uses it for balanced interpretation while formal multiplicity remains F0.6.
 
-**Claims supported/contested:** neither ritual thresholding nor wholesale abandonment of statistical methods is adequate; multiple uncertainty measures and explicit decision consequences matter.
+**Claims supported/contested:** neither ritual thresholding nor wholesale abandonment of statistical methods is adequate; multiple uncertainty measures and scientific context matter.
 
 **Modules:** F0.5, F0.6, F0.10.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -311,15 +312,15 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Source type:** institutional statistical reference.
 
-**Question answered:** How are descriptive distributions, exploratory graphics and core frequentist statistical concepts defined and related in applied analysis?
+**Question answered:** How are descriptive distributions, sampling uncertainty, confidence intervals and core frequentist statistical concepts defined and related in applied analysis?
 
 **Population/context:** general applied statistics; examples are often engineering/process-oriented.
 
-**Key contribution:** stable reference for exploratory data analysis, graphical examination of distributions, outliers/anomalies, descriptive methods and later inferential-statistics concepts.
+**Key contribution:** stable reference for exploratory analysis and frequentist interval construction; its confidence-interval sections explicitly describe nominal confidence as long-run repeated-sampling coverage under assumptions.
 
-**Key limitations:** context is not sports/biomedicine and some presentation is traditional; F0 supplies domain-flavored examples and pairs later inferential use with ASA guidance rather than binary-testing habits.
+**Key limitations:** context is not sports/biomedicine and some presentation is traditional; F0.5 pairs it with ASA/Greenland to prevent binary or probability-reversal interpretations.
 
-**Claims supported/contested:** distribution shape and graphical analysis matter before modeling; descriptive summaries should be interpreted with the underlying data structure; later inferential quantities depend on sampling/statistical assumptions.
+**Claims supported/contested:** confidence level is a property of a repeated-sampling procedure rather than posterior probability for one fixed parameter; SE contributes to interval width/precision under the specified model.
 
 **Modules:** F0.4, F0.5.
 
@@ -335,19 +336,19 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Source type:** peer-reviewed methodological review/tutorial.
 
-**Question answered:** How can sample size be justified in relation to inferential goals rather than by rote convention?
+**Question answered:** How should sample size and informational value be aligned with inferential goals, including effects considered large enough to matter?
 
 **Population/context:** quantitative empirical research broadly.
 
-**Key contribution:** distinguishes census/resource constraints, a-priori power, precision, heuristics and explicit lack of justification; links informativeness to smallest effects of interest, precision and error rates.
+**Key contribution:** distinguishes multiple sample-size-justification goals and explicitly links informativeness to desired accuracy, smallest effects of interest and effect sizes the study needs to inform or exclude.
 
-**Key limitations:** not a consensus guideline; examples and emphasis arise largely from behavioral-science methodology, so principles must be translated carefully to exercise/nutrition designs.
+**Key limitations:** not a universal consensus guideline; examples/emphasis arise largely from behavioral-science methodology. F0.5 uses only smallest-effect/informativeness concepts; formal power/sample-size calculations remain F0.6.
 
-**Claims supported/contested:** power is conditional on assumptions and target effects; sample size should be justified by the information needed, not by a magical universal N.
+**Claims supported/contested:** statistical informativeness depends on the inferential goal and effect magnitudes that matter, not a magical universal N or significance threshold.
 
 **Modules:** F0.5, F0.6.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-09.
 
 ---
 
@@ -677,11 +678,35 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Key contribution:** directly separates SD as variability of observations from SE as variability/precision of an estimate across hypothetical repeated samples; presents the simple mean relation `SE = SD/√n` and warns against using SE to describe the spread of individuals.
 
-**Key limitations:** concise educational note from 2005; it is not a comprehensive modern statistics textbook and its confidence-interval discussion belongs to later F0.5. F0.4 uses only the stable SD/SE/sampling-variation distinction.
+**Key limitations:** concise educational note from 2005; it is not a comprehensive modern statistics textbook. F0.5 uses it only as the bridge from sampling variability to estimate precision/CI.
 
-**Claims supported/contested:** SD and SE describe different objects; increasing n reduces the mean SE approximately with `1/√n` when SD is comparable, whereas the individual-level SD does not automatically shrink because sample size increased.
+**Claims supported/contested:** SD and SE describe different objects; increasing n reduces mean SE approximately with `1/√n` when SD is comparable, while individual-level SD does not automatically shrink.
 
 **Modules:** F0.4, F0.5.
+
+**Last checked:** 2026-09-09.
+
+---
+
+### F0-S28 — Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations
+
+**Citation:** Greenland S, Senn SJ, Rothman KJ, Carlin JB, Poole C, Goodman SN, Altman DG. Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations. *European Journal of Epidemiology*. 2016;31:337-350. doi:10.1007/s10654-016-0149-3.
+
+**Open access:** https://pmc.ncbi.nlm.nih.gov/articles/PMC4877414/
+
+**Source type:** peer-reviewed methodological tutorial/review; open access under CC BY 4.0.
+
+**Question answered:** What common interpretations of p-values, confidence intervals and power are logically/statistically invalid, and what language better reflects their dependence on statistical models and repeated-sampling procedures?
+
+**Population/context:** statistical inference across biomedical/scientific research.
+
+**Key contribution:** provides explicit definitions and 25 common misinterpretations; reinforces that p-values are conditional on the statistical model, large p-values do not establish the null, confidence level is a repeated-sampling property rather than posterior probability for one observed interval, and effect estimates/confidence limits should not be reduced to significance labels.
+
+**Key limitations:** intentionally broad/critical and includes power discussion that exceeds F0.5. F0.5 uses only CI/p-value interpretation and compatibility-language safeguards; formal power belongs to F0.6.
+
+**Claims supported/contested:** probability reversals such as `P(H0|data)=p` are invalid; `p>0.05` is not evidence that H0 is true; one frequentist CI should not be read as a posterior probability distribution; magnitude, interval limits and assumptions need explicit interpretation.
+
+**Modules:** F0.5, F0.6, F0.10.
 
 **Last checked:** 2026-09-09.
 
@@ -691,9 +716,13 @@ This is the local source registry for F0. Sources are included only when they ha
 - The current Cochrane Handbook located during this research is version 6.5, updated August 2024.
 - Current CONSORT/SPIRIT materials continue to expose design-specific extensions. The crossover (2019), cluster (2012) and factorial (2023; explanation/elaboration 2025) extensions used in F0.2 were developed against CONSORT 2010, so they are used only for design-specific concepts together with the general CONSORT 2025 standard; they are not mislabeled as 2025-rewritten extensions.
 - The official risk-of-bias site rechecked on 2026-09-09 states that the revised `ROBINS-I V2` draft was posted 20 November 2025 and remains explicitly a draft subject to change. F0.3 uses the webpage only to support bias-domain separation and version literacy; formal tool application remains reserved for F0.8.
-- NIST/SEMATECH e-Handbook and its exploratory-data-analysis material were rechecked on 2026-09-09 and remain the institutional F0.4 backbone for distributions, graphics and descriptive analysis.
-- The EMA ICH E9 page rechecked on 2026-09-09 continues to list ICH E9 Step 5 and E9(R1) Step 5 as the current adopted statistical-principles/estimand guidance; F0.4 uses them only for alignment of question/variable/summary, not regulatory detail.
-- Altman & Bland's SD-versus-SE note remains available through BMJ and is used only for the stable mathematical distinction between individual variability and sampling variability/precision; CI material is deferred to F0.5.
+- NIST/SEMATECH e-Handbook and its confidence-interval pages were rechecked on 2026-09-09; F0.5 uses them for frequentist repeated-sampling/precision concepts, not as a binary-testing authority.
+- Cochrane Chapter 6 was rechecked on 2026-09-09 and remains Chapter 6 of Handbook v6.5; its page states last update August 2023. F0.5 uses it for MD/SMD/RD/RR/OR scale logic.
+- The ASA official p-value statement and its six principles were directly rechecked on 2026-09-09; the 2021 ASA Task Force statement remains accessible and is used to avoid both ritual thresholding and the false lesson that p-values are intrinsically useless.
+- Lakens 2022 remains openly available and is used only for smallest-effect/informativeness reasoning in F0.5; formal power/sample-size planning remains F0.6.
+- Altman & Bland remains the F0.4→F0.5 bridge for SD versus SE; CI interpretation itself is anchored by NIST and Greenland et al.
+- Greenland et al. 2016 was added in F0-A10 because F0.5 explicitly requires common CI/p-value misinterpretation safeguards; the article is open access under CC BY 4.0 and no third-party full text was copied to GitHub.
+- The EMA ICH E9 page rechecked on 2026-09-09 continues to list ICH E9 Step 5 and E9(R1) Step 5 as the current adopted statistical-principles/estimand guidance.
 - GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the official GRADE site states that the Book is the most current resource and is intended to replace the previous Handbook by the end of 2026. For a chapter not yet replaced/complete, consult the official GRADE living map/legacy guidance rather than silently assuming the old handbook is current.
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
 - Methodological sources above are the F0 backbone. Exercise/nutrition exemplars are labeled separately and must not be mistaken for general methodological authorities.
