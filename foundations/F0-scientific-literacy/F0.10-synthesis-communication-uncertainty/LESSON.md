@@ -1,6 +1,6 @@
 # F0.10 — Síntese e comunicação da incerteza
 
-**Production state:** `APPROVED_PENDING_QA`
+**Production state:** `APPROVED`
 
 **Prerequisites P2:** F0.5 — estimativas, intervalos, effect sizes e relevância prática; F0.7 — síntese, heterogeneidade e missing evidence; F0.8 — risk of bias, certeza e aplicabilidade; F0.9 — leitura crítica de paper completo.
 
@@ -14,331 +14,248 @@
 
 Ao terminar esta unidade, você deve conseguir receber um resultado ou evidence body já criticamente reconstruído e comunicá-lo para públicos diferentes sem:
 
-1. transformar um p-value em verdade binária;
-2. esconder magnitude ou intervalo de confiança;
-3. apagar um limiar de importância prática;
+1. transformar p-value em verdade binária;
+2. esconder magnitude ou intervalo;
+3. apagar limiar de importância prática;
 4. converter `low certainty` em “não funciona”;
 5. converter `high certainty` em “efeito grande/importante”;
 6. dar o mesmo peso retórico a evidências de força muito diferente só para parecer equilibrado;
 7. confundir directness com ausência de bias;
 8. confundir certeza da evidência com força de recomendação;
-9. ampliar população, outcome, duração ou contexto além do que a evidência sustenta;
-10. tornar a versão leiga mais certa que a síntese técnica.
+9. ampliar população, outcome, duração ou contexto além do suportado;
+10. tornar a versão leiga mais certa que a técnica.
 
 Regra central:
 
 > **Simplificar linguagem pode reduzir complexidade verbal; não pode reduzir a incerteza científica.**
 
-A função de F0.10 é converter um julgamento de evidência em comunicação calibrada sem perda epistemológica.
+F0.10 converte julgamento de evidência em comunicação calibrada sem perda epistemológica.
 
 ---
 
-# 2. O objeto que precisa sobreviver à tradução: invariant core
+## 2. Invariant core: o que deve sobreviver à tradução
 
 Antes de escrever para qualquer público, congele oito campos:
 
 1. **Target** — população, intervenção/exposição, comparator, outcome, tempo e contexto;
-2. **Direction** — para onde a estimativa aponta;
-3. **Magnitude** — quão grande é o efeito na escala relevante;
-4. **Precision** — qual intervalo/uncertainty acompanha a estimativa;
-5. **Threshold** — qual magnitude mudaria uma decisão ou seria considerada importante;
-6. **Certainty** — quanta confiança cabe no body/outcome inference;
-7. **Applicability** — até onde o body corresponde ao target real;
-8. **Boundaries** — o que ainda não foi estabelecido e o que mudaria a conclusão.
+2. **Direction** — para onde a estimate aponta;
+3. **Magnitude** — tamanho do efeito na escala relevante;
+4. **Precision** — CI/range/uncertainty;
+5. **Threshold** — magnitude que seria importante ou mudaria decisão;
+6. **Certainty** — confiança no body/outcome inference;
+7. **Applicability** — alinhamento ao target real;
+8. **Boundaries** — o que não foi estabelecido e o que mudaria a conclusão.
 
-Esse conjunto é o **invariant core**.
+Isso é o **invariant core**.
 
-Você pode trocar:
+Você pode mudar vocabulário, extensão, ordem e densidade técnica. Não pode mudar silenciosamente:
 
-- vocabulário;
-- extensão;
-- ordem das frases;
-- densidade estatística;
-- exemplos.
+- `may` → `does`;
+- `small possible benefit` → `works`;
+- `did not detect` → `has no effect`;
+- `moderate certainty` → `proven`;
+- `trained adults` → `everyone`;
+- `12 weeks` → `long term`;
+- `one outcome` → `overall performance/health`.
 
-Você não pode trocar silenciosamente:
-
-- `may` por `does`;
-- `small possible benefit` por `works`;
-- `did not detect` por `has no effect`;
-- `moderate certainty` por `proven`;
-- `trained adults` por `everyone`;
-- `12 weeks` por `long term`;
-- `one outcome` por `overall health/performance`.
-
----
-
-# 3. Evidência antes da redação
-
-F0.9 terminou com um appraisal reconstruído. F0.10 começa daí.
-
-Nunca faça:
-
-`headline → simplify → communicate`.
-
-Faça:
+Fluxo canônico:
 
 `reconstructed evidence → invariant core → calibrated claim → audience translation → drift audit`.
 
-Se o appraisal ainda não resolveu qual estimand/outcome está em jogo, F0.10 não pode corrigir isso com palavras melhores.
+Se F0.9 ainda não resolveu qual estimand/result está em jogo, palavras melhores não resolvem o problema.
 
 ---
 
-# 4. Linguagem calibrada
+## 3. Linguagem calibrada
 
-A força verbal deve acompanhar o que a evidência permite.
+A força verbal acompanha a força do que foi reconstruído.
 
-## 4.1 Verbos e construções úteis
+### Observational/descriptive
 
-### Observação/descritivo
+Use construções como:
 
 - `was associated with`;
 - `was higher/lower in`;
 - `co-occurred with`.
 
-Não converter automaticamente em:
+Não transforme automaticamente em `caused`, `improved` ou `prevented`.
 
-- `caused`;
-- `improved`;
-- `prevented`.
+### Resultado experimental com incerteza material
 
-### Resultado experimental com incerteza relevante
+Formulações úteis:
 
 - `the estimate favored X, but the interval was compatible with...`;
 - `the trial did not detect a clear between-group difference`;
 - `a small benefit remains plausible`;
 - `the data are compatible with effects ranging from...`.
 
-### Body com certeza moderada
+### Body-level certainty
 
-- `the intervention probably...` quando esse verbo é coerente com a framework usada e o target de certainty;
-- `moderate-certainty evidence suggests/probably indicates...`.
+Quando coerente com a framework usada:
 
-### Body com baixa certeza
+- moderate certainty → `probably`, `moderate-certainty evidence suggests...`;
+- low certainty → `may`, `the evidence is uncertain about...`.
 
-- `the intervention may...`;
-- `the evidence is uncertain about...`;
-- `the estimate suggests..., but confidence is limited by...`.
-
-A escolha exata do verbo não é uma tabela universal. O princípio é consistência entre **claim strength** e **evidence strength**.
+Não existe dicionário universal de verbos. Existe a exigência de que claim strength e evidence strength não entrem em conflito.
 
 ---
 
-# 5. O p-value não controla a frase
+## 4. O p-value não controla a frase
 
-F0-S08 e F0-S09 continuam válidos aqui.
+`F0-S08` e `F0-S09` continuam válidos:
 
-Não escreva:
+- `p<0.05` não significa “verdadeiro”;
+- `p<0.05` não significa “importante”;
+- `p>0.05` não significa “sem efeito”.
 
-- `p<0.05, therefore true`;
-- `p<0.05, therefore important`;
-- `p>0.05, therefore no effect`.
-
-Escreva o resultado em termos de:
+Comunique:
 
 `estimate → interval → threshold → design/bias → certainty/context`.
 
-Um p-value pode ser uma peça da saída estatística. Ele não substitui esses objetos.
+O p-value pode ser uma saída estatística; não substitui magnitude, precisão ou contexto.
 
 ---
 
-# 6. Três claims diferentes: ausência de detecção, ausência prática e equivalência
+## 5. Três claims diferentes: não detectado, não importante e equivalente
 
-Essas frases parecem próximas, mas não são intercambiáveis.
+### 5.1 Did not detect
 
-## 6.1 “Não detectamos evidência clara de diferença”
+Resultado:
 
-Exemplo:
+`MD = -8 s [95% CI -45,+29]`.
 
-`MD = -8 s [95% CI -45, +29]`.
+O intervalo inclui benefício e pouca diferença/efeito oposto.
 
-Se `0` é o null, o intervalo inclui benefício e dano/efeito oposto.
+Defensável:
 
-Uma frase defensável:
+> O estudo não detectou uma diferença clara; benefício e pouca ou nenhuma diferença permanecem compatíveis com os dados.
 
-> O estudo não detectou uma diferença clara; os dados ainda são compatíveis com benefício e com pouca ou nenhuma diferença.
+### 5.2 Evidence compatible with no important effect
 
-## 6.2 “A evidência é compatível com ausência de efeito importante”
+Threshold de benefício importante = `-30 s`.
 
-Agora suponha um threshold de benefício importante em `-30 s` e resultado:
+Resultado:
 
-`MD = -4 s [95% CI -18, +10]`.
+`MD = -4 s [95% CI -18,+10]`.
 
-O intervalo exclui benefício maior que `30 s` nessa direção.
+O CI exclui um benefício de 30 s ou maior na direção favorável.
 
-Uma conclusão mais forte pode ser defensável:
+Defensável:
 
-> Sob o threshold de 30 s, os dados são compatíveis com ausência de benefício grande/importante; efeitos pequenos ainda permanecem possíveis.
+> Sob esse threshold, os dados são compatíveis com ausência de benefício grande/importante; efeitos pequenos ainda permanecem possíveis.
 
-Isso é diferente de `p>0.05`.
+Isso é mais informativo que dizer apenas `p>0.05`.
 
-## 6.3 Equivalence formal
+### 5.3 Formal equivalence
 
-Para afirmar formal equivalence/non-inferiority, é necessário um desenho/analysis framework apropriado e margens prespecificadas adequadamente.
+Formal equivalence/non-inferiority exige desenho/análise e margem apropriados, idealmente prespecified.
 
 `nonsignificant superiority test ≠ equivalence trial`.
 
 ---
 
-# 7. Point estimate, interval e threshold devem viajar juntos
+## 6. Estimate + CI + threshold devem viajar juntos
 
-Considere:
+Exemplo:
 
-`MD = -22 s [95% CI -51, +7]`
+`MD = -22 s [95% CI -51,+7]`, threshold importante `-30 s`.
 
-Threshold de benefício importante:
+Dizer apenas “efeito médio de 22 s” apaga precisão. Dizer apenas “não significativo” apaga magnitude e as possibilidades ainda compatíveis.
 
-`-30 s`.
+Síntese adequada:
 
-Uma comunicação que diz apenas:
+> A estimate favoreceu a intervenção em 22 s, mas o IC95% vai de 51 s de benefício a 7 s de piora; portanto, tanto um benefício acima do threshold de 30 s quanto pouca diferença permanecem compatíveis com os dados.
 
-> “O efeito médio foi de 22 s.”
-
-perde precisão.
-
-Uma que diz apenas:
-
-> “Não foi significativo.”
-
-perde magnitude e compatibilidade.
-
-Uma melhor síntese é:
-
-> A estimativa média favoreceu a intervenção em 22 s, mas o intervalo de 95% foi de 51 s de benefício a 7 s de piora; portanto, tanto um benefício acima do limiar de 30 s quanto pouca diferença permanecem compatíveis com os dados.
-
-Esse é o núcleo de F0.5 preservado em F0.10.
+Essa é a continuidade direta de F0.5.
 
 ---
 
-# 8. Certainty não é magnitude
+## 7. Certainty não é magnitude
 
-GRADE separa duas perguntas:
+GRADE separa:
 
-1. **Qual efeito/intervalo parece existir?**
-2. **Quanta confiança temos de que o efeito verdadeiro está na faixa relevante?**
+1. qual efeito/faixa parece existir;
+2. quanta confiança temos de que o efeito verdadeiro está nessa faixa ou lado de um threshold.
 
-Portanto:
+Logo:
 
 - `high certainty + trivial effect` é possível;
 - `low certainty + large point estimate` é possível;
-- `low certainty` não significa `no effect`;
-- `high certainty` não significa `large benefit`.
+- low certainty não significa no effect;
+- high certainty não significa large/important effect.
 
 Exemplo:
 
-> High-certainty evidence may indicate that an intervention changes an outcome by only a trivial amount.
+`+0.15 [0.12,0.18]`, threshold `+1.0`, high certainty.
 
-Isso é epistemicamente diferente de:
-
-> The intervention has a large effect.
+A conclusão correta é alta confiança de que o efeito é pequeno/trivial em relação ao threshold, não “efeito importante”.
 
 ---
 
-# 9. Incerteza não é uma coisa só
+## 8. Incerteza tem mecanismos diferentes
 
-Ao comunicar incerteza, identifique sua origem.
+### Imprecision
 
-## 9.1 Imprecision
+CI amplo, poucos eventos/information size, crossing de thresholds relevantes.
 
-Problema:
+> “A magnitude permanece incerta porque a faixa compatível é ampla.”
 
-- CI amplo;
-- poucos eventos;
-- baixo N/information size;
-- threshold crossing relevante.
+### Risk of bias
 
-Comunicação:
+Processos de desenho/condução/análise podem deslocar sistematicamente a estimate.
 
-> “A magnitude permanece incerta porque o intervalo é amplo.”
+> “Mesmo uma estimate precisa pode estar sistematicamente distorcida por...”
 
-## 9.2 Risk of bias
+### Inconsistency
 
-Problema:
+Estudos diretos estimam efeitos materialmente diferentes sem explicação suficiente.
 
-- mecanismos podem deslocar sistematicamente a estimate.
+> “A variação entre estudos reduz confiança em uma única magnitude média.”
 
-Comunicação:
+### Indirectness
 
-> “Mesmo uma estimativa precisa pode estar sistematicamente distorcida por...”
+Evidence PICO/context difere do target.
 
-Não diga “o CI é amplo por bias” se o problema é outra coisa.
+> “A evidência é menos direta para atletas altamente treinados porque...”
 
-## 9.3 Inconsistency
+### Missing/dissemination evidence
 
-Problema:
+Estudos/resultados podem estar ausentes de forma relacionada ao achado.
 
-- estudos estimam efeitos materialmente diferentes sem explicação suficiente.
+> “A confiança é limitada pela possibilidade de evidência não observada ou seletivamente reportada.”
 
-Comunicação:
-
-> “O efeito varia entre estudos, reduzindo confiança em uma única magnitude média.”
-
-## 9.4 Indirectness
-
-Problema:
-
-- evidence PICO/context não corresponde bem ao target.
-
-Comunicação:
-
-> “A evidência é menos direta para atletas altamente treinados porque a maioria dos estudos foi feita em...”
-
-## 9.5 Missing/dissemination evidence
-
-Problema:
-
-- resultados/estudos podem estar ausentes de forma relacionada aos achados.
-
-Comunicação:
-
-> “A confiança é limitada pela possibilidade de evidência não observada/selecionada.”
-
-Não reduza tudo a “mais estudos são necessários”.
+Não colapse todos esses mecanismos em “mais estudos são necessários”.
 
 ---
 
-# 10. Direct evidence ≠ unbiased evidence
+## 9. Direct evidence ≠ unbiased evidence
 
-Uma comparação pode ser diretamente alinhada ao target e ainda ser enviesada.
-
-Exemplo:
-
-- população correta;
-- intervenção correta;
-- comparator correto;
-- outcome correto;
-- duração correta;
-
-mas:
+Um estudo pode corresponder perfeitamente a population/intervention/comparator/outcome/time e ainda ter:
 
 - differential attrition;
-- unblinded subjective outcome;
+- unblinded subjective measurement;
 - selective analysis.
 
-Isso é **direct but potentially biased**.
+Ele pode ser **direct but biased**.
 
-O inverso também é possível: um estudo pode ser internamente forte e ainda ser indirect para o target.
+O inverso também é possível: internal validity forte e applicability estreita.
 
-Mantenha os eixos separados:
-
-`internal validity / RoB` ≠ `directness / applicability`.
+`internal validity / RoB ≠ directness / applicability`.
 
 ---
 
-# 11. Conflito entre estudos: não conte papers
+## 10. Conflito entre estudos: não conte papers
 
-Considere quatro fontes:
+Se há:
 
-- uma meta-analysis de seis RCTs diretos;
-- um RCT grande e recente;
-- um observational cohort grande;
-- um pequeno mechanistic study.
+- uma meta-analysis de RCTs diretos;
+- um grande RCT recente;
+- um observational cohort;
+- um acute mechanistic study;
 
-Não faça:
+não conclua “2 contra 2”.
 
-> “Dois estudos são positivos e dois negativos, então está 50/50.”
-
-A síntese deve ponderar:
+Pondere:
 
 1. fit à pergunta;
 2. design e bias;
@@ -349,74 +266,61 @@ A síntese deve ponderar:
 7. body-level certainty;
 8. atualidade quando material.
 
-**False balance** ocorre quando fontes com capacidade inferencial muito desigual recebem peso retórico equivalente só porque discordam.
+**False balance** ocorre quando fontes de capacidade inferencial muito desigual recebem peso retórico equivalente só porque discordam.
 
----
-
-# 12. Hierarquia mecânica também é erro
-
-Evitar false balance não significa usar uma pirâmide automática.
-
-Um RCT pequeno e high risk não derrota automaticamente um cohort observacional cuidadosamente desenhado para uma pergunta que randomização não responde bem.
-
-Um mechanistic experiment pode ser excelente para mecanismo e insuficiente para performance crônica.
-
-A pergunta correta permanece:
+Evitar false balance também não significa aplicar evidence pyramid mecanicamente. A pergunta permanece:
 
 > **Qual fonte é mais informativa para qual claim?**
 
+Um mechanistic experiment pode ser excelente para mecanismo e insuficiente para performance crônica. Um RCT high-risk pode ser menos informativo para determinado claim que outra evidência cuidadosamente desenhada.
+
 ---
 
-# 13. Síntese de conflito em quatro passos
+## 11. Síntese de conflito em quatro passos
 
 Use:
 
 `claim → source fit → weighted evidence → residual uncertainty`.
 
-## Passo 1 — Defina o claim
+### 1. Claim
 
-Exemplo:
+Defina exatamente população, contraste, outcome e tempo.
 
-> “Intervention X melhora performance de endurance em atletas treinados após 8–12 semanas.”
+### 2. Source fit
 
-## Passo 2 — Classifique o fit
-
-Para cada fonte:
+Pergunte para cada fonte:
 
 - mesma população?
 - mesma intervention/comparator?
 - mesmo outcome?
-- mesma time horizon?
+- mesmo time horizon?
 - design adequado ao claim?
 
-## Passo 3 — Pondere o corpo
+### 3. Weighted evidence
 
-Pergunte:
+Considere:
 
-- quais estimates dominam pela precisão/relevância?
-- quais têm maior risk of bias?
-- há heterogeneity explicável?
-- os resultados diretos são consistentes?
+- precision/relevance;
+- RoB;
+- heterogeneity;
+- compatibility;
+- directness.
 
-## Passo 4 — Escreva a incerteza residual
+### 4. Residual uncertainty
 
-Exemplo:
+Uma frase útil pode ser:
 
-> “A evidência mais direta e metodologicamente forte concentra-se perto de efeitos pequenos, enquanto os maiores efeitos aparecem em estudos menos precisos ou menos diretamente aplicáveis; portanto, benefícios grandes são menos suportados que benefícios pequenos, embora alguma incerteza permaneça.”
+> A evidência mais direta e forte concentra-se perto de efeitos pequenos, enquanto os maiores efeitos aparecem em estudos menos precisos ou menos diretamente aplicáveis; benefícios grandes são menos sustentados, embora alguma incerteza permaneça.
 
 ---
 
-# 14. Evidence statement ≠ recommendation
+## 12. Evidence statement ≠ recommendation
 
-Uma **evidence statement** responde:
+**Evidence statement:** o que a evidência indica sobre um outcome específico?
 
-> O que a evidência indica sobre um outcome específico?
+**Recommendation statement:** o que alguém deveria fazer?
 
-Uma **recommendation statement** responde:
-
-> O que alguém deve fazer?
-
-A segunda pode exigir ainda:
+Recomendação pode exigir ainda:
 
 - benefits e harms múltiplos;
 - valores/preferências;
@@ -426,49 +330,38 @@ A segunda pode exigir ainda:
 - equity;
 - contexto decisório.
 
-Logo:
-
 `certainty of one outcome ≠ recommendation strength`.
 
-Mesmo uma evidência de alta certeza sobre um efeito pequeno não cria automaticamente recomendação forte.
+Alta certeza de um efeito pequeno não cria automaticamente recomendação forte.
 
 ---
 
-# 15. Audience translation sem drift
+## 13. Tradução por audiência sem drift
 
-## 15.1 Technical synthesis
+### Technical
 
-Pode incluir:
+Pode incluir effect measure, point estimate, CI, threshold, RoB/certainty language, directness, limitations e target exato.
 
-- effect measure;
-- point estimate;
-- CI;
-- threshold;
-- risk-of-bias/certainty language;
-- directness;
-- limitations;
-- exact target.
+### Practitioner-facing
 
-## 15.2 Practitioner-facing synthesis
-
-Pode reduzir jargon, mas deve preservar:
+Reduza jargão, mas preserve:
 
 - quem foi estudado;
 - tamanho provável do efeito;
 - amplitude da incerteza;
 - grau de confiança;
-- aplicabilidade;
-- o que não está estabelecido.
+- applicability;
+- o que não foi estabelecido.
 
-## 15.3 Lay-facing synthesis
+### Lay-facing
 
-Pode traduzir CI para faixa plausível/compatível e certainty para linguagem comum.
+Pode traduzir CI como faixa de efeitos compatíveis e certainty como grau de confiança em linguagem comum.
 
-Mas não pode trocar:
+Mas não pode converter:
 
-> “A evidência sugere um benefício pequeno, com incerteza moderada.”
+> “A evidência sugere benefício pequeno, com certeza moderada.”
 
-por:
+em:
 
 > “Funciona.”
 
@@ -476,229 +369,209 @@ Nem:
 
 > “Não detectamos benefício claro.”
 
-por:
+em:
 
 > “Não funciona.”
 
 ---
 
-# 16. Drift audit
+## 14. Drift audit
 
-Depois de produzir três versões, compare frase por frase.
-
-Pergunte:
+Depois de produzir várias versões, compare-as:
 
 1. a população ficou mais ampla?
-2. a direção mudou?
-3. a magnitude desapareceu?
-4. o intervalo virou certeza?
-5. o threshold sumiu?
+2. direção mudou?
+3. magnitude desapareceu?
+4. interval virou certeza?
+5. threshold sumiu?
 6. `may/probably` virou verbo categórico?
 7. bias foi apagado?
 8. applicability foi generalizada?
 9. evidence statement virou recommendation?
-10. uma versão leiga parece mais confiante que a técnica?
+10. versão simplificada parece mais confiante que a técnica?
 
 Se sim, houve **language drift**.
 
 ---
 
-# 17. “O que mudaria minha conclusão?”
+## 15. O que mudaria a conclusão?
 
-Toda boa síntese termina com update conditions.
-
-Pergunte:
-
-> Qual nova evidência ou mudança de assumptions faria esta conclusão mudar materialmente?
+Toda boa síntese explicita update conditions.
 
 Exemplos:
 
-- um RCT direto grande com CI estreito excluindo o threshold atual;
-- reanalysis que resolve um problema material de missingness;
-- confirmação de um prespecified subgroup effect;
-- novos estudos na população-alvo reduzindo indirectness;
-- evidência de publication/non-reporting bias que altera o body;
-- mudança defensável do threshold de decisão;
-- evidência de harms relevantes que muda a recomendação mesmo sem alterar efficacy.
+- RCT direto grande com CI estreito inteiramente além do threshold;
+- body direto com CI estreito excluindo o threshold;
+- reanalysis que resolve missingness material;
+- novos estudos na população-alvo que reduzem indirectness;
+- credible missing-evidence signal que altera o body;
+- mudança defensável do threshold;
+- harms relevantes que alteram recommendation mesmo sem mudar efficacy.
 
-Isso transforma a conclusão em uma posição atualizável, não dogmática.
+“Mais estudos são necessários” é insuficiente sem dizer **qual resultado** mudaria a conclusão e em que direção.
 
 ---
 
-# 18. Worked example A — não detectado ≠ inexistente
-
-Outcome: performance time; menor = melhor.
+## 16. Worked example A — não detectado ≠ inexistente
 
 - target: trained adults;
-- MD = `-12 s`;
-- 95% CI = `-44 a +20 s`;
+- outcome: performance time, lower better;
+- `MD = -12 s`;
+- `95% CI = -44 a +20 s`;
 - practical-benefit threshold = `-30 s`;
-- low risk of bias;
+- low RoB;
 - direct evidence;
 - body certainty: moderate, limitada principalmente por imprecision.
 
-## Technical
+### Technical
 
-> A estimativa favorece a intervenção em 12 s, mas o IC95% de -44 a +20 s cruza tanto o null quanto o limiar de benefício importante de -30 s. Assim, os dados não demonstram benefício claro nem excluem um benefício material; a incerteza é principalmente de precisão.
+> A estimate favorece a intervenção em 12 s, mas o IC95% de -44 a +20 s cruza tanto o null quanto o limiar de benefício importante de -30 s. Os dados não demonstram benefício claro nem excluem benefício material; a incerteza é principalmente de precisão.
 
-## Practitioner-facing
+### Practitioner-facing
 
-> O melhor palpite é uma melhora pequena, mas o estudo ainda é compatível tanto com uma melhora relevante quanto com quase nenhuma diferença. Por isso, não é correto concluir nem que “funciona claramente” nem que “não funciona”.
+> O melhor palpite é uma melhora pequena, mas os dados ainda permitem tanto uma melhora relevante quanto quase nenhuma diferença. Não é correto concluir nem que “funciona claramente” nem que “não funciona”.
 
-## Lay-facing
+### Lay-facing
 
-> O resultado apontou para uma pequena melhora, mas a margem de incerteza é grande: o efeito real pode ser relevante ou pode ser praticamente nulo. Ainda não há base para uma conclusão definitiva.
+> O resultado apontou para uma pequena melhora, mas a margem de incerteza ainda é grande: o efeito real pode ser relevante ou praticamente nulo. Ainda não há base para uma conclusão definitiva.
 
-O conteúdo epistemológico é o mesmo nas três versões.
+O invariant core permanece o mesmo.
 
 ---
 
-# 19. Worked example B — high certainty, trivial effect
+## 17. Worked example B — high certainty, trivial effect
 
-- pooled effect = `+0.15 unidade`;
-- 95% CI = `+0.12 a +0.18`;
-- threshold de importância = `+1.0`;
+- pooled effect `+0.15`;
+- 95% CI `+0.12 a +0.18`;
+- threshold importante `+1.0`;
 - high certainty.
 
-Conclusão adequada:
+Adequado:
 
 > Há alta confiança de que o efeito é pequeno/trivial em relação ao threshold definido.
 
-Conclusão inadequada:
+Inadequado:
 
 > Há alta certeza, então o efeito é importante.
 
-`certainty` descreve confiança sobre a faixa do efeito; não transforma sua magnitude.
-
 ---
 
-# 20. Worked example C — conflito sem falsa equivalência
+## 18. Worked example C — conflito sem falsa equivalência
 
 Claim: Intervention Q melhora um performance score crônico.
 
 Evidence:
 
-- systematic review de RCTs diretos: pooled `+0.4 [0.0,+0.8]`;
+- systematic review de RCTs diretos: `+0.4 [0.0,+0.8]`;
 - grande RCT novo: `+0.2 [-0.1,+0.5]`;
-- cohort observacional: `+1.8 [+1.3,+2.3]`, self-selection e residual confounding plausível;
-- acute mechanistic experiment: biomarker aumenta 35%, sem performance endpoint.
+- cohort observacional: `+1.8 [+1.3,+2.3]`, com self-selection/residual confounding;
+- acute mechanistic experiment: biomarker +35%, sem performance endpoint;
+- threshold importante `+1.0`.
 
-Threshold importante = `+1.0`.
+Ruim:
 
-Uma síntese ruim:
+> “A literatura está dividida: dois positivos e dois inconclusivos.”
 
-> “A literatura é muito dividida: dois estudos positivos e dois inconclusivos.”
+Melhor:
 
-Uma síntese melhor:
-
-> “As fontes mais diretas para performance crônica estimam efeitos pequenos e abaixo do threshold de +1.0, enquanto o maior efeito vem de evidência observacional mais vulnerável a confounding; o estudo mecanístico apoia plausibilidade, não magnitude de performance. O peso do conjunto favorece, no máximo, um efeito pequeno, com os grandes benefícios menos sustentados.”
+> As fontes mais diretas para performance crônica estimam efeitos pequenos e abaixo do threshold de +1.0; o maior efeito vem de evidência observacional mais vulnerável a confounding, e o mechanistic study apoia plausibilidade, não magnitude de performance. O peso do conjunto favorece, no máximo, efeito pequeno; benefícios grandes estão menos sustentados.
 
 ---
 
-# 21. Template canônico F0.10
+## 19. Template canônico F0.10
 
 Antes de qualquer audiência, preencha:
 
-## A. Target
-
+### A. Target
 `Population / intervention-exposure / comparator / outcome / time / setting-context`
 
-## B. Evidence direction and magnitude
-
+### B. Direction and magnitude
 `effect measure + point estimate`
 
-## C. Precision
+### C. Precision
+`CI/range + material possibilities remaining`
 
-`CI/range + what material possibilities remain`
+### D. Practical threshold
+`threshold + whether uncertainty crosses it`
 
-## D. Practical threshold
-
-`threshold + whether CI crosses it`
-
-## E. Main uncertainty sources
-
+### E. Main uncertainty source(s)
 `bias / imprecision / inconsistency / indirectness / missing evidence`
 
-## F. Certainty
-
+### F. Certainty
 `body/outcome certainty + rationale`
 
-## G. Applicability
-
+### G. Applicability
 `where it transports / where it becomes indirect`
 
-## H. Evidence statement
-
+### H. Evidence statement
 `one calibrated sentence`
 
-## I. Recommendation boundary
+### I. Recommendation boundary
+`what the evidence statement does not decide`
 
-`what this evidence statement does NOT decide by itself`
-
-## J. Update conditions
-
+### J. Update conditions
 `what would materially change the conclusion`
 
 Só depois produza versões por audiência.
 
 ---
 
-# 22. Performance-package rule
+## 20. Performance-package rule
 
-A avaliação usa um único pacote sintético de evidência para obrigar três comunicações:
+A avaliação usa um único pacote sintético para obrigar três comunicações:
 
 1. technical;
 2. practitioner-facing;
 3. lay-facing.
 
-A correção não premia “tom bonito”. Ela verifica se as três versões conservam o mesmo invariant core.
+A correção não premia “tom bonito”. Verifica se as três versões conservam o mesmo invariant core.
 
-O pacote inclui evidências com pesos inferenciais diferentes de propósito. Contar papers em vez de ponderá-los é erro estrutural.
+O pacote inclui fontes com pesos inferenciais diferentes de propósito. Contar papers em vez de ponderá-los é erro estrutural.
 
 ---
 
-# 23. Critical fails
+## 21. Critical fails
 
-Uma resposta falha estruturalmente se:
+Falha estrutural se a resposta:
 
-1. usa `p<0.05` como prova de verdade/importância;
-2. usa `p>0.05` como prova de ausência/equivalência;
-3. omite CI/threshold material para tornar a mensagem mais simples;
+1. usa `p<0.05` como verdade/importância;
+2. usa `p>0.05` como ausência/equivalência;
+3. omite CI/threshold material para simplificar;
 4. converte low certainty em “sem efeito”;
 5. converte high certainty em “efeito grande/importante”;
-6. trata direct evidence como necessariamente unbiased;
-7. dá igual peso retórico a fontes fracas e fortes apenas por balance;
+6. trata direct evidence como automaticamente unbiased;
+7. dá equal rhetorical weight a fontes fracas/fortes só por balance;
 8. confunde body certainty com recommendation strength;
-9. amplia população/outcome/time/context sem justificativa;
-10. usa linguagem causal além do desenho;
-11. deixa practitioner/lay version mais certa que a technical version;
-12. esconde uma fonte material de uncertainty;
+9. amplia população/outcome/time/context sem suporte;
+10. fortalece causal language além do desenho;
+11. deixa practitioner/lay version mais certa que technical;
+12. esconde fonte material de uncertainty;
 13. resume conflito por votação de papers;
-14. usa “mais estudos são necessários” sem dizer qual informação mudaria a conclusão;
-15. transforma um mechanistic result em demonstrated performance/clinical benefit sem bridge evidence.
+14. usa “mais estudos” sem especificar update condition;
+15. transforma mechanistic result em demonstrated chronic performance/clinical benefit sem bridge evidence.
 
 ---
 
-# 24. Active recall
+## 22. Active recall
 
 Sem consultar:
 
 1. recite os oito campos do invariant core;
-2. explique `did not detect` versus `no meaningful effect` versus formal equivalence;
+2. explique `did not detect` vs `no meaningful effect` vs formal equivalence;
 3. diga por que estimate + CI + threshold devem viajar juntos;
-4. dê um exemplo de high-certainty trivial effect;
-5. dê um exemplo de low-certainty large point estimate;
+4. dê exemplo de high-certainty trivial effect;
+5. dê exemplo de low-certainty large point estimate;
 6. diferencie bias, imprecision, inconsistency e indirectness;
 7. explique por que directness não garante low RoB;
-8. explique false balance sem recorrer a evidence pyramid automática;
+8. explique false balance sem evidence pyramid automática;
 9. diferencie evidence statement de recommendation;
 10. cite cinco perguntas do drift audit;
-11. reescreva uma conclusão técnica em linguagem leiga sem aumentar certeza;
-12. diga o que faria uma conclusão científica ser atualizável em vez de dogmática.
+11. traduza uma conclusão técnica para linguagem leiga sem aumentar certeza;
+12. diga que evidência faria uma conclusão mudar materialmente.
 
 ---
 
-# 25. Limites deliberados
+## 23. Limites deliberados
 
 F0.10 não ensina:
 
@@ -706,19 +579,21 @@ F0.10 não ensina:
 - prescrição nutricional;
 - guideline development completo;
 - formal Evidence-to-Decision panel methods;
-- science journalism/marketing;
-- rhetoric/persuasion detached from evidence;
+- journalism/marketing;
+- persuasion detached from evidence;
 - meta-analysis avançada;
 - Bayesian decision theory avançada.
 
-O objetivo é mais fundamental: **a mesma verdade provisória deve continuar sendo a mesma verdade provisória em qualquer audiência.**
+O objetivo é mais fundamental:
+
+> **A mesma verdade provisória deve continuar sendo a mesma verdade provisória em qualquer audiência.**
 
 ---
 
-# 26. Regra final
+## 24. Regra final
 
 Antes de publicar uma síntese, pergunte:
 
-> **Se eu remover o jargão, a população, magnitude, intervalo, threshold, certainty, applicability e limites continuam intactos — ou minha simplificação transformou incerteza em certeza?**
+> **Se eu remover o jargão, população, magnitude, intervalo, threshold, certainty, applicability e limites continuam intactos — ou a simplificação transformou incerteza em certeza?**
 
-Se a resposta for a segunda opção, a comunicação falhou mesmo que seja clara e convincente.
+Se transformou, a comunicação falhou mesmo que pareça clara e convincente.
