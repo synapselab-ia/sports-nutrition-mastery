@@ -11,9 +11,9 @@
 - `LESSON.md`
 - `EXERCISES.md`
 - `ANSWER_KEY.md`
-- `foundations/F0-scientific-literacy/SOURCE_INDEX.md` source plan/readback required before checkpoint close
+- `foundations/F0-scientific-literacy/SOURCE_INDEX.md`
 
-**Production decision:** `PASS`, conditional only on final source-index/readback bookkeeping before checkpoint advancement.
+**Production decision:** `PASS — APPROVED`.
 
 ---
 
@@ -337,6 +337,6 @@ Therefore:
 
 # 13. Final production decision
 
-`PASS — APPROVE F0.9 UNIT` once the source-index additions `F0-S30`/`F0-S31` and final file/readback checks are persisted.
+`PASS — APPROVE F0.9 UNIT`.
 
-After that bookkeeping, the canonical next production action should be the F0.9 NotebookLM study package, not F0.10 yet.
+Source-index additions `F0-S30`/`F0-S31`, final lesson approval and readback checks were persisted on 2026-09-10. The canonical next production action is the F0.9 NotebookLM study package, not F0.10 yet.
