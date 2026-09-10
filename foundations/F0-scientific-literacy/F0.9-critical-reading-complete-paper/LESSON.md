@@ -1,6 +1,6 @@
 # F0.9 — Leitura crítica de um artigo completo
 
-**Production state:** `APPROVED_PENDING_QA`
+**Production state:** `APPROVED`
 
 **Prerequisites P2:** F0.1–F0.8.
 
@@ -683,7 +683,7 @@ Explicit boundaries.
 A F0.9 response fails structurally if it does any of the following:
 
 1. appraises only title/abstract;
-2. treats `RCT`, `cohort` or another design label as the appraisal;
+2. treats `RCT`, `cohort` ou outro design label como the appraisal;
 3. substitutes checklist completion for reasoning;
 4. interprets `p<0.05` as true/important effect;
 5. interprets `p>0.05` as proof of no effect/equivalence;
