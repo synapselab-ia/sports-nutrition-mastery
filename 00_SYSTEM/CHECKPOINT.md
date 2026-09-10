@@ -1,8 +1,8 @@
 # CHECKPOINT — Sports Nutrition Mastery
 
-**Updated:** 2026-09-09
+**Updated:** 2026-09-10
 **Canonical branch:** `main`
-**Project state:** `F0_8_STUDY_PACKAGE_READY`
+**Project state:** `F0_9_UNIT_APPROVED`
 
 ## Completed
 
@@ -105,68 +105,99 @@
 #### `F0-A17` — NotebookLM study package
 
 - `F0-A17` completed: approved F0.8 NotebookLM package created at `notebooklm/F0.8-risk-of-bias-certainty-applicability/`;
-- verified canonical files on `main`:
-  - `MANIFEST.md`;
-  - `STUDY_GUIDE.md`;
-  - `QA_REPORT.md`;
+- verified canonical files: `MANIFEST.md`, `STUDY_GUIDE.md`, `QA_REPORT.md`;
 - package decision: `PASS — READY_FOR_STUDY`;
-- first-pass corpus is intentionally limited to exactly six sources:
-  1. canonical F0.8 lesson — `CORE`;
-  2. riskofbias.info official RoB 2/ROBINS-I resource — `CORE`;
-  3. GRADE Book overview — `CORE`;
-  4. GRADE intervention-certainty principles — `SUPPORT`;
-  5. GRADE indirectness — `SUPPORT`;
-  6. STROBE — `CONTRAST`;
-- source roles are deliberately non-redundant: riskofbias.info anchors current result-level tool/version status; GRADE overview anchors body/outcome certainty and recommendation separation; certainty principles anchor threshold/range and NRSI starting approaches; indirectness anchors evidence-versus-target transfer; STROBE provides the explicit reporting-versus-quality contrast;
-- external verification on 2026-09-09 confirmed:
-  - RoB 2 current individually randomized parallel-group version = `22 August 2019`;
-  - ROBINS-I V2 = revised `20 November 2025` **draft**, subject to change;
-  - GRADE overview last modified `12 May 2026`;
-  - GRADE intervention-certainty principles last modified `21 August 2025`;
-  - GRADE indirectness last modified `12 May 2026`;
-  - STROBE continues to state its checklist is for reporting and not an observational-study quality instrument;
-- no source-version change required revision of the approved F0.8 lesson;
-- the Study Guide uses 18 ordered passes from object separation through reporting contrast, result-level RoB, RoB 2, bias-versus-precision, ROBINS-I/target-trial reasoning, GRADE domains, applicability, recommendation boundary and integrated audit;
-- package repeatedly blocks reporting-checklist certification, total quality scores, randomized=low-risk, observational=unusable, low-certainty=no-effect, high-certainty=large-effect, significance=high-certainty, direct=unbiased, I²-only certainty judgments and funnel-based publication-bias diagnoses;
-- integrated study task reproduces the synthetic two-body comparison:
-  - Body A: four randomized trials, pooled `MD +1.5 [1.2, 1.8]`, consistent effects and close target alignment;
-  - Body B: five non-randomized cohorts, pooled transformed `MD-equivalent +1.6 [-0.2, 3.4]`, confounding/selection/measurement/directness concerns and wide effect variation;
-  - practical-benefit threshold `+1.0`;
-- all thirteen F0.8 audit fields are required before final synthesis;
-- F0.8 `EXERCISES.md`, `ANSWER_KEY.md`, production QA, full `SOURCE_INDEX.md` and F0.4 `ENTRY_DIAGNOSTIC.md` remain outside the initial NotebookLM corpus;
-- no RoB tool PDF/template, GRADE source file or third-party full text was committed; only project-authored Markdown, citations, official links and synthetic cases were persisted;
+- first-pass corpus is intentionally limited to exactly six sources: canonical F0.8 lesson, riskofbias.info, GRADE overview, GRADE intervention-certainty principles, GRADE indirectness and STROBE as reporting-versus-quality contrast;
 - package creation changed no learner state and did not change the F0.4 quantitative diagnostic.
+
+### F0.9 — Critical reading of a complete paper
+
+#### `F0-A18` — instructional unit
+
+- `F0-A18` completed: complete ninth instructional unit created and production QA passed;
+- approved unit path: `foundations/F0-scientific-literacy/F0.9-critical-reading-complete-paper/`;
+- verified canonical files on `main`:
+  - `LESSON.md` — `APPROVED`;
+  - `EXERCISES.md` — 100-point independent assessment;
+  - `ANSWER_KEY.md` — commented scoring key;
+  - `QA_REPORT.md` — `PASS — APPROVED` across scope, CONTENT, EVIDENCE, PEDAGOGICAL and MASTERY gates;
+- F0.9 requires the fixed full-paper sequence `Question/estimand → Design/sampling → Intervention/exposure/comparator → Outcome measurement → Bias/confounding/missingness → Sample size/analysis plan → Effect estimate/uncertainty → Multiplicity/exploration → Result robustness → Applicability → Consistency with authors’ conclusion → What the paper does not establish`;
+- article anatomy, supplements, registry/protocol/SAP, data/code repositories, provenance and publication timeline are taught as navigation/audit objects rather than validity scores;
+- the learner must extract a compact PICO/estimand table and a result table before accepting narrative interpretation;
+- F0.1–F0.8 are explicitly integrated rather than replaced by a new checklist;
+- within-group change is explicitly separated from between-group treatment effect;
+- `p>0.05` is explicitly not treated as proof of no effect or equivalence;
+- post-study/observed-power calculations are not allowed to rescue a completed-study interpretation; estimate + CI + practical threshold + design/bias remain primary;
+- multiplicity and prespecification require a timeline comparison of study conduct against registry/protocol/SAP timestamps;
+- retrospective registration can improve transparency but cannot prove prospective prespecification;
+- result robustness is separated from result-shopping, and data/code sharing is treated as auditability rather than automatic validity;
+- applicability is audited across population, intervention/exposure, comparator, outcome, time, setting and decision context;
+- single-paper appraisal is explicitly separated from body-of-evidence GRADE certainty;
+- reporting guidelines remain maps for locating information rather than validity/quality scores;
+- local assessment gate is `>=80/100 + no critical fail`; checklist-only responding is capped at 60/100;
+- the blind performance task uses `F0-S30`, Klemp et al. 2025, a legally accessible human randomized exercise/nutrition trial, with `F0-S31` ClinicalTrials.gov `NCT05922475` as the registry/timeline companion;
+- `F0-S30` is open access under CC BY 4.0; no article full text, figure, table or third-party PDF was copied into the repository;
+- the selected trial provides a nontrivial appraisal case: 12-week three-arm resistance-training study in older previously untrained men; 32 randomized/enrolled and 30 completed/analyzed; post-exercise protein, pre-sleep protein and training-only conditions; multiple muscle-thickness/strength outcomes and timepoints; mixed-effects analysis; reported longitudinal CIs; retrospective registry; named OSF data repository; and a post-study sensitivity-power analysis;
+- the performance task requires distinguishing PRP-versus-PSP timing from supplemented-versus-training-only contrasts, recognizing that the latter also changes nutrient/energy exposure;
+- the answer key distinguishes reported improvements over time from evidence that one intervention group outperformed another and does not invent unreported between-group CIs;
+- the study reports no statistically significant group-related differences, but the module rejects converting that into formal equivalence without direct uncertainty relative to a defensible margin/threshold;
+- trial registry timing was verified: study start September 2017, completion May 2019, first submission/posting in 2023; therefore the public registry is retrospective for the completed trial;
+- the paper reports these data as a subset of a larger project with additional outcomes; this is treated as a selection/multiplicity opportunity requiring audit, not proof of selective reporting;
+- applicability to trained competitive athletes is deliberately limited by age, sex, training status, baseline dietary context, training dose, specific supplement product/dose, outcomes and duration;
+- critical fails explicitly include abstract-only appraisal, design-label-only appraisal, checklist-as-validity, binary p-value reasoning, observed-power rescue, ignoring multiplicity/prespecification, reporting=low RoB, one paper-level RoB/certainty shortcut, within-group-as-treatment-effect, unsupported acute/mechanistic extrapolation, copying authors’ conclusion without reconstruction, inventing missing information and assigning one paper a body-level GRADE rating.
+
+#### F0.9 source/version decisions
+
+- current methodological sources actually used were rechecked on 2026-09-10;
+- `F0-S01` CONSORT 2025 remains the current general randomized-trial reporting standard with a 30-item checklist; it is used for reporting visibility/navigation only, never as a validity score;
+- `F0-S07` riskofbias.info recheck confirmed RoB 2 for individually randomized parallel-group trials remains version `22 August 2019`; licensed tool documents were not republished;
+- `F0-S18` GRADE Book overview remains last modified `12 May 2026` and continues to separate body-level certainty from recommendation strength;
+- `F0-S19` intervention-certainty principles remain last modified `21 August 2025` and continue threshold/range-aware body/outcome reasoning;
+- `F0-S30` and `F0-S31` were added to `SOURCE_INDEX.md` because they are actually used in the F0.9 performance task;
+- `SOURCE_INDEX.md` was advanced to `Last researched: 2026-09-10`;
+- no other new source ID was created;
+- no third-party full text was persisted.
 
 ## Current curriculum position
 
 `F0 — Scientific Literacy and Quantitative Reasoning`
 
-**Production position:** `F0.8 STUDY_PACKAGE_READY`.
+**Production position:** `F0.9 APPROVED`.
 
-F0.1–F0.8 now have approved instructional units and approved NotebookLM study packages. F0.4 additionally has the quantitative entry diagnostic, still `UNOBSERVED`.
+F0.1–F0.8 have approved instructional units and approved NotebookLM study packages.
 
-`F0.9 — Critical reading of a complete paper` is the next unproduced instructional unit.
+F0.9 now has:
+
+- approved self-contained integration lesson;
+- 100-point independent assessment with a blind full-paper task;
+- commented answer key;
+- approved production QA;
+- registered full-paper and registry sources (`F0-S30`, `F0-S31`).
+
+The F0.9 NotebookLM study package is the next production artifact. F0.10 remains deferred until that package is complete.
 
 **Learning position:** `UNSEEN`.
 
 No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MASTERED` from production activity.
 
-## F0.8 canonical production/package decisions
+## F0.9 canonical production decisions
 
-- never collapse reporting, RoB, certainty, applicability or recommendation strength;
-- RoB is result-specific/domain-based, not a total quality score;
-- randomized/non-randomized labels inform but do not complete appraisal;
-- ROBINS-I V2 Nov-2025 remains draft until official status changes;
-- GRADE certainty is outcome/body/question specific and threshold/range aware;
-- certainty describes confidence in an effect range, not effect magnitude itself;
-- F0.5 estimate/CI/threshold reasoning remains mandatory for imprecision;
-- F0.7 heterogeneity/missing-evidence reasoning remains mandatory for inconsistency/dissemination bias;
-- applicability requires mechanism-based comparison of evidence versus target context;
-- internal validity and applicability are separate axes;
-- certainty of one outcome does not determine recommendation strength;
-- first-pass F0.8 NotebookLM manifest v1 uses exactly six sources with roles recorded above;
-- F0.8 exercises and answer key remain outside the initial notebook;
-- full-paper integration across F0.1–F0.8 remains F0.9.
+- never appraise a paper from title/abstract alone;
+- extract the PICO/estimand and result table before narrative interpretation;
+- design labels inform appraisal but do not complete it;
+- reporting guidelines locate information and are not quality/validity scores;
+- temporal evidence determines whether registration/protocol/SAP can support prospective-prespecification claims;
+- retrospective registration improves transparency but cannot establish prospectivity;
+- within-group change and between-group treatment effect are separate objects;
+- nonsignificance and equivalence are separate claims;
+- completed-study interpretation uses estimate + CI + practical threshold + design/bias, not observed/post hoc power;
+- multiplicity concerns the available claim/analysis family, not one highlighted p-value;
+- risk-of-bias reasoning remains result-specific;
+- robustness is not result-shopping and open data do not retroactively fix design;
+- applicability is a target-context comparison independent of internal validity;
+- single-paper appraisal is not a body-of-evidence certainty rating;
+- every appraisal ends with strongest defensible inference, authors’ conclusion audit and explicit boundaries on what the paper does not establish;
+- the F0.9 blind performance paper is `F0-S30` with `F0-S31` as registry/timeline companion.
 
 ## Pending learning validations
 
@@ -179,8 +210,9 @@ No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `
 - F0.6 has not yet been studied or assessed by the learner;
 - F0.7 has not yet been studied or assessed by the learner;
 - F0.8 has not yet been studied or assessed by the learner;
+- F0.9 has not yet been studied or assessed by the learner;
 - approved NotebookLM guides exist for F0.1–F0.8;
-- no mastery-state change is authorized from curriculum/package production alone.
+- no mastery-state change is authorized from curriculum production alone.
 
 ## Operational constraints
 
@@ -191,11 +223,12 @@ No F0 module has been marked `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `
 - NotebookLM is a study layer; GitHub remains canonical;
 - living/versioned sources must be rechecked when materially relevant;
 - answer keys and prerequisite diagnostics must not contaminate first-pass retrieval/assessment;
-- synthetic sports/nutrition numerical examples must not become substantive nutrition recommendations;
+- the real F0.9 performance paper may be linked as legally accessible source, but the project does not need to republish its full text;
 - production can proceed while learner validation remains pending;
 - F0.9 learner validation requires F0.1–F0.8 as P2;
+- F0.10 learner validation requires F0.5 + F0.7 + F0.8 + F0.9;
 - F0.4 diagnostic remains `UNOBSERVED` until actual learner responses are produced.
 
 ## NEXT_ACTION
 
-`F0-A18` — Produce the complete ninth instructional unit `F0.9 — Critical reading of a complete paper`. Use `COURSE_MAP.md`, `PREREQUISITE_GRAPH.md`, `ASSESSMENT_BLUEPRINT.md`, all approved F0.1–F0.8 units and current mapped reporting/appraisal sources. Create `foundations/F0-scientific-literacy/F0.9-critical-reading-complete-paper/LESSON.md`, `EXERCISES.md`, `ANSWER_KEY.md` and production `QA_REPORT.md`. Teach a fixed full-paper appraisal sequence: `1. question/estimand → 2. design/sampling → 3. intervention/exposure/comparator → 4. outcome measurement → 5. bias/confounding/missingness → 6. sample size/analysis plan → 7. effect estimate/uncertainty → 8. multiplicity/exploration → 9. result robustness → 10. applicability → 11. consistency with authors’ conclusion → 12. what the paper does not establish`. Explicitly integrate F0.1 operationalization, F0.2 design limits, F0.3 bias/causal mechanisms, F0.4 descriptive/sampling reasoning, F0.5 magnitude/CI/practical thresholds, F0.6 power/multiplicity/prespecification, F0.7 synthesis context when relevant and F0.8 result-level RoB/certainty/applicability distinctions. Teach article anatomy and supplementary-material navigation at P0/P1 level; require extraction of a compact PICO/estimand table and result table before interpretation; distinguish primary, secondary, exploratory and post hoc findings using registration/protocol/SAP/timestamps where available; use reporting guidelines only to locate information and never as validity scores. The performance task must be a blind critical appraisal of one legally accessible full human exercise/nutrition paper with enough quantitative uncertainty and methodological detail for meaningful appraisal, preferably with registration/protocol/supplement access, followed by a structured answer key. The task must require explicit statements of the strongest defensible inference, the most material limitations, applicability, whether the authors’ conclusion is proportional, and what the paper does not prove. Critical fails must include abstract-only appraisal, design-label-only appraisal, checklist completion as a substitute for reasoning, `p<0.05 = important/true`, `p>0.05 = no effect`, observed-power rescue, ignoring prespecification/multiplicity, treating reporting completeness as low RoB, treating one RoB/certainty label as a substitute for result-specific reasoning, extrapolating acute/mechanistic outcomes to chronic performance/body-composition outcomes without support, and rewriting the authors’ conclusion without independently reconstructing the measured estimand/results. Recheck the current status of every reporting/appraisal source actually used and verify that the chosen assessment paper is legally accessible before authoring; add only sources actually used to `SOURCE_INDEX.md`; apply CONTENT/EVIDENCE/PEDAGOGICAL/MASTERY QA; preserve F0.1–F0.8 learner states and F0.4 diagnostic `UNOBSERVED`; then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
+`F0-A19` — Produce the complete NotebookLM study package for `F0.9 — Critical reading of a complete paper`. Create `notebooklm/F0.9-critical-reading-complete-paper/MANIFEST.md`, `STUDY_GUIDE.md` and package `QA_REPORT.md` using the approved F0.9 lesson and a deliberately limited, auditable corpus. The initial corpus must include the canonical F0.9 lesson, the legally accessible `F0-S30` full paper and its `F0-S31` trial-registry record, plus only the minimum methodological support needed to preserve reporting-versus-validity, result-specific RoB, completed-study uncertainty/power and single-paper-versus-body-certainty boundaries. Assign `CORE`/`SUPPORT`/`CONTRAST` roles and explain every source’s instructional function and limitation. The package must train the fixed 12-step F0.9 appraisal sequence; article/supplement/registry/protocol/SAP/data navigation; provenance and version/timeline checks; PICO/estimand extraction; result-table extraction; within-group versus between-group inference; magnitude/CI/practical-threshold reasoning; rejection of `p>0.05 = equivalence` and observed-power rescue; multiplicity/prespecification classification using timestamps; result-specific bias mechanisms without total quality scores; robustness versus result-shopping; applicability across population/intervention/comparator/outcome/time/setting/context; authors’ conclusion proportionality; and explicit `what the paper does not establish` boundaries. Use the Klemp paper as a guided full-paper study object without embedding the completed blind-assessment answer key into the initial notebook corpus. Keep F0.9 `EXERCISES.md` and `ANSWER_KEY.md` outside the initial NotebookLM corpus so independent assessment remains uncontaminated; keep F0.4 `ENTRY_DIAGNOSTIC.md` outside and preserve it as `UNOBSERVED`. Recheck every external source/link/version actually used in the manifest, apply STUDY PACKAGE QA plus copyright/public-repository controls, preserve F0.1–F0.9 learner states as pending, keep F0.10 production deferred, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION`.
