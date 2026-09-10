@@ -1,6 +1,6 @@
 # F0 — SOURCE INDEX
 
-**Last researched:** 2026-09-09
+**Last researched:** 2026-09-10
 **Scope:** authoritative methodological backbone for F0.1–F0.10
 
 This is the local source registry for F0. Sources are included only when they have a defined instructional function. A reporting guideline is not treated as a risk-of-bias instrument, and no source type is treated as automatically decisive for questions it was not designed to answer.
@@ -37,7 +37,9 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S26 | current DAG/causal-adjustment guide | F0.3, F0.9 |
 | F0-S27 | standard deviation versus standard error | F0.4, F0.5 |
 | F0-S28 | CI/p-value/power misinterpretation guide | F0.5, F0.6, F0.10 |
-| F0-S29 | post hoc/observed power misuse | F0.6 |
+| F0-S29 | post hoc/observed power misuse | F0.6, F0.9 |
+| F0-S30 | full-paper exercise/nutrition appraisal exemplar | F0.9 |
+| F0-S31 | trial-registry/prespecification companion for F0-S30 | F0.9 |
 
 ## 2. Registered sources
 
@@ -61,7 +63,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Modules:** F0.1, F0.2, F0.6, F0.9.
 
-**Last checked:** 2026-09-09.
+**Last checked:** 2026-09-10.
 
 ---
 
@@ -197,15 +199,15 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** systematic review and study-level risk-of-bias assessment.
 
-**Key contribution:** access point for RoB 2, ROBINS-I, ROBINS-E and ROB ME. As rechecked on 2026-09-09, the official ROBINS-I V2 page states that the revised V2 draft was posted 20 November 2025; it reorganizes/expands domains including classification, selection and missing data and remains explicitly a draft subject to change.
+**Key contribution:** access point for RoB 2, ROBINS-I, ROBINS-E and ROB ME. On recheck 2026-09-10, the current RoB 2 version for individually randomized parallel-group trials remains 22 August 2019. The official ROBINS-I V2 page continues to identify the revised V2 posted 20 November 2025 as a draft subject to change.
 
-**Key limitations:** tool use requires guidance/training; domain judgments cannot be replaced by a total score. `ROBINS-I V2` must be identified by its current draft/version state rather than silently treated as a finalized universal standard. Licensing must be respected; do not republish protected tool documents into the public repository unless permitted.
+**Key limitations:** tool use requires guidance/training; domain judgments cannot be replaced by a total score. Licensing must be respected; the current site states RoB 2/ROBINS-I/ROBINS-E/ROB ME materials are CC BY-NC-ND 4.0, so protected tool documents are not republished into this public repository.
 
-**Claims supported/contested:** risk of bias is domain- and result-specific; randomized and non-randomized studies require different causal/bias considerations; current operational frameworks distinguish confounding, selection, missingness, measurement and reporting processes rather than collapsing them into one “quality” number.
+**Claims supported/contested:** risk of bias is domain- and result-specific; randomized and non-randomized studies require different causal/bias considerations; operational frameworks separate distortion mechanisms rather than collapsing them into one “quality” number.
 
 **Modules:** F0.3, F0.8, F0.9.
 
-**Last checked:** 2026-09-09.
+**Last checked:** 2026-09-10.
 
 ---
 
@@ -469,7 +471,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Modules:** F0.8, F0.9, F0.10.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-10.
 
 ---
 
@@ -493,7 +495,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Modules:** F0.8, F0.9, F0.10.
 
-**Last checked:** 2026-09-08.
+**Last checked:** 2026-09-10.
 
 ---
 
@@ -539,7 +541,7 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Claims supported/contested:** used in F0 only to teach inferential boundaries and operationalization. It supports the factual description of what the experiment measured; it is not treated as evidence that acute MPS differences automatically imply greater long-term hypertrophy or performance.
 
-**Modules:** F0.1; may be revisited in F0.9 as a full-paper appraisal exemplar if pedagogically appropriate.
+**Modules:** F0.1; may be revisited in F0.9 as a transfer contrast, not as the F0-A18 blind performance paper.
 
 **Last checked:** 2026-09-08.
 
@@ -727,31 +729,84 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Population/context:** statistical inference broadly; examples are simulated research experiments.
 
-**Key contribution:** directly demonstrates that observed/post hoc power is misleading/redundant for interpreting completed-study results, is tightly related to the observed p-value/estimate in common settings, and cannot distinguish whether nonsignificance reflects no meaningful effect versus an imprecise realization. It recommends using design context plus effect estimates/confidence intervals for interpretation rather than observed-power rescue.
+**Key contribution:** directly demonstrates that observed/post hoc power is misleading/redundant for interpreting completed-study results, is tightly related to the observed p-value/estimate in common settings, and cannot distinguish whether nonsignificance reflects no meaningful effect versus an imprecise realization. It recommends using design context plus effect estimates/confidence intervals for interpretation rather than observed-power rescue. In F0.9 this safeguard is applied to the performance paper's post-study sensitivity-power calculation without claiming that every design-sensitivity calculation is identical to observed-effect power.
 
-**Key limitations:** focused commentary/simulation, not a complete power-analysis text; it does not replace prospective sample-size/power planning guidance. F0.6 uses it only for the observed-power misuse it directly addresses.
+**Key limitations:** focused commentary/simulation, not a complete power-analysis text; it does not replace prospective sample-size/power planning guidance.
 
-**Claims supported/contested:** prospective power is useful for design under specified effects/assumptions; observed-effect post hoc power does not provide independent evidence about the truth/presence of an effect and should not be used to explain away a nonsignificant result.
+**Claims supported/contested:** prospective power is useful for design under specified effects/assumptions; post-study power/sensitivity calculations do not provide posterior evidence about the truth/presence of an observed effect and cannot substitute for treatment-effect estimates/CIs.
 
-**Modules:** F0.6.
+**Modules:** F0.6, F0.9.
 
 **Last checked:** 2026-09-09.
 
+---
+
+### F0-S30 — Klemp et al. 2025 full-paper appraisal exemplar
+
+**Citation:** Klemp AO, Ormsbee MJ, Yeh M, Sokolowski CM, Kim D-H, Panton LB, Kim J-S, et al. Neither pre-sleep nor post-exercise protein consumption influences resistance exercise training adaptations in older adults. *Journal of the International Society of Sports Nutrition*. 2025;22(1):2519511. doi:10.1080/15502783.2025.2519511.
+
+**DOI/full text:** https://doi.org/10.1080/15502783.2025.2519511 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC12897527/
+
+**Source type:** peer-reviewed human randomized exercise/nutrition trial; open-access full-paper performance exemplar.
+
+**Question answered:** In previously untrained older men performing 12 weeks of supervised resistance exercise, did a daily 40 g mixed protein supplement consumed post-exercise or pre-sleep produce different muscle-thickness or 1-RM adaptations compared with resistance training alone, and what can the reported trial actually establish about timing/additional supplementation?
+
+**Population/context:** men aged 60–75, sedentary/untrained before enrollment, 12 weeks of supervised full-body resistance training twice weekly; 32 randomized/enrolled and 30 completed/analyzed across post-exercise protein, pre-sleep protein and training-only groups.
+
+**Key contribution:** supplies the F0.9 blind full-paper appraisal case. The article contains a multi-arm randomized architecture, longitudinal outcomes, mixed-effects analysis, reported 95% CIs for several time contrasts, multiple outcomes/timepoints, a retrospective registry, a named public OSF data repository and a post-study sensitivity-power calculation. It therefore permits integrated application of F0.1–F0.8 rather than a simplified checklist exercise.
+
+**Key limitations:** small analyzed sample; training-only comparator receives no supplemental product and is not blinded to assignment; supplemented-versus-training-only contrasts also change nutrient/energy exposure rather than isolating timing alone; the article reports these outcomes as a subset of a larger project; the registry is retrospective; between-group treatment-effect CIs/practical-equivalence margins are not presented in a way that supports automatic equivalence claims; applicability is narrow to the studied population/intervention/training context. These are appraisal issues, not proof that the observed data are invalid.
+
+**Claims supported/contested:** the paper directly supports the factual description of its design, interventions, reported outcomes and detected longitudinal changes. For F0.9 it is used to train the distinction between time effects and between-group effects, nonsignificance and equivalence, retrospective transparency and prospective prespecification, result-specific bias and broad “study quality,” and study-population inference versus extrapolation. It is not used as a universal nutrition recommendation.
+
+**Access/licensing:** the PMC record explicitly identifies the article as Open Access under CC BY 4.0. No full-text copy is stored in this repository.
+
+**Modules:** F0.9.
+
+**Last checked:** 2026-09-10.
+
+---
+
+### F0-S31 — ClinicalTrials.gov NCT05922475
+
+**Citation:** ClinicalTrials.gov. NCT05922475 — Efficacy of Pre-sleep or Post-exercise Protein During 12 Weeks of Resistance Exercise Training. Florida State University.
+
+**Official URL:** https://clinicaltrials.gov/study/NCT05922475
+
+**Source type:** public trial-registry record / prespecification-timeline companion to F0-S30.
+
+**Question answered:** What trial characteristics/outcomes were placed in the public registry, and when did that public record exist relative to study conduct/completion?
+
+**Population/context:** same trial/project as F0-S30.
+
+**Key contribution:** provides an external audit trail for study start/completion, enrollment, intervention arms, registered outcomes and public-registration timing. Current public record data place study start in September 2017, primary/study completion in May 2019, first submission in May 2023 and first posting in June 2023. This makes the record pedagogically useful for distinguishing retrospective transparency from prospective prespecification.
+
+**Key limitations:** because the registry was created after study completion, it cannot by itself establish that the posted outcome hierarchy or analysis choices were fixed before investigators could know the data. The current record must not be treated as a substitute for a prospectively timestamped protocol/SAP. Registry metadata are an audit source, not a validity score.
+
+**Claims supported/contested:** a registry's evidentiary value depends on timing/version history; retrospective registration does not automatically invalidate a trial, but it does not protect against result-informed outcome/analysis selection in the way a prospective record can.
+
+**Modules:** F0.9.
+
+**Last checked:** 2026-09-10.
+
 ## 3. Research notes and version controls
 
-- `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010. On recheck 2026-09-09, its explanation/elaboration continues to expose trial registration, protocol/SAP access and transparent documentation of prespecified/post hoc analyses and deviations.
+- `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010. Rechecked 2026-09-10 for F0.9; the statement/explanation continues to expose trial registration, protocol/SAP access and transparent documentation of methods/analyses while remaining reporting guidance rather than a validity score.
 - The current Cochrane Handbook located during this research is version 6.5, updated August 2024.
 - Current CONSORT/SPIRIT materials continue to expose design-specific extensions. The crossover (2019), cluster (2012) and factorial (2023; explanation/elaboration 2025) extensions used in F0.2 were developed against CONSORT 2010, so they are used only for design-specific concepts together with the general CONSORT 2025 standard; they are not mislabeled as 2025-rewritten extensions.
-- The official risk-of-bias site rechecked on 2026-09-09 states that the revised `ROBINS-I V2` draft was posted 20 November 2025 and remains explicitly a draft subject to change. F0.3 uses the webpage only to support bias-domain separation and version literacy; formal tool application remains reserved for F0.8.
+- The official risk-of-bias site rechecked on 2026-09-10 states that current RoB 2 for individually randomized parallel-group trials remains 22 August 2019. The revised `ROBINS-I V2` posted 20 November 2025 remains explicitly a draft subject to change. F0.9 uses domain-level result-specific reasoning and does not republish licensed tool documents.
 - NIST/SEMATECH e-Handbook and its confidence-interval pages were rechecked on 2026-09-09; F0.5 uses them for frequentist repeated-sampling/precision concepts, not as a binary-testing authority.
 - Cochrane Chapter 6 was rechecked on 2026-09-09 and remains Chapter 6 of Handbook v6.5; its page states last update August 2023. F0.5 uses it for MD/SMD/RD/RR/OR scale logic.
 - The ASA official p-value statement and its six principles were directly rechecked on 2026-09-09; the 2021 ASA Task Force statement remains accessible and is used in F0.6 to connect transparency, uncertainty, multiplicity and replicability without teaching that p-values are intrinsically useless.
 - FDA *Multiple Endpoints in Clinical Trials* remains Final Guidance (October 2022) on recheck 2026-09-09; F0.6 uses its grouping/ordering/multiplicity principles at a conceptual level without generalizing regulatory requirements to all exercise/nutrition research.
 - Lakens 2022 remains openly available; F0.6 uses its sample-size-justification framework to separate a-priori power, desired precision/accuracy, population/resource constraints and other transparent rationales.
 - Altman & Bland remains the F0.4→F0.5 bridge for SD versus SE; CI interpretation itself is anchored by NIST and Greenland et al.
-- Greenland et al. 2016 remains open access under CC BY 4.0; F0.6 now uses its power probability-reversal cautions in addition to the F0.5 CI/p-value safeguards.
-- Heinsberg & Weeks 2022 was added in F0-A12 specifically because the unit requires a direct safeguard against observed/post hoc power as a completed-study interpretation tool; no third-party full text was copied into GitHub.
+- Greenland et al. 2016 remains open access under CC BY 4.0; F0.6 uses its power probability-reversal cautions in addition to the F0.5 CI/p-value safeguards.
+- Heinsberg & Weeks 2022 remains the focused F0.6 safeguard against interpreting observed/post hoc power as completed-study evidence. F0.9 transfers that rule to the selected paper's post-study sensitivity-power section while distinguishing design sensitivity from posterior evidence.
 - The EMA ICH E9 page rechecked on 2026-09-09 continues to list ICH E9 Step 5 and E9(R1) Step 5 as the current adopted statistical-principles/estimand guidance.
-- GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the official GRADE site states that the Book is the most current resource and is intended to replace the previous Handbook by the end of 2026. For a chapter not yet replaced/complete, consult the official GRADE living map/legacy guidance rather than silently assuming the old handbook is current.
+- GRADE living overview was rechecked on 2026-09-10 and remains last modified 12 May 2026; intervention-certainty principles remain last modified 21 August 2025. F0.9 uses these only to preserve the boundary that an individual-paper appraisal is not a body-of-evidence certainty rating.
+- GRADE is actively transitioning from the older handbook to the living `GRADE Book`; the living Book is treated as the current resource where chapters are available.
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
+- `F0-S30` was selected for F0-A18 only after full-text/legal-access verification. Its PMC copy is CC BY 4.0; only citations, links and original appraisal material are persisted here.
+- `F0-S31` demonstrates why registry timestamps matter: a record posted after trial completion increases transparency but cannot prove prospective prespecification.
 - Methodological sources above are the F0 backbone. Exercise/nutrition exemplars are labeled separately and must not be mistaken for general methodological authorities.
