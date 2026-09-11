@@ -1,7 +1,7 @@
 # F0 — SOURCE INDEX
 
-**Last researched:** 2026-09-10
-**Scope:** authoritative methodological backbone for F0.1–F0.10
+**Last researched:** 2026-09-11
+**Scope:** authoritative methodological backbone for F0.1–F0.10 and the cumulative F0 Exit Assessment
 
 This is the local source registry for F0. Sources are included only when they have a defined instructional function. A reporting guideline is not treated as a risk-of-bias instrument, and no source type is treated as automatically decisive for questions it was not designed to answer.
 
@@ -40,6 +40,8 @@ This is the local source registry for F0. Sources are included only when they ha
 | F0-S29 | post hoc/observed power misuse | F0.6, F0.9 |
 | F0-S30 | full-paper exercise/nutrition appraisal exemplar | F0.9 |
 | F0-S31 | trial-registry/prespecification companion for F0-S30 | F0.9 |
+| F0-S32 | alternate full-paper appraisal exemplar | F0 Exit Assessment |
+| F0-S33 | registry/timeline companion for F0-S32 | F0 Exit Assessment |
 
 ## 2. Registered sources
 
@@ -789,6 +791,56 @@ This is the local source registry for F0. Sources are included only when they ha
 
 **Last checked:** 2026-09-10.
 
+---
+
+### F0-S32 — Jagłowska et al. 2026 exit-assessment appraisal exemplar
+
+**Citation:** Jagłowska K, Folwarski M, Chroboczek M, Potrykus M, Kaczmarczyk M, Skonieczna-Żydecka K, Kaczor JJ. Multistrain Probiotic Supplementation Combined with a Standardized Diet Did Not Significantly Affect Exercise Performance or Inflammatory Responses in Male Endurance Runners: A Randomized Controlled Trial. *Nutrients*. 2026;18(15):2484. doi:10.3390/nu18152484.
+
+**DOI/full text:** https://doi.org/10.3390/nu18152484 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC13468382/
+
+**Source type:** peer-reviewed human randomized exercise/nutrition trial; alternate open-access full-paper appraisal exemplar for the cumulative F0 exit assessment.
+
+**Question answered:** In trained male endurance runners following a standardized diet, what does four weeks of multistrain probiotic supplementation versus matched placebo establish about VO2peak and other performance/inflammatory outcomes, and how should the trial's uncertainty, multiplicity, missingness, prespecification and applicability be appraised?
+
+**Population/context:** trained adult male long-distance runners; four-week randomized double-blind parallel probiotic-versus-placebo comparison under a standardized normocaloric meal-box diet; 30 randomized and 27 completed/analyzed.
+
+**Key contribution:** supplies F0 Exit Assessment v1 Section D with a paper different from F0-S30. It includes an explicit group×phase primary estimand, model-based 95% CIs, many secondary outcomes, Benjamini–Hochberg multiplicity correction, a missed a-priori recruitment target, per-protocol/complete-case analysis, a public retrospective registry and an internal reporting inconsistency about registry timing. The primary VO2peak interaction is approximately `−3.5 mL·kg−1·min−1 [−7.0,−0.1]`, nominal `p=.044`, but adjusted `p=.707`, making binary significance reasoning especially unsuitable.
+
+**Key limitations:** preliminary/exploratory modest sample; planned total n=40 was not reached and planning assumed a large effect from a different prior athletic/formulation context; three randomized participants lacked POST assessment and primary analyses were per-protocol/complete-case; public registration occurred after participant enrolment; male-only population; self-reported training monitoring; short duration; specific probiotic formulation; microbiome/metabolomic mechanisms are not directly established by the reported performance/inflammation analysis. These are appraisal issues, not proof that the trial is invalid.
+
+**Claims supported/contested:** used to assess integrated F0 reasoning—question/estimand reconstruction, randomized-design boundaries, result-specific bias, estimate/CI interpretation, multiplicity, prespecification timeline, absence-versus-equivalence, applicability and calibrated conclusion. It is not used as a universal recommendation about probiotics.
+
+**Access/licensing:** PMC identifies the article as Open Access under CC BY. No article full text, figure or table is stored in this repository.
+
+**Modules:** F0 Exit Assessment v1.
+
+**Last checked:** 2026-09-11.
+
+---
+
+### F0-S33 — ClinicalTrials.gov NCT07411482
+
+**Citation:** ClinicalTrials.gov. NCT07411482 — public trial-registry record corresponding to F0-S32.
+
+**Official URL:** https://clinicaltrials.gov/study/NCT07411482
+
+**Source type:** public trial-registry / provenance and prespecification-timeline companion to F0-S32.
+
+**Question answered:** What information is publicly registered for the probiotic endurance-runner trial and what can the public record establish about timing/prespecification relative to trial conduct?
+
+**Population/context:** same trial/project as F0-S32.
+
+**Key contribution:** provides an independent public record identifier and version/timeline audit target for the exit-assessment appraisal. F0-S32 reports that registration was first submitted 31 December 2025 and first posted 13 February 2026 after participant enrolment, so the public registry is pedagogically useful for distinguishing retrospective transparency from prospective prespecification.
+
+**Key limitations:** current registry visibility cannot retroactively establish that outcome hierarchy/model choices were publicly fixed before investigators could know the data. The article separately claims earlier bioethics/grant specification; that claim requires its own timestamped documentary support and should not be conflated with the later public registry. A registry record is not a validity score.
+
+**Claims supported/contested:** timeline/version evidence determines what registration can support; retrospective public registration does not automatically invalidate trial data, but it cannot independently provide the same protection against result-informed choices as a prospectively timestamped public record.
+
+**Modules:** F0 Exit Assessment v1.
+
+**Last checked:** 2026-09-11.
+
 ## 3. Research notes and version controls
 
 - `CONSORT 2025` is the current general CONSORT statement and explicitly supersedes CONSORT 2010. Rechecked 2026-09-10 for F0.9; the statement/explanation continues to expose trial registration, protocol/SAP access and transparent documentation of methods/analyses while remaining reporting guidance rather than a validity score.
@@ -809,4 +861,7 @@ This is the local source registry for F0. Sources are included only when they ha
 - STROBE remains useful for observational reporting, but its own documentation explicitly warns that the checklist is not a methodological-quality instrument.
 - `F0-S30` was selected for F0-A18 only after full-text/legal-access verification. Its PMC copy is CC BY 4.0; only citations, links and original appraisal material are persisted here.
 - `F0-S31` demonstrates why registry timestamps matter: a record posted after trial completion increases transparency but cannot prove prospective prespecification.
+- `F0-S32` was selected on 2026-09-11 as the alternate complete-paper object for F0 Exit Assessment v1. PMC/MDPI confirm 1 August 2026 publication and CC BY access. Its nominal-versus-FDR-adjusted primary result, modest achieved sample, per-protocol analysis and retrospective public registration create genuine appraisal work without requiring hidden domain knowledge.
+- `F0-S32` contains internally inconsistent registry wording: the main methods/limitations describe retrospective registration after enrolment, while the institutional statement calls it prospective/prior to enrolment. Exit scoring follows the explicit reported dates/timeline and rewards detection of the reporting inconsistency rather than treating either label as authoritative by itself.
+- `F0-S33` is used only as the public registry/timeline companion; registry existence is never treated as proof of prospective prespecification or validity.
 - Methodological sources above are the F0 backbone. Exercise/nutrition exemplars are labeled separately and must not be mistaken for general methodological authorities.
