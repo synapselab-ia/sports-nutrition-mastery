@@ -2,7 +2,7 @@
 
 **Updated:** 2026-09-11
 **Canonical branch:** `main`
-**Project state:** `F0_EXIT_ASSESSMENT_READY`
+**Project state:** `F0_STUDY_RUNBOOK_READY`
 
 ## Canonical project state
 
@@ -10,14 +10,14 @@
 - GitHub remains canonical; NotebookLM is a controlled study layer;
 - production and learner validation are separate;
 - no private health data, secrets or non-redistributable third-party full text may be persisted;
-- scientific/methodological claims that are living/versioned must be rechecked when materially relevant;
-- learner status changes require observed evidence, never content-production inference.
+- living/versioned scientific claims are rechecked when materially relevant;
+- learner-state changes require observed evidence, never production inference.
 
 ## F0 production status
 
 `F0 — Scientific Literacy and Quantitative Reasoning`
 
-All ten instructional units are approved and all ten NotebookLM packages are ready:
+All ten instructional units are approved and all ten NotebookLM packages are `READY_FOR_STUDY`:
 
 | Module | Unit | NotebookLM |
 |---|---|---|
@@ -32,38 +32,30 @@ All ten instructional units are approved and all ten NotebookLM packages are rea
 | F0.9 Critical reading of a complete paper | APPROVED | READY_FOR_STUDY |
 | F0.10 Synthesis/communication of uncertainty | APPROVED | READY_FOR_STUDY |
 
-F0.4 additionally has a quantitative entry diagnostic. Its state remains `UNOBSERVED`.
+F0.4 additionally has `ENTRY_DIAGNOSTIC.md`; state remains `UNOBSERVED`.
 
-Key canonical reasoning chains remain:
-
-- F0.1: `question → target population → contrast → outcome → time → estimand`;
-- F0.3: `target causal question/estimand → causal structure → distortion mechanism → adjustment/conditioning → repairability/data limitation → calibrated conclusion`;
-- F0.5: `Target/measure → Direction → Magnitude → Precision/CI → Statistical output → Practical meaning + unsupported claims`;
-- F0.9: `Question/estimand → Design/sampling → Intervention/exposure/comparator → Outcome measurement → Bias/confounding/missingness → Sample size/analysis plan → Effect estimate/uncertainty → Multiplicity/exploration → Result robustness → Applicability → Consistency with authors’ conclusion → What the paper does not establish`;
-- F0.10: `reconstructed evidence → invariant core → calibrated claim → audience translation → drift audit → update conditions`.
-
-Persistent safeguards:
+Persistent reasoning safeguards remain:
 
 - association ≠ causation;
 - randomized ≠ automatically low risk of bias;
 - reporting completeness ≠ validity/certainty;
-- risk of bias is result-specific/domain-based, not a total quality score;
+- risk of bias is result-specific/domain-based, not a total score;
 - `p<0.05` ≠ truth/importance;
 - `p>0.05` ≠ no effect/equivalence;
 - frequentist CI ≠ posterior probability interval;
 - completed-study interpretation uses estimate + CI + practical threshold + design/bias, not observed power;
 - multiplicity includes outcomes, timepoints, subgroups, models and data-dependent paths;
-- prespecification improves auditability but does not guarantee validity;
-- systematic review ≠ meta-analysis and pooling is compatibility-dependent;
+- prespecification improves auditability without guaranteeing validity;
+- systematic review ≠ meta-analysis; pooling is compatibility-dependent;
 - inverse-variance weight is precision, not quality/certainty;
-- I² is not a quality or sameness score;
+- I² is not a quality/sameness score;
 - certainty is body/outcome/question specific and not effect magnitude;
 - internal validity and applicability are separate;
-- one-paper appraisal ≠ body-level GRADE certainty;
+- one-paper appraisal ≠ body-level certainty;
 - certainty of one outcome ≠ recommendation strength;
-- audience simplification cannot increase certainty or broaden target scope.
+- simplifying language cannot increase certainty or broaden scope.
 
-## F0-A22 — cumulative Exit Assessment v1
+## F0 cumulative Exit Assessment
 
 `F0-A22` is complete.
 
@@ -71,90 +63,147 @@ Approved packet:
 
 `foundations/F0-scientific-literacy/F0-exit-assessment/`
 
-Verified files on `main`:
+Verified artifacts:
 
-- `ASSESSMENT.md` — cumulative 100-point learner-facing assessment;
-- `ANSWER_KEY.md` — point-by-point scoring, acceptable alternatives, critical-fail triggers and remediation mapping;
+- `ASSESSMENT.md` — 100 points;
+- `ANSWER_KEY.md` — scoring/alternatives/critical fails/remediation mapping;
 - `QA_REPORT.md` — `PASS — READY_FOR_ADMINISTRATION`.
 
-### Structure
+Exit structure:
 
-The approved blueprint structure is preserved exactly:
+- A question/design/causal structure = 20;
+- B quantitative interpretation = 25;
+- C systematic review/certainty = 20;
+- D full-paper critical appraisal = 25;
+- E communication of uncertainty = 10.
 
-- Section A — question/design/causal structure: `20`;
-- Section B — quantitative interpretation: `25`;
-- Section C — systematic review/certainty: `20`;
-- Section D — full-paper critical appraisal: `25`;
-- Section E — communication of uncertainty: `10`;
-- total: `100`.
+Exit gate:
 
-Exit gate remains:
-
-- total `>=85/100`;
+- `>=85/100` total;
 - every section `>=70%`;
 - no `CRITICAL_FAIL`;
-- Section D must show a defensible integrated appraisal chain;
-- Section E must preserve epistemic content when language is simplified.
+- defensible integrated Section D chain;
+- no increase in certainty during Section E simplification.
 
 `75–84` with no critical fail = `NEAR_PASS / TARGETED_REMEDIATION`.
+Below 75 = broader remediation mapped to earliest broken dependency.
+A first strong pass may support `APPLIED`/`INTEGRATED`; it never automatically authorizes `MASTERED`.
 
-Below `75` = broader remediation mapped to earliest broken dependency.
+Section D uses alternate transfer source `F0-S32` with registry companion `F0-S33`; these remain quarantined from first-pass study so the exit paper is not memorized in advance.
 
-A first strong pass may support `APPLIED`/`INTEGRATED`; it does not automatically authorize `MASTERED`, which requires robust/repeated performance over time.
+## F0-A23 — Study-to-Exit Runbook
 
-### Fresh transfer design
+`F0-A23` is complete.
 
-- Sections A–C and E use new synthetic scenarios/numbers rather than copying module assessments;
-- Section C contains a five-study synthetic forest/evidence-synthesis package with visible heterogeneity;
-- Section D uses a different real paper from the F0.9 training paper;
-- answer-key scoring rewards reasoning rather than one memorized wording;
-- checklist-only Section D remains capped at 60% of that section.
+Canonical learner-facing runbook:
 
-### Section D source
+`study/F0_STUDY_RUNBOOK.md`
 
-`F0-S32` — Jagłowska K, Folwarski M, Chroboczek M, Potrykus M, Kaczmarczyk M, Skonieczna-Żydecka K, Kaczor JJ. *Multistrain Probiotic Supplementation Combined with a Standardized Diet Did Not Significantly Affect Exercise Performance or Inflammatory Responses in Male Endurance Runners: A Randomized Controlled Trial.* Nutrients. 2026;18(15):2484. doi:10.3390/nu18152484.
+State: `READY_FOR_USE`.
 
-- published 1 August 2026;
-- human randomized double-blind parallel placebo-controlled exercise/nutrition trial;
-- trained male endurance runners;
-- standardized diet;
-- quantitative 95% CIs and explicit multiplicity handling;
-- preliminary/exploratory design with missed recruitment target and per-protocol/complete-case analysis;
-- public registration occurred retrospectively;
-- full text is legally accessible through PMC and marked CC BY;
-- no third-party full text/figure/table was copied into GitHub.
+The runbook defines the full learner path from current `UNSEEN` state to legitimate exit readiness.
 
-`F0-S33` — ClinicalTrials.gov `NCT07411482` is the registry/timeline companion.
+### Canonical first-pass route
 
-The paper contains an internal reporting inconsistency: main methods/limitations identify retrospective registration after enrolment, while the institutional statement uses prospective/prior-enrolment language. Exit scoring follows the explicit reported dates/timeline and rewards detection of the inconsistency rather than accepting either label mechanically.
+`F0.1 → F0.2 → F0.3 → F0.4 quantitative entry diagnostic → F0.4 → F0.5 → F0.6 → F0.7 → F0.8 → F0.9 → F0.10 → cumulative retrieval → Exit Assessment`
 
-`SOURCE_INDEX.md` was advanced to `Last researched: 2026-09-11` and now registers `F0-S32`/`F0-S33` without removing prior sources.
+The prerequisite graph remains authoritative; this linear route is a preferred operational route, not permission to bypass P2 dependencies.
+
+### NotebookLM setup rule
+
+For every module:
+
+1. create a separate NotebookLM notebook;
+2. use that module's `MANIFEST.md` as the exact initial corpus specification;
+3. preserve `CORE`/`SUPPORT`/`CONTRAST` roles;
+4. use the ordered `STUDY_GUIDE.md` passes;
+5. keep `EXERCISES.md`, `ANSWER_KEY.md`, production QA, full `SOURCE_INDEX.md`, diagnostics and exit materials outside the initial corpus;
+6. do not substitute AI summaries or random NotebookLM-discovered sources for approved sources.
+
+### Standard learner cycle
+
+`source-guided study → closed-book recall → fresh micro-transfer → independent module EXERCISES → correction/error routing → canonical study-record update`
+
+All current module assessments use local progression gate:
+
+`>=80/100 + no critical fail`
+
+- 70–79 → targeted remediation + equivalent fresh retest;
+- <70 → broader module review + equivalent reassessment;
+- any critical fail → mandatory repair/retest regardless of numerical score.
+
+A local pass may support `APPLIED` only when observed work demonstrates application. `INTEGRATED` requires cross-module performance. `MASTERED` requires robust repeated performance over time.
+
+### F0.4 quantitative gate
+
+`ENTRY_DIAGNOSTIC.md` must be independently administered before F0.4 quantitative readiness is treated as demonstrated.
+
+Routing remains:
+
+- `READY_FOR_F0.4` = 14–16/16 and no 0/2 domain;
+- `P1_REPAIR` = localized gaps under canonical diagnostic criteria;
+- `P2-QB_REQUIRED` = <=9/16, >=3 zeroed domains, or fewer than six domains with any demonstrated competence.
+
+If `P2-QB_REQUIRED`, the quantitative bridge becomes a structural prerequisite and F0.4/downstream quantitative validation pauses until an equivalent retest demonstrates readiness.
+
+### Retrieval/spacing
+
+Runbook defines:
+
+- R0 same-cycle closed-book recall + fresh micro-transfer;
+- R1 short-delay retrieval at 1–3 days;
+- R2 mixed retrieval at ~7 ± 2 days;
+- R3 cumulative integration at ~14–21 days and again after F0.10;
+- at least one delayed cumulative retrieval before the Exit Assessment even if study is accelerated.
+
+### Persistent learner records
+
+Observed study events update only when evidence exists:
+
+- `study/STUDY_HISTORY.md` — concrete activity/performance/strength/gap/next action;
+- `study/ERROR_LEDGER.md` — material observed conceptual/statistical/application/integration errors with remediation/retest status;
+- `study/MASTERY_MATRIX.md` — state transitions supported by observed evidence only.
+
+Errors route to the earliest broken dependency rather than the module where they were first noticed.
+
+### Exit readiness
+
+Before administration of the cumulative Exit Assessment:
+
+- all F0.1–F0.10 have observed first-pass study;
+- F0.4 diagnostic/bridge is resolved;
+- all ten independent module assessments have passed their local gate or been repaired by equivalent retest;
+- no unresolved structural prerequisite error remains;
+- at least one delayed cumulative retrieval has occurred after F0.10;
+- an integrated chain has already been demonstrated outside the exit packet;
+- exit answer key and F0-S32/F0-S33 remain uncontaminated.
+
+If the exit answer key is exposed before independent administration, v1 is not treated as clean validation and an alternate form is required.
 
 ## Current learner position
 
 **Learning position:** `UNSEEN`.
 
-Repository learner artifacts confirm:
+Repository learner artifacts still confirm:
 
-- learner initial domain remains `UNKNOWN` and must be measured rather than inferred;
-- `study/MASTERY_MATRIX.md` still records F0 Scientific literacy = `UNSEEN`;
-- no F0.1–F0.10 module has observed evidence sufficient for `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MASTERED`;
-- F0.4 quantitative diagnostic = `UNOBSERVED`;
-- `study/STUDY_HISTORY.md` contains only its template; no study session has yet been persisted;
-- `study/ERROR_LEDGER.md` must only receive actual observed learner errors.
+- initial domain = `UNKNOWN` and must be measured rather than inferred;
+- `study/MASTERY_MATRIX.md` aggregate F0 = `UNSEEN`;
+- F0.4 diagnostic = `UNOBSERVED`;
+- no F0.1–F0.10 module has observed evidence for `STUDIED`, `RECALLED`, `APPLIED`, `INTEGRATED` or `MASTERED`;
+- `study/STUDY_HISTORY.md` contains no completed learner event yet;
+- `study/ERROR_LEDGER.md` contains no observed learner error yet.
 
-The Exit Assessment is **ready but must not yet be scored/administered as if prerequisites were learned** merely because production is complete.
+Creating the runbook changed **no learner state**.
 
-## Operational constraints for learner validation
+## Operational constraints for the next phase
 
-- initial NotebookLM corpora must not include module answer keys or prerequisite diagnostics;
-- answer keys may be used for scoring only after independent response;
-- learner-state changes require observed performance;
-- F0.4 diagnostic must be administered before treating quantitative prerequisites as demonstrated;
-- remediation/retests must use new numbers/scenarios/papers when transfer is being tested;
-- actual persistent errors should be logged with cause/correction/retest plan;
-- passing the exit gate permits progression but does not confer professional credentialing or clinical authority.
+- next work is learner validation, not additional F0 curriculum production;
+- initial F0.1 corpus must exclude its `EXERCISES.md` and `ANSWER_KEY.md`;
+- correction occurs only after an unaided response;
+- only actual learner performance may be persisted;
+- personal/health information stays out of the public repository;
+- F0 Exit Assessment remains quarantined until runbook readiness criteria are met.
 
 ## NEXT_ACTION
 
-`F0-A23` — Create the canonical learner-facing **F0 Study-to-Exit Runbook** at `study/F0_STUDY_RUNBOOK.md` using the already approved F0.1–F0.10 NotebookLM packages, `MASTERY_PROTOCOL.md`, F0.4 `ENTRY_DIAGNOSTIC.md`, module assessments and the new F0 Exit Assessment. The runbook must define the actual learning/validation sequence from current `UNSEEN` state to exit readiness without fabricating study activity: how to instantiate each NotebookLM corpus from its manifest; first-pass study order; active-recall checks; when module exercises are taken independently; how observed results update `STUDY_HISTORY.md`, `ERROR_LEDGER.md` and `MASTERY_MATRIX.md`; exactly where the F0.4 quantitative diagnostic occurs and how failure promotes the quantitative bridge to a structural prerequisite; criteria for advancing between modules while allowing targeted remediation; cumulative retrieval/retest spacing; readiness criteria before administering `F0-exit-assessment/ASSESSMENT.md`; exit scoring/remediation workflow; and the rule that one exit pass can support `APPLIED`/`INTEGRATED` but never automatic `MASTERED`. Keep personal/health data out of the public repository, change no learner state because no study has yet occurred, then update this checkpoint and leave exactly one subsequent `NEXT_ACTION` that begins the first observed F0.1 learner study session rather than producing more curriculum.
+`F0-A24` — Begin the **first observed F0.1 learner study session** using `study/F0_STUDY_RUNBOOK.md`, `notebooklm/F0.1-scientific-questions/MANIFEST.md` and `STUDY_GUIDE.md`. Do not produce new curriculum. First verify/guide creation of the approved six-source F0.1 NotebookLM corpus without adding `EXERCISES.md`, `ANSWER_KEY.md`, QA metadata or future-module sources. Then begin the F0.1 study sequence with the conceptual skeleton and an unaided learner response before correction; use one-question-at-a-time Socratic retrieval rather than revealing answers. Persist only study/performance that actually occurs in the session: append `study/STUDY_HISTORY.md` when there is meaningful observed activity, add `ERROR_LEDGER.md` entries only for material demonstrated errors, and update `MASTERY_MATRIX.md` only if the observed evidence justifies a state transition. Do not administer the F0.4 diagnostic, later-module assessments or the F0 Exit Assessment in this action unless the canonical runbook is subsequently updated by a real learner event that makes such progression legitimate.
